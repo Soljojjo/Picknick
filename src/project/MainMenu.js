@@ -16,25 +16,24 @@ const TvPrograms = () => {
 
 
 // Can only return one object, encapsulated in a DIV here
-return (
-    < div >
+    return (
+        <div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridGap: 20 }}>
-            <div> <Sidebar /> </div>
-            <div><h1 className="channel-title">SVT 1</h1>
+            
+            <div> column 1<Sidebar /> </div>
+
+            <div> column 2 <h1 className="channel-title">SVT 1</h1>
                 <ul className="program-list">
                     {programs.map((program) => (
-                        <li className="program-list__item">
-                            <div className="program-list__time">
-                            
-                            { program.name}
-                            </div>
+                        <li className="program-list__item">                               
+                            {program.name}   
                         </li>
                     ))}
                 </ul>
             </div>
-            <div></div>
+            <div> column 3</div>
         </div>
-    </div >
+        </div>
 );
 };
 export default TvPrograms;
