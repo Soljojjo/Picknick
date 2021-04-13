@@ -1,6 +1,6 @@
 import React from 'react';
-import Hello from './Projekt/sayHello';
-import Tweet from './Projekt/Tweet';
+import Hello from './project/sayHello';
+import Tweet from './project/tweet';
 
 function App() {
   
