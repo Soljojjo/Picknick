@@ -22,14 +22,7 @@ const TvPrograms = () => {
             
             <div> column 1<Sidebar /> </div>
 
-            <div> column 2 <h1 className="channel-title">SVT 1</h1>
-                <ul className="program-list">
-                    {programs.map((program) => (
-                        <li className="program-list__item">                               
-                            {program.name}   
-                        </li>
-                    ))}
-                </ul>
+            <div> column 2 
             </div>
             <div> column 3</div>
         </div>
