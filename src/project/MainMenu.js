@@ -20,11 +20,17 @@ const TvPrograms = () => {
         <div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridGap: 20 }}>
             
-            <div> column 1<Sidebar /> </div>
-
-            <div> column 2 
+            <div> column 1
+                <Sidebar /> 
             </div>
-            <div> column 3</div>
+
+            <div> column 2
+
+            </div>
+
+            <div> column 3
+
+            </div>
         </div>
         </div>
 );
