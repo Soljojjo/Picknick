@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function tweet() {
+export default function Tweet() {
     return (
         <div>
             <h3>Johanna</h3>
