@@ -19,19 +19,19 @@ const TvPrograms = () => {
 // Can only return one object, encapsulated in a DIV here
     return (
         <div>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(9, 1fr)", gridGap: 20 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gridGap: 20 }}>
             
             <div> column 1
                 
             </div>
                 
             <div> column 2
-            
+            <Sidebar /> 
 
             </div>
 
             <div> column 3
-            <Sidebar /> 
+            <Sidebar2 />
             </div>
 
             <div> column 4
@@ -39,27 +39,7 @@ const TvPrograms = () => {
                 
             </div>
                 
-            <div> column 5
-            <Sidebar2 />
-
-            </div>
-
-            <div> column 6
             
-            </div>
-
-            <div> column 7
-                
-
-            </div>
-
-            <div> column 8
-
-            </div>
-
-            <div> column 9
-
-            </div>
         </div>
         </div>
 );
