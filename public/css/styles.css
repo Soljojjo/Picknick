@@ -6,19 +6,26 @@ body {
     position: absolute;
     width: 300px;
     height: 100%;
-    background-color:#B7AFA4;
+    border-radius: 12px;
+    
 }
 
 .menu__link {
+    background-color: turquoise;
     color: black;
     text-decoration: none;
     display: block;
     padding: 25px;
+    border-radius: 12px;
+    margin: 10px;
 }
 
 .menu__link:hover{
+    display: block;
     background: #888;
     color:white;
+    border-radius: 12px;
+    
 }
 
 .channel-title{
@@ -40,3 +47,4 @@ body {
 .program-list__time{
     font-weight: bold;
 }
+

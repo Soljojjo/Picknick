@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Sidebar from './Sidebar';
+import Sidebar2 from './Sidebar2';
 
 const TvPrograms = () => {
 
@@ -23,8 +24,9 @@ const TvPrograms = () => {
             <div> column 1
                 <Sidebar /> 
             </div>
-
+                
             <div> column 2
+            <Sidebar2 />
 
             </div>
 
