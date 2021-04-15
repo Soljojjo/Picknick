@@ -51,11 +51,11 @@ const TvPrograms = () => {
         
         
         <div class="center-column1">
-            <h2>Center1</h2>
+            <h2></h2>
             <Sidebar />
         </div>
         <div class="center-column2">
-            <h2>center2</h2>
+            <h2></h2>
             <Sidebar2 />
         </div>
         <div class="right-column">
