@@ -113,6 +113,7 @@ padding: 1px;
     height: 100%;
     border-radius: 12px;
     float: left;
+    min-width: 100px;
     
 }
 
@@ -127,15 +128,17 @@ padding: 1px;
     padding: 15px;
     border-radius: 12px;
     margin: 14px;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 2px 4px 0 rgba(153, 152, 152, 0.104), 0 3px 10px 0 rgba(0,0,0,0.19);
+    min-width: 100px;
 }
 
 .menu__link:hover{
     display: block;
-    background: #888;
-    color:white;
+    color:black;
+    padding: 15px;
     border-radius: 12px;
-    
+    margin: 14px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
 }
 
 .channel-title{
