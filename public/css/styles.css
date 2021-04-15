@@ -8,7 +8,7 @@ h1{
     text-align: center;
     font-size: 32px;
     letter-spacing: - 0.3%;
-    color: #84A89E;
+    color: black;
 }
 
 
@@ -24,14 +24,14 @@ h2{
     font-family: Cabin;
     font-weight: bold;
     font-size: 16px;
-    color: #84A89E;
+    color: black;
 }
 
 .txt_2{
     font-family: Cabin;
     font-weight: bold;
     font-size: 16px;
-    color: #84A89E;
+    color: black;
 }
 
 .header{
@@ -41,6 +41,15 @@ text-align: center;
 padding: 1px;
  
 }​​​​
+
+
+
+.logo1{
+    text-align: left;
+    width: 100px; 
+    image-resolution: 10px; 
+    color: blue;
+}
 
 
 .containerdiv{

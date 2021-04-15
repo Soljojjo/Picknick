@@ -30,9 +30,12 @@ const TvPrograms = () => {
 
 
 
-            
+<div class="logo">  
+    <img src= "./images/picknick.jpg" alt=" logo "/>
+    </div>     
 
     <div class= "header">
+        
        <h1>Upptäck äventyren nära dig</h1>
        <p class="txt_1">Hitta ett utflyktsmål där det går att byta blöjor? Värma vällingen? </p> 
        <p class="txt_2">Använd picknick för att hitta utflyktsmål dom passar hela familjen</p>
@@ -46,11 +49,11 @@ const TvPrograms = () => {
         
         
         <div class="center-column1">
-            <h2>Utflykt1</h2>
+            <h2>Center1</h2>
             <Sidebar />
         </div>
         <div class="center-column2">
-            <h2>Utflykt2</h2>
+            <h2>center2</h2>
             <Sidebar2 />
         </div>
         <div class="right-column">
