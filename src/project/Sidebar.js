@@ -1,14 +1,16 @@
 import React from 'react'
 
 
-
-
-const Sidebar = () =>{
-    return(
+function Sidebar() {
+    function handleClick(e) {
+      e.preventDefault();
+      console.log('The link was clicked. ');
+    }
+    return (
         <div class="menu">
-            <a class="menu__link" href="https://www.bergianska.se">Bergianska Trädgården</a>
-            <a class="menu__link" href="">Ekospåret på Artipelag</a>
-            <a class="menu__link" href="">Ekorrstigen i Hudding</a>    
+            <a class="menu__link" href="" onClick={handleClick}>Bergianska trädgården</a>
+            <a class="menu__link" href="" onClick={handleClick}>Ekospåret på Artipelag</a>
+            <a class="menu__link" href=" " onClick={handleClick}>Ekorrstigen i Hudding</a>
         </div>
     )
 }
