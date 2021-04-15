@@ -36,7 +36,7 @@ const TvPrograms = () => {
        <h1>Upptäck äventyren nära dig</h1>
        <p class="txt_1">Hitta ett utflyktsmål där det går att byta blöjor? Värma vällingen? Använd
        <br></br>
-       picknick för att hitta utflyktsmål dom passar hela familjen</p> 
+       picknick för att hitta utflyktsmål som passar hela familjen</p> 
       
     </div>
     
