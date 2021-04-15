@@ -6,9 +6,9 @@ import React from 'react'
 const Sidebar = () =>{
     return(
         <div class="menu">
-            <a class="menu__link" href="https://www.skansen.se">Skansen onhover</a>
-            <a class="menu__link" href="">Tyresta by</a>
-            <a class="menu__link" href="">Tensta</a>    
+            <a class="menu__link" href="https://www.bergianska.se">Bergianska Trädgården</a>
+            <a class="menu__link" href="">Ekospåret på Artipelag</a>
+            <a class="menu__link" href="">Ekorrstigen i Hudding</a>    
         </div>
     )
 }

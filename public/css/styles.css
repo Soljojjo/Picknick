@@ -6,9 +6,10 @@ body {
 h1{
     font-family: Cabin;
     text-align: center;
+    font-weight: bold;
     font-size: 32px;
     letter-spacing: - 0.3%;
-    color: black;
+    color: #202020;
 }
 
 
@@ -27,9 +28,10 @@ h2{
     color: black;
 }
 
-.txt_2{
+.txt_1{
+    color: #202020;
     font-family: Cabin;
-    font-weight: bold;
+    font-weight: regular;
     font-size: 16px;
     color: black;
 }
@@ -44,11 +46,20 @@ padding: 1px;
 
 
 
-.logo1{
+.logo{
     text-align: left;
-    width: 100px; 
+    width: 10px;
     image-resolution: 10px; 
     color: blue;
+    
+}
+
+.logo1{
+    text-align: left;
+    width: 200px;
+    image-resolution: 10px; 
+    background-color: blue;
+    
 }
 
 
@@ -107,7 +118,10 @@ padding: 1px;
 
 .menu__link {
     background-color: #DCE6E3;
-    color: black;
+    color:#202020;
+    font-family: Cabin;
+    font-weight: medium;
+    font-size: 20px;
     text-decoration: none;
     display: block;
     padding: 15px;
