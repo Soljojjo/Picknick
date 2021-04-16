@@ -31,7 +31,7 @@ const TvPrograms = () => {
                 <p class="body_copy">Hitta ett utflyktsmål där det går att byta blöjor? Värma vällingen? Använd <br />
                 picknick för att hitta utflyktsmål som passar hela familjen.
                 </p>
-
+  
             </div>
             <p class="family">
                 <img src="./icons/family_friendly.png" alt="<h2>Familjevänliga utflyktsmål</h2>" />
@@ -54,8 +54,6 @@ const TvPrograms = () => {
             <div class="footer">
                 <p>&copy; All rights reserved.</p>
             </div>
-
-
 
         </div>
     );
