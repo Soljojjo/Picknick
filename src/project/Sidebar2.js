@@ -10,7 +10,7 @@ function Sidebar2() {
         <div class="menu">
             <a class="menu__link" href="" onClick={handleClick}>Tyresta Nationalpark</a>
             <a class="menu__link" href="" onClick={handleClick}>Birka, Mörkö</a>
-            <a class="menu__link" href=" " onClick={handleClick}>Grottan på Mörkö</a>
+            <a class="menu__link" href="" onClick={handleClick}>Grottan på Mörkö</a>
         </div>
     )
 }
