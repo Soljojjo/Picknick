@@ -28,13 +28,13 @@ const TvPrograms = () => {
             <div class="header">
 
                 <h1>Upptäck äventyren nära dig</h1>
-                <p class="body_copy">Hitta ett utflyktsmål där det går att byta blöjor? Värma vällingen? Använd <br />
-                picknick för att hitta utflyktsmål som passar hela familjen.
+                <p class="body_copy">Hitta ett utflyktsmål där det går att byta blöjor? Värma vällingen? <br />
+                Använd Picknick för att hitta utflyktsmål som passar hela familjen.
                 </p>
   
             </div>
             <p class="family">
-                <img src="./icons/family_friendly.png" alt="<h2>Familjevänliga utflyktsmål</h2>" />
+                <img src="./icons/family_friendly.png" alt="<h2>Familjevänliga utflyktsmål</h2>" width="800" />
             </p>
 
             <div class="container">
