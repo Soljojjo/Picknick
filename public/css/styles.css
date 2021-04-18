@@ -171,6 +171,8 @@ h3 {
     /* Drop shadow */
     box-shadow: 4px 4px 3px rgba(32, 32, 32, 0.14);
     border-radius: 14px;
+
+    /* fix for picture icon in button */
     background: url( ../icons/siggesta_gard_icon.png ) #DCE6E3 no-repeat;
     background-size: 54px 54px;
 }
@@ -183,12 +185,47 @@ h3 {
     top: -8.33%;
     bottom: 0%;
     */
-    padding:0px;
-    background: url( ../icons/siggesta_gard_icon.png );
+    padding-left:65px;    
+    text-align: right;
+    text-align-last: right;
+}
+.menu__icon {
+    /* From figma: */
+    /* position: absolute;
+    left: 0%;
+    right: 63.26%;
+    top: -8.33%;
+    bottom: 0%;
+    */
+    padding-left:77px;    
+    text-align: right;
+    text-align-last: right;
+    align-items: flex-end;
+}
+.menu__icon1 {
+    padding-left:92px;    
+}
+.menu__icon2 {
+    padding-left:155px;    
+}
+.menu__icon3 {
+    padding-left:109px;    
+
 }
 
 .menu__icon:hover {
-    background: green;
+    border-radius: 5px;
+    /* background: white; */
+}
+.menu__icon1:hover {
+    border-radius: 5px;
+}
+}.menu__icon2:hover {
+    border-radius: 5px;
+}
+}.menu__icon3:hover {
+    border-radius: 5px;
+
 }
 
 .menu__link:hover {
