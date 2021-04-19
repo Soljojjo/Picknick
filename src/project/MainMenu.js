@@ -18,7 +18,6 @@ const TvPrograms = () => {
     })
 
 
-
     // Can only return one object, encapsulated in a DIV here
     return (
         <div>
@@ -30,38 +29,32 @@ const TvPrograms = () => {
             <div class="header">
 
                 <h1>Upptäck äventyren nära dig</h1>
-                <p class="txt_1">Hitta ett utflyktsmål där det går att byta blöjor? Värma vällingen? Använd
-       <br></br>
-       picknick för att hitta utflyktsmål som passar hela familjen</p>
-
-
-
+                <p class="body_copy">Hitta ett utflyktsmål där det går att byta blöjor? Värma vällingen? <br />
+                Använd Picknick för att hitta utflyktsmål som passar hela familjen.
+                </p>
+  
             </div>
+            <p class="family">
+                <img src="./icons/family_friendly.png" alt="<h2>Familjevänliga utflyktsmål</h2>" width="800" />
+            </p>
 
             <div class="container">
                 <div class="left-column">
                     <h2></h2>
-
                 </div>
 
-
                 <div class="center-column1">
-                    <h2></h2>
                     <Sidebar />
                 </div>
                 <div class="center-column2">
-                    <h2></h2>
                     <Sidebar2 />
                 </div>
                 <div class="right-column">
-                    <h2></h2>
                 </div>
             </div>
             <div class="footer">
                 <p>&copy; All rights reserved.</p>
             </div>
-
-
 
         </div>
     );
@@ -69,7 +62,11 @@ const TvPrograms = () => {
 
 export default TvPrograms;
 
-
+/*
+<p class="family">
+<img src="./icons/family_friendly_2440px.png" alt="<h2>Familjevänliga utflyktsmål</h2>" />
+</p>
+*/
 
 
 
