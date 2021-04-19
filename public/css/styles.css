@@ -2,6 +2,7 @@ body {
     background-color: #FEF8EF;
 }
 
+/* Text hantering-------------- */
 
 h1{
     font-family: 'Cabin';
@@ -14,11 +15,15 @@ h1{
 
 
 h2{
+    background-color: green;
+    color: white;
+    text-align: center;
     font-family: 'Cabin';
     font-weight: bold;
     font-size: 24px;
+    width: 450px;
     
-    
+  
 }
 
 .txt_1{
@@ -35,6 +40,8 @@ h2{
     font-size: 16px;
     color: black;
 }
+
+/* kolumn hantering--------------- */
 
 .header{
 
@@ -107,6 +114,7 @@ padding: 1px;
 
     ;      }​​​​​​​​
 
+    /* knappar/lista --------- */
 .menu {
     position: flex;
     width: 30%;
@@ -140,6 +148,10 @@ padding: 1px;
     margin: 14px;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
 }
+
+
+
+/* Skräp----------------- */
 
 .channel-title{
     text-align: center;
