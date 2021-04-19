@@ -1,5 +1,5 @@
 import React from 'react';
-import TvPrograms from './project/MainMenu';
+import MainMenu from './project/MainMenu';
 
 function App() {
   
@@ -7,7 +7,7 @@ function App() {
     <div>
       
 
-      <TvPrograms />
+      <MainMenu />
       
 
     </div>

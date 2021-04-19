@@ -1,19 +1,18 @@
 import React, { useEffect, useState } from 'react';
-import Sidebar from './Sidebar';
-import Sidebar2 from './Sidebar2';
+import Destinations from './Destinations';
 
 
 
-const TvPrograms = () => {
+const MainMenu = () => {
 
-    const url = "https://tv-api-p2x2o.ondigitalocean.app/SVT 1.json"
+    //const url = "https://tv-api-p2x2o.ondigitalocean.app/SVT 1.json"
     const [programs, setPrograms] = useState([]);
 
     useEffect(async () => {
         if (programs.length === 0) {
-            const response = await fetch(url);
-            const data = await response.json();
-            setPrograms(data);
+            //const response = await fetch(url);
+            //const data = await response.json();
+           // setPrograms(data);
         }
     })
 
@@ -22,8 +21,8 @@ const TvPrograms = () => {
     return (
         <div>
 
-            <div class="logo">
-                <img class="logo1" src="./images/picknick.jpg" alt=" logo " />
+            <div class="logoPicknick">
+                <img src="./images/picknick.jpg" alt=" logo " />
             </div>
 
             <div class="header">
@@ -32,7 +31,7 @@ const TvPrograms = () => {
                 <p class="body_copy">Hitta ett utflyktsmål där det går att byta blöjor? Värma vällingen? <br />
                 Använd Picknick för att hitta utflyktsmål som passar hela familjen.
                 </p>
-  
+
             </div>
             <p class="family">
                 <img src="./icons/family_friendly.png" alt="<h2>Familjevänliga utflyktsmål</h2>" width="800" />
@@ -43,13 +42,12 @@ const TvPrograms = () => {
                     <h2></h2>
                 </div>
 
-                <div class="center-column1">
-                    <Sidebar />
+                <div class="center-column">
+                    <Destinations />
                 </div>
-                <div class="center-column2">
-                    <Sidebar2 />
-                </div>
+
                 <div class="right-column">
+                    <h2></h2>
                 </div>
             </div>
             <div class="footer">
@@ -60,7 +58,7 @@ const TvPrograms = () => {
     );
 };
 
-export default TvPrograms;
+export default MainMenu;
 
 /*
 <p class="family">
