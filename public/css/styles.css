@@ -2,7 +2,7 @@ body {
     background-color: #FEF8EF;
 }
 
-/* Text hantering-------------- */
+/* ---------------------------------------Text hantering */
 
 h1{
     font-family: 'Cabin';
@@ -83,6 +83,7 @@ h3 {
     padding: 1px;
 }
 
+/*----------------------------------logo hantering (bild)*/
 ​​​​ .logo {
     text-align: left;
     width: 10px;
@@ -98,6 +99,7 @@ h3 {
     padding-top: 30px;
 }
 
+/* ----------------------------------------sidans columner*/
 .containerdiv {
     padding: 1%;
     box-sizing: border-box;
@@ -136,6 +138,7 @@ h3 {
     ​​​​​​​​;
 }
 
+/*-------------------------------------- Sidebar knappar */
 ​​​​​​​​ .menu {
     position: flex;
     width: 30%;
@@ -256,6 +259,10 @@ h3 {
     border-radius: 14px;
     */
 }
+
+
+
+/*------------------------------------------------skräp? */
 
 .channel-title {
     text-align: center;
