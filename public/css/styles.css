@@ -207,29 +207,10 @@ h3 {
     text-align-last: right;
     align-items: flex-end;
 }
-.menu__icon1 {
-    padding-left:92px;    
-}
-.menu__icon2 {
-    padding-left:155px;    
-}
-.menu__icon3 {
-    padding-left:109px;    
 
-}
 
-.menu__icon:hover {
-    border-radius: 5px;
-    /* background: white; */
-}
-.menu__icon1:hover {
-    border-radius: 5px;
-}
-}.menu__icon2:hover {
-    border-radius: 5px;
-}
-}.menu__icon3:hover {
-    border-radius: 5px;
+.menu__icon{
+color: green;
 
 }
 
