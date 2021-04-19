@@ -194,25 +194,6 @@ h3 {
     text-align: right;
     text-align-last: right;
 }
-.menu__icon {
-    /* From figma: */
-    /* position: absolute;
-    left: 0%;
-    right: 63.26%;
-    top: -8.33%;
-    bottom: 0%;
-    */
-    padding-left:77px;    
-    text-align: right;
-    text-align-last: right;
-    align-items: flex-end;
-}
-
-
-.menu__icon{
-color: green;
-
-}
 
 .menu__link:hover {
     display: block;
