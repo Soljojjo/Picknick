@@ -11,8 +11,7 @@ function App() {
 
       <div>
       <Switch>
-          <Route path="/" exact component={MainMenu} />
-          <Route path="/InfoPage" component={InfoPage} />
+          
         </Switch>
         <p>testar routing</p>
         <nav>
@@ -25,7 +24,8 @@ function App() {
                 </li>
             </ul>
         </nav>
-
+        <Route path="/" exact component={MainMenu} />
+        <Route path="/InfoPage" component={InfoPage} />
         
       </div>
 

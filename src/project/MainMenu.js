@@ -26,7 +26,7 @@ const MainMenu = () => {
             </div>
 
             <div class="header">
-
+            
                 <h1>Upptäck äventyren nära dig</h1>
                 <p class="body_copy">Hitta ett utflyktsmål där det går att byta blöjor? Värma vällingen? <br />
                 Använd Picknick för att hitta utflyktsmål som passar hela familjen.
