@@ -5,16 +5,7 @@ import Destinations from './Destinations';
 
 const MainMenu = () => {
 
-    //const url = "https://tv-api-p2x2o.ondigitalocean.app/SVT 1.json"
-    const [programs, setPrograms] = useState([]);
-
-    useEffect(async () => {
-        if (programs.length === 0) {
-            //const response = await fetch(url);
-            //const data = await response.json();
-           // setPrograms(data);
-        }
-    })
+   
 
 
     // Can only return one object, encapsulated in a DIV here
@@ -25,7 +16,7 @@ const MainMenu = () => {
 
             <div class="header">
             <div>
-                <img class= "logoPicknick" src="./images/picknick.jpg" alt=" logo " />
+                <img class= "logoPicknick" src="./icons/picknickLogoAndText.png" alt=" logo " />
             </div>
                 
 
@@ -42,7 +33,8 @@ const MainMenu = () => {
             </div> 
             
             <div class="container2"> 
-            <h2>Utflyktsmål i Stockholm</h2>
+            <h2>Utflyktsmål i Stockholm</h2> 
+            <p class="body_copy">Filtrera med populära taggar:</p> 
                 
             </div>
 
