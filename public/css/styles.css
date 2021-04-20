@@ -63,17 +63,6 @@ h3 {
     line-height: 130%;
     /* identical to box height, or 21px */
 }
-.family {  /*TODO alternera storleken*/
-    font-family: 'Cabin';
-    text-align: center;
-    padding-left: 20%;
-    vertical-align: bottom;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 100%;
-    font-size:20px; 
-    /* transform: scale(0.3, 0.3); only for a huge pic */
-}
 
 .header {
     height: 120px;
@@ -89,21 +78,32 @@ h3 {
     padding-top: 30px;
 }
 
+.menupicture{
+    width: 100%;
+    padding-top: 30px;
+}
+
+.container{
+    height: 250px;
+    background: url(../images/water.jpg);
+    background-size: 100%;
+}
+
+
+.containertext{
+    text-align: left;
+   
+    
+}
+
 .containerdiv {
     padding: 1%;
     box-sizing: border-box;
     min-height: 500px;
 }
 
-.left-column {
-    width: 5%;
-    float: left;
-}
 
-​​​​​​​​ .right-column {
-    width: 5%;
-    float: left;
-}
+
 
 .center-column {
     width: 90%;
@@ -140,7 +140,7 @@ h3 {
     padding-left: 70px;
     border-radius: 12px;
     margin: 14px;
-    box-shadow: 0 2px 4px 0 rgba(153, 152, 152, 0.104), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    /*box-shadow: 0 2px 4px 0 rgba(153, 152, 152, 0.104), 0 3px 10px 0 rgba(0, 0, 0, 0.19);*/
     min-width: 100px;
     /* From figma below: */
     /*
@@ -152,13 +152,13 @@ h3 {
     position: relative; */
     /* width: 497px; */
     /* height: 60px; */
-    background: #DCE6E3;
+    /*background: #DCE6E3;
     /* Drop shadow */
-    box-shadow: 4px 4px 3px rgba(32, 32, 32, 0.14);
+    /*box-shadow: 4px 4px 3px rgba(32, 32, 32, 0.14);*/
     border-radius: 14px;
 
     /* fix for picture icon in button */
-    background: url( ../icons/siggesta_gard_icon.png ) #DCE6E3 no-repeat;
+    background: url( ../icons/siggesta_gard_icon.png ) no-repeat;
     background-size: 54px 54px;
 }
 
