@@ -10,7 +10,6 @@ h1 {
     letter-spacing: - 0.3%;
     color: #597B72;
     font-style: normal;
-    line-height: 39px;
     padding-left: 10px;
     /* From Figma, identical to box height */
     /*letter-spacing: -0.003em;
@@ -58,20 +57,29 @@ h3 {
 
 .header {
     height: 20px;
+    padding: 10px;
     
+}
+
+.link{
+    font-weight: bold;
+    font-family: 'Cabin';
+    color: #597B72;
+    padding-left: 10px;
+
 }
 /*------------------------------------bild hantering*/
 .logoPicknick {
     margin-left: 0;
     width: 120px;
-    padding-left: 10px;
+    
     
     
 }
 
 .menupicture{
     width: 100%;
-    padding-top: 30px;
+
 }
 /*---------------------------------------- container hantering*/
 .container{
@@ -81,12 +89,14 @@ h3 {
 }
 
 
-.containerdiv {
-    padding: 1%;
-    box-sizing: border-box;
-    min-height: 500px;
-}
 
+.infoContainer{ /*-------------------bild*/
+    height: 320px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+    
+}
 
 
 /*-------------------------------------------- column hantering*/

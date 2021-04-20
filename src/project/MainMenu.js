@@ -32,8 +32,10 @@ const MainMenu = () => {
                 </p> 
             </div> 
             
-            <div class="container2"> 
-            <h2>Utflyktsmål i Stockholm</h2> 
+            <div class="container2">
+
+            <h2>Utflyktsmål i Stockholm</h2>
+             
             <p class="body_copy">Filtrera med populära taggar:</p> 
                 
             </div>

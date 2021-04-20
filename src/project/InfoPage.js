@@ -1,9 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import Destinations from './Destinations';
+import { Route, BrowserRouter as Router, Switch, Link } from "react-router-dom";
+
 
 
 
 const InfoPage = () => {
+
+    function handleClick() {
+        console.log('The link was clicked. ');
+        <Link to= "/InfoPage">InfoPage</Link>;
+      }
 
 
 
@@ -16,29 +23,37 @@ const InfoPage = () => {
 
             <div class="header">
             <div>
-                <img class= "logoPicknick" src="./icons/picknickLogoAndText.png" alt=" logo " />
+                <img class= "logoPicknick" onClick= {handleClick} src="./icons/picknickLogoAndText.png" alt=" logo " />
             </div>
                 
 
             </div>
            
 
-            <div class="container">
-                {/* <div>
+            <div class="infoContainer">
+                <div>
+                <Link class="link" name to= "/">Back</Link>
+                </div>
+                <h1>Siggesta Gård</h1>
+                <div>
                 <img class="menupicture" src="./images/water.jpg" alt="girl at water"/>
-                </div> */}
-            <h1>Upptäck äventyren <br></br>nära dig</h1>   
-                <p class="body_copy">Hitta utflyktsmål anpassade för hela <br></br>familjen         
-                </p> 
+                </div> 
+
             </div> 
             
-            <div class="container2"> 
-            <h2>Utflyktsmål i Stockholm</h2> 
+            <div class="infoContainer2"> 
+
             <p class="body_copy">Filtrera med populära taggar:</p> 
                 
             </div>
 
-            <div class="container3">   
+            <div class="infoContainer3">
+                <p class = "body_copy"><b>OM UTFLYKTSMÅLET</b>. På Siggesta Gård finns det alltid något kul att göra utomhus.
+                Det bästa är att det är öppet året runt.
+                <br/>
+                <br/> 
+                Ta med dig barnen på utomhusaktiviteter
+                som ni alla kommer gilla och avsluta med en god lunch i vår restaurang. </p>
                 
             </div>
             

@@ -13,17 +13,7 @@ function App() {
       <Switch>
           
         </Switch>
-        <p>testar routing</p>
-        <nav>
-            <ul>
-                <li>
-                    <Link to= "/InfoPage">InfoPage</Link>
-                </li>
-                <li>
-                    <Link to= "/">MainMenu</Link>
-                </li>
-            </ul>
-        </nav>
+
         <Route path="/" exact component={MainMenu} />
         <Route path="/InfoPage" component={InfoPage} />
         
