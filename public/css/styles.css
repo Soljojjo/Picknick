@@ -1,16 +1,17 @@
 body {
     background-color: #FEF8EF;
 }
-
+/* -----------------------------Text hantering*/
 h1 {
     font-family: 'Cabin';
-    text-align: center;
+    text-align: left;
     font-weight: bold;
     font-size: 32px;
     letter-spacing: - 0.3%;
-    color: #202020;
+    color: #597B72;
     font-style: normal;
     line-height: 39px;
+    padding-left: 10px;
     /* From Figma, identical to box height */
     /*letter-spacing: -0.003em;
     color: #000000;*/
@@ -19,12 +20,14 @@ h1 {
 h2 {
     /* H2 Heading 2 */
     font-family: Cabin;
+    text-align: left;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 130%;
     /* or 31px */
-    color: #000000;
+    color: #597B72;
+    padding-left: 10px;
 }
 
 h3 {
@@ -38,20 +41,7 @@ h3 {
     color: #000000;
 }
 
-.txt_1 {
-    font-family: Cabin;
-    font-weight: bold;
-    font-size: 16px;
-    color: black;
-}
 
-.txt_1 {
-    color: #202020; /* TODO åtgärda färger*/
-    font-family: 'Cabin';
-    font-weight: regular;
-    font-size: 16px;
-    color: black;
-}
 
 .body_copy {
     /* From figma: */
@@ -61,40 +51,35 @@ h3 {
     font-weight: normal;
     font-size:20px; /* Adjusted from 16 in figma */
     line-height: 130%;
+    padding-left: 10px;
+    color: #597B72;
     /* identical to box height, or 21px */
 }
 
 .header {
-    height: 120px;
-    text-align: center;
-    padding: 1px;
+    height: 20px;
+    
 }
-
+/*------------------------------------bild hantering*/
 .logoPicknick {
-    text-align: left;
-    width: 200px;
-    image-resolution: 10px;
-    padding-left: 40px;
-    padding-top: 30px;
+    margin-left: 0;
+    width: 120px;
+    padding-left: 10px;
+    
+    
 }
 
 .menupicture{
     width: 100%;
     padding-top: 30px;
 }
-
+/*---------------------------------------- container hantering*/
 .container{
     height: 250px;
-    background: url(../images/water.jpg);
+    background: url(../images/throwTheBaby.jpg);
     background-size: 100%;
 }
 
-
-.containertext{
-    text-align: left;
-   
-    
-}
 
 .containerdiv {
     padding: 1%;
@@ -104,7 +89,7 @@ h3 {
 
 
 
-
+/*-------------------------------------------- column hantering*/
 .center-column {
     width: 90%;
     float: left;
@@ -119,7 +104,7 @@ h3 {
     padding-top: 10px;
     box-sizing: border-box;
 }
-
+/*------------------------------------------- knappar/ länkar hantering */
 ​​​​​​​​ .menu {
     position: flex;
     width: 30%;
@@ -130,7 +115,7 @@ h3 {
 }
 
 .menu__link {
-    color: #202020;
+    color: #597B72;
     font-family: 'Cabin';
     font-weight: medium;
     font-size: 20px;

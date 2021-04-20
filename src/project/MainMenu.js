@@ -24,8 +24,8 @@ const MainMenu = () => {
             
 
             <div class="header">
-            <div class="logoPicknick">
-                <img src="./images/picknick.jpg" alt=" logo " />
+            <div>
+                <img class= "logoPicknick" src="./images/picknick.jpg" alt=" logo " />
             </div>
                 
 
@@ -36,16 +36,20 @@ const MainMenu = () => {
                 {/* <div>
                 <img class="menupicture" src="./images/water.jpg" alt="girl at water"/>
                 </div> */}
-            <h1 class="containertext">Upptäck äventyren <br></br>nära dig</h1>
+            <h1>Upptäck äventyren <br></br>nära dig</h1>   
                 <p class="body_copy">Hitta utflyktsmål anpassade för hela <br></br>familjen         
                 </p> 
             </div> 
+            
+            <div class="container2"> 
+            <h2>Utflyktsmål i Stockholm</h2>
+                
+            </div>
 
-            <div class="container2">   
-                <div class="center-column">
+            <div class="container3">   
+                
                     <Destinations />
-                </div>
-
+                
             </div>
             <div class="footer">
                 <p>&copy; All rights reserved.</p>
