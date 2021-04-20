@@ -23,7 +23,7 @@ const InfoPage = () => {
 
             <div class="header">
             <div>
-                <img class= "logoPicknick" onClick= {handleClick} src="./icons/picknickLogoAndText.png" alt=" logo " />
+                <img class= "logoPicknick" src="./icons/picknickLogoAndText.png" alt=" logo " />
             </div>
                 
 
