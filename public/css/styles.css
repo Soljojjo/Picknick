@@ -1,7 +1,9 @@
 body {
     background-color: #FEF8EF;
 }
+
 /* -----------------------------Text hantering*/
+
 h1 {
     font-family: 'Cabin';
     text-align: left;
@@ -40,15 +42,28 @@ h3 {
     color: #000000;
 }
 
-
-
 .body_copy {
     /* From figma: */
     /* Body copy */
     font-family: 'Cabin';
     font-style: normal;
     font-weight: normal;
-    font-size:20px; /* Adjusted from 16 in figma */
+    font-size: 20px;
+    /* Adjusted from 16 in figma */
+    line-height: 130%;
+    padding-left: 10px;
+    color: #597B72;
+    /* identical to box height, or 21px */
+}
+
+.body_copy_filter {
+    /* From figma: */
+    /* Body copy */
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    /* Adjusted from 16 in figma */
     line-height: 130%;
     padding-left: 10px;
     color: #597B72;
@@ -58,54 +73,47 @@ h3 {
 .header {
     height: 20px;
     padding: 10px;
-    
 }
 
-.link{
+.link {
     font-weight: bold;
     font-family: 'Cabin';
     color: #597B72;
     padding-left: 10px;
-
 }
+
 /*------------------------------------bild hantering*/
+
 .logoPicknick {
     margin-left: 0;
     width: 120px;
-    
-    
-    
 }
 
-.menupicture{
+.menupicture {
     width: 100%;
-
 }
+
 /*---------------------------------------- container hantering*/
-.container{
+
+.container {
     height: 250px;
     background: url(../images/throwTheBaby.jpg);
     background-size: 100%;
 }
 
-
-
-.infoContainer{ /*-------------------bild*/
+.infoContainer {
+    /*-------------------bild*/
     height: 320px;
     padding-bottom: 20px;
     padding-top: 20px;
-
-    
 }
 
-
 /*-------------------------------------------- column hantering*/
+
 .center-column {
     width: 90%;
     float: left;
 }
-
-
 
 .footer {
     clear: both;
@@ -114,7 +122,9 @@ h3 {
     padding-top: 10px;
     box-sizing: border-box;
 }
+
 /*------------------------------------------- knappar/ länkar hantering */
+
 ​​​​​​​​ .menu {
     position: flex;
     width: 30%;
@@ -151,9 +161,8 @@ h3 {
     /* Drop shadow */
     /*box-shadow: 4px 4px 3px rgba(32, 32, 32, 0.14);*/
     border-radius: 14px;
-
     /* fix for picture icon in button */
-    background: url( ../icons/siggesta_gard_icon.png ) no-repeat;
+    background: url(../icons/siggesta_gard_icon.png ) no-repeat;
     background-size: 54px 54px;
 }
 
@@ -165,7 +174,7 @@ h3 {
     top: -8.33%;
     bottom: 0%;
     */
-    padding-left:77px;    
+    padding-left: 77px;
     text-align: right;
     text-align-last: right;
     align-items: flex-end;
@@ -201,4 +210,69 @@ h3 {
     box-shadow: 4px 4px 3px rgba(32, 32, 32, 0.14);
     border-radius: 14px;
     */
+}
+
+.container2 {
+    margin: 1px;
+    /*padding-top: 2px;     
+    padding-left: 33px;
+    padding-right: 6px;
+    padding-bottom: 3px;*/
+}
+
+.button {
+    margin: 4px;
+    color: black;
+    /*width: 0.9em;
+    height: 0.9em;
+    margin-right: 0.5em;*/
+    text-align: right;
+    border: none;
+    border-radius: 8px;
+    background-color: #c7ebe5;
+    background-position: 0px 0px;
+    cursor: pointer;
+    height: 25px;
+    padding-top: 2px;
+    padding-left: 8px;
+    padding-right: 6px;
+    padding-bottom: 3px;
+    vertical-align: middle;
+}
+
+.button:hover {
+    margin: 4px;
+    color: black;
+    /*width: 0.9em;
+    height: 0.9em;
+    margin-right: 0.5em;*/
+    text-align: right;
+    border: none;
+    border-radius: 8px;
+    background-color: #4ac5b1;
+    background-position: 0px 0px;
+    cursor: pointer;
+    height: 25px;
+    padding-top: 2px;
+    padding-left: 8px;
+    padding-right: 6px;
+    padding-bottom: 3px;
+    vertical-align: middle;
+}
+
+.button-icon {
+    color: blue;
+    text-align: right;
+    border: none;
+    cursor: pointer;
+    /* make the cursor like hovering over an <a> element */
+    height: 30px;
+    /* make this the size of your image */
+    padding-top: 2px;
+    /* make text start to the right of the image */
+    padding-left: 33px;
+    padding-right: 6px;
+    padding-bottom: 3px;
+    vertical-align: middle;
+    /* align the text vertically centered */
 }
