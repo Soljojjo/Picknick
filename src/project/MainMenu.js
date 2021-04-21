@@ -1,27 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import Destinations from './Destinations';
 
-
-
 const MainMenu = () => {
 
-
-
-
-    // Can only return one object, encapsulated in a DIV here
     return (
         <div>
-
-
-
             <div class="header">
                 <div>
                     <img class="logoPicknick" src="./icons/picknickLogoAndText.png" alt=" logo " />
                 </div>
-
-
             </div>
-
 
             <div class="container">
                 {/* <div>
@@ -38,28 +26,17 @@ const MainMenu = () => {
 
                 <p class="body_copy_filter">Filtrera med populära taggar:</p>
 
-                <button class="button"><img src="./icons/family baby change diaper.png" class=".button-icon"
-                    height="20px" />Skötbord</button>
-                                    <button class="button"><img src="./icons/u_parking-square.png" class=".button-icon"
-                    height="20px" />Parkering</button>
-                                    <button class="button"><img src="./icons/_fill_icon_empty.png" class=".button-icon"
-                    height="20px" />WC</button>
-                                    <button class="button"><img src="./icons/_fill_icon_empty.png" class=".button-icon"
-                    height="20px" />4h-gård</button>
-                                    <button class="button"><img src="./icons/u_baby-carriage.png" class=".button-icon"
-                    height="20px" />Barnvagnsvänligt</button>
-                                    <button class="button"><img src="./icons/plate.png" class=".button-icon"
-                    height="20px" />Kiosk/café</button>
-                                    <button class="button"><img src="./icons/_fill_icon_empty.png" class=".button-icon"
-                    height="20px" />Grillplats</button>
-                                    <button class="button"><img src="./icons/family outdoors slide.png" class=".button-icon"
-                    height="20px" />Lekplats</button>
-                                    <button class="button"><img src="./icons/_fill_icon_empty.png" class=".button-icon"
-                    height="20px" />Mikrovågsugn</button>
-                                    <button class="button"><img src="./icons/_fill_icon_empty.png" class=".button-icon"
-                    height="20px" />Badplats</button>
-                                    <button class="button"><img src="./icons/sign post.png" class=".button-icon"
-                    height="20px" />Promenadstigar</button>
+                <button class="button"><img src="./icons/family baby change diaper.png"   height="20px" />Skötbord</button>
+                <button class="button"><img src="./icons/u_parking-square.png" height="20px" />Parkering</button>
+                <button class="button"><img src="./icons/_fill_icon_empty.png" height="20px" />WC</button>
+                <button class="button"><img src="./icons/_fill_icon_empty.png"   height="20px" />4h-gård</button>
+                <button class="button"><img src="./icons/u_baby-carriage.png"   height="20px" />Barnvagnsvänligt</button>
+                <button class="button"><img src="./icons/plate.png"   height="20px" />Kiosk/café</button>
+                <button class="button"><img src="./icons/_fill_icon_empty.png"   height="20px" />Grillplats</button>
+                <button class="button"><img src="./icons/family outdoors slide.png"   height="20px" />Lekplats</button>
+                <button class="button"><img src="./icons/_fill_icon_empty.png"   height="20px" />Mikrovågsugn</button>
+                <button class="button"><img src="./icons/_fill_icon_empty.png"   height="20px" />Badplats</button>
+                <button class="button"><img src="./icons/sign post.png"   height="20px" />Promenadstigar</button>
 
             </div>
 
