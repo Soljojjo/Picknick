@@ -13,7 +13,7 @@ function Destinations() {
             <div>
                 {Places.map(place =>
                     <div>
-                        <Link to="/InfoPage"  className="menu__link"> <img src={place.card}/> {place.name}</Link>
+                        <Link to="/InfoPage"  className="menu__link"> <img src={place.card}/> {place.name} <br></br> {place.smallDescription}</Link>
                     </div>
                 )}
             </div >
