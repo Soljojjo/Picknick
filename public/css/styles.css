@@ -66,6 +66,7 @@ h3 {
     font-family: 'Cabin';
     color: #597B72;
     padding-left: 10px;
+    
 
 }
 /*------------------------------------bild hantering*/
@@ -89,14 +90,14 @@ h3 {
 }
 
 
-
-.infoContainer{ /*-------------------bild*/
-    height: 320px;
-    padding-bottom: 20px;
+/*-------------------bild ---flyttat till slideshow.css
+.infoContainer{ 
+    height: 100px;
+    padding-bottom: 0px;
     padding-top: 20px;
 
     
-}
+}*/
 
 
 /*-------------------------------------------- column hantering*/
