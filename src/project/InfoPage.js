@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Destinations from './Destinations';
-import { Route, BrowserRouter as Router, Switch, Link } from "react-router-dom";
 import Places from './Places.json';
+import { Route, BrowserRouter as Router, Switch, Link } from "react-router-dom";
+import id from './Destinations';
 
 
 
@@ -35,6 +36,11 @@ const InfoPage = () => {
                 <div>
                 <Link class="link" name to= "/">Back</Link>
                 </div>
+                {Places.filter((place) => place.id === 1).map(place =>
+                <div> 
+                <h1>{place.name}</h1>
+                </div>
+                )}
                 <h1>Siggesta Gård</h1>
                 <div>
                 <img class="menupicture" src="./images/water.jpg" alt="girl at water"/>
