@@ -145,12 +145,13 @@ h3 {
     font-weight: medium;
     font-size: 20px;
     text-decoration: none;
-    display: block;
+    display: inline;
     padding: 15px;
-    padding-left: 70px;
-    margin: 14px;
+    padding-left: 0px;
+    margin: 10px;
     /*box-shadow: 0 2px 4px 0 rgba(153, 152, 152, 0.104), 0 3px 10px 0 rgba(0, 0, 0, 0.19);*/
     min-width: 100px;
+   
     /* From figma below: */
     /*
     display: flex;
