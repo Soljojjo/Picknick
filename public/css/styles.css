@@ -48,7 +48,7 @@ h3 {
     font-family: 'Cabin';
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 16px;
     /* Adjusted from 16 in figma */
     line-height: 130%;
     padding-left: 10px;
@@ -80,6 +80,7 @@ h3 {
     font-family: 'Cabin';
     color: #597B72;
     padding-left: 10px;
+    padding-top: px;;
 }
 
 /*------------------------------------bild hantering*/
@@ -89,9 +90,11 @@ h3 {
     width: 120px;
 }
 
+
 .menupicture {
     width: 100%;
 }
+*/
 
 /*---------------------------------------- container hantering*/
 
@@ -132,7 +135,6 @@ h3 {
     position: flex;
     width: 30%;
     height: 100%;
-    border-radius: 12px;
     float: left;
     min-width: 100px;
 }
@@ -146,7 +148,6 @@ h3 {
     display: block;
     padding: 15px;
     padding-left: 70px;
-    border-radius: 12px;
     margin: 14px;
     /*box-shadow: 0 2px 4px 0 rgba(153, 152, 152, 0.104), 0 3px 10px 0 rgba(0, 0, 0, 0.19);*/
     min-width: 100px;
@@ -163,12 +164,29 @@ h3 {
     /*background: #DCE6E3;
     /* Drop shadow */
     /*box-shadow: 4px 4px 3px rgba(32, 32, 32, 0.14);*/
-    border-radius: 14px;
     /* fix for picture icon in button */
-    background: url(../icons/siggesta_gard_icon.png ) no-repeat;
-    background-size: 54px 54px;
+    
 }
 
+/* cardsbilder till huvudsidan */
+.aspuddsparken{
+    background: url(../icons/siggesta_gard_icon.png ) no-repeat;
+    background-size: 54px 54px;
+    border-radius: 0px;
+}
+
+.bergianska{
+    background: url(../places/bergianska/Card_Bergianska.png ) no-repeat;
+    background-size: 54px 54px;
+    border-radius: 0px;
+}
+
+.birka{
+    background: url(../icons/siggesta_gard_icon.png ) no-repeat;
+    background-size: 54px 54px;
+    border-radius: 0px;
+}
+/*
 .menu__icon {
     /* From figma: */
     /* position: absolute;
@@ -176,19 +194,20 @@ h3 {
     right: 63.26%;
     top: -8.33%;
     bottom: 0%;
-    */
+    
     padding-left: 77px;
     text-align: right;
     text-align-last: right;
     align-items: flex-end;
 }
-
+*/
+/*
 .menu__icon:hover {
     border-radius: 5px;
-    /* background: white; */
-}
+    /* background: white; 
+}*/
 
-.menu__link:hover {
+/*.menu__link:hover {
     display: block;
     color: black;
     padding: 15px;
@@ -212,8 +231,9 @@ h3 {
     /*
     box-shadow: 4px 4px 3px rgba(32, 32, 32, 0.14);
     border-radius: 14px;
-    */
-}
+    
+}*/
+
 
 .container2 {
     margin: 1px;

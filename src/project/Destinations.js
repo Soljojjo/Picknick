@@ -11,9 +11,9 @@ function Destinations() {
     //Ändra namn på menu och menu__link
     return (
         <div class="menu">
-            <Link to= "/InfoPage" class = "menu__link">Bergianska trädgården</Link>
-            <Link to= "/InfoPage" class = "menu__link">Ekospåret på Artipelag</Link>
-            <Link to= "/InfoPage" class = "menu__link">Ekorrstigen i Huddinge</Link>
+            <Link to= "/InfoPage" class = "menu__link aspuddsparken">Aspuddsparken</Link>
+            <Link to= "/InfoPage" class = "menu__link bergianska">Bergianska Trädgården</Link>
+            <Link to= "/InfoPage" class = "menu__link birka">Birka</Link>
             
         </div>
     )
