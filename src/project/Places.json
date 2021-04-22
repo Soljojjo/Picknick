@@ -1,25 +1,75 @@
-[
+[ 
     {
+<<<<<<< HEAD
         "id": 1,
         "name": "Bergianska trädgården",
         "description": " ååååh vad fint det är här",
+=======
+        "name": "Aspuddsparken",
+        "description": "Aspuddsparken är en av de största parklekarna med djur i Stockholm. Barnen och djuren är det viktigaste i vår park. Här träffas gamla och unga, varje dag året runt. Här finns en stor öppen verksamhet med parkfiket som mittpunkt. Länk google maps: https://goo.gl/maps/FK9pBDhDkTtgTfMG9",
+>>>>>>> c62f75de65ea8841bf06397846de9e31dc23c4dd
         "img": "./images/water.jpg",
-        "barnvagn":true
+        "changingDiaper": true,
+        "parking": false,
+        "wc":true,
+        "fourH": false,
+        "pramFriendly": false,
+        "café":true,
+        "fireplace": false,
+        "playground": false,
+        "microwave": false,
+        "beach": false,
+        "trails": false
+       
+       
     },
 
     {
+<<<<<<< HEAD
         "id": 2,
         "name": "Ekospåret på Artipelag",
         "description": " men här var det ju också fint!",
+=======
+        "name": "Bergianska trädgården",
+        "description": "I Bergianska trädgården kan du med barnvagnen promenera och upptäcka växter från hela världen. Besök gärna växthuset där exotiska växter som vanligen hittas i regnskogar och öknen. Länk google maps: https://goo.gl/maps/iusNYXJ9uVQmHrf38",
+>>>>>>> c62f75de65ea8841bf06397846de9e31dc23c4dd
         "img": "./images/water.jpg",
-        "barnvagn":false
+        "changingDiaper": false,
+        "parking": false,
+        "wc": true,
+        "fourH": false,
+        "pramFriendly": true,
+        "café": true,
+        "fireplace": false,
+        "playground": false,
+        "microwave": false,
+        "beach": false,
+        "trails": false
+                
     },
 
     {
+<<<<<<< HEAD
         "id": 3,
         "name": "Ekorrstigen i Huddinge",
         "description": " ååååh titta jag såg en groda",
+=======
+        "name": "Birka",
+        "description": "Besök Birka på vackra Björkö och ta del av hur det var under vikingatiden i Sverige. Här finns även möjlighet att ta dig ut i vattnet eller bada på stranden. Länk google maps: https://goo.gl/maps/jRPydSpQcwCRPpGcA",
+>>>>>>> c62f75de65ea8841bf06397846de9e31dc23c4dd
         "img": "./images/water.jpg",
-        "barnvagn":true
+        "changingDiaper": false,
+        "parking": false,
+        "wc": true,
+        "fourH": false,
+        "pramFriendly": true,
+        "café": true,
+        "fireplace": false,
+        "playground": false,
+        "microwave": false,
+        "beach": false,
+        "trails": false
+       
     }
+   
 ]
