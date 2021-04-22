@@ -240,6 +240,45 @@ h3 {
     vertical-align: middle;
 }
 
+.button_off {
+    margin: 4px;
+    color: black;
+    /*width: 0.9em;
+    height: 0.9em;
+    margin-right: 0.5em;*/
+    text-align: right;
+    border: none;
+    border-radius: 8px;
+    background-color: #c7ebe5;
+    background-position: 0px 0px;
+    cursor: pointer;
+    height: 25px;
+    padding-top: 2px;
+    padding-left: 8px;
+    padding-right: 6px;
+    padding-bottom: 3px;
+    vertical-align: middle;
+}
+
+.button_on {
+    margin: 4px;
+    color: black;
+    /*width: 0.9em;
+    height: 0.9em;
+    margin-right: 0.5em;*/
+    text-align: right;
+    border: none;
+    border-radius: 8px;
+    background-color:  #97bbb5;
+    background-position: 0px 0px;
+    cursor: pointer;
+    height: 25px;
+    padding-top: 2px;
+    padding-left: 8px;
+    padding-right: 6px;
+    padding-bottom: 3px;
+    vertical-align: middle;
+}
 .button:hover {
     margin: 4px;
     color: black;
