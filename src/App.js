@@ -12,11 +12,10 @@ function App() {
       <div>
       <Switch>
           
-        </Switch>
-
-        <Route path="/" exact component={MainMenu} />
-        <Route path="/InfoPage" component={InfoPage} />
-        
+          <Route path="/" exact component={MainMenu} />
+          <Route path="/InfoPage" component={InfoPage} />
+          
+        </Switch>  
       </div>
 
     </Router>

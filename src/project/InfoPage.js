@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Destinations from './Destinations';
 import { Route, BrowserRouter as Router, Switch, Link } from "react-router-dom";
+import Places from './Places.json';
 
 
 
@@ -9,7 +10,7 @@ const InfoPage = () => {
 
     function handleClick() {
         console.log('The link was clicked. ');
-        <Link to= "/InfoPage">InfoPage</Link>;
+        <Link to= "/"></Link>;
       }
 
 
@@ -23,7 +24,7 @@ const InfoPage = () => {
 
             <div class="header">
             <div>
-                <img class= "logoPicknick" onClick= {handleClick} src="./icons/picknickLogoAndText.png" alt=" logo " />
+                <Link to="/"> <img class= "logoPicknick"  src="./icons/picknickLogoAndText.png" alt=" logo " /></Link>
             </div>
                 
 
