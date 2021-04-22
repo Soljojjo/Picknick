@@ -1,60 +1,71 @@
-[ 
+[
     {
         "id": 1,
         "name": "Bergianska trädgården",
-        "description": " ååååh vad fint det är här",
-        "img": "./images/water.jpg",
+        "activities": "Promenader, växter, picknick, fika",
+        "smallDescription": "Blommor, blommor, blommor! \nFik och plats för utelek.",
+        "description": "I Bergianska trädgården kan du med barnvagnen promenera och upptäcka växter från hela världen.\n\nBesök gärna växthuset där exotiska växter som vanligen hittas i regnskogar och öknen.",
+        "mapsLink": "https://goo.gl/maps/iusNYXJ9uVQmHrf38",
+        "card": "./places/bergianska/Card_Bergianska.png",
+        "img1": "./places/bergianska/bergianska1.jpg",
+        "img2": "./place/bergianska/italienska_terrassen.jpg",
+        "img3": "./places/bergianska/paviljong.jpg",
         "changingDiaper": true,
         "parking": false,
-        "wc":true,
+        "wc": true,
         "fourH": false,
         "pramFriendly": false,
-        "café":true,
+        "cafe": true,
         "fireplace": false,
         "playground": false,
         "microwave": false,
         "beach": false,
-        "trails": false
-       
-       
+        "trails": true
     },
-
     {
         "id": 2,
-        "name": "Ekospåret på Artipelag",
-        "description": " men här var det ju också fint!",
-        "img": "./images/water.jpg",
+        "name": "Birka",
+        "activities": "Fornlämningar, djur, båttur, museum, Bad",
+        "smallDescription": "Efter en trevlig båttur anländer du till Birka.",
+        "description": "Besök Birka på vackra Björkö och ta del av hur det var under vikingatiden i Sverige. Här finns även möjlighet att ta dig ut i vattnet eller bada på stranden.",
+        "mapsLink": "https://goo.gl/maps/iusNYXJ9uVQmHrf38",
+        "card": "./places/birka/birka_hjalm-1024x683.jpg",
+        "img1": "./places/birka/Birka_2019_foto_Claes_Helander-8441-683x1024.jpg",
+        "img2": "./places/birka/birka_hjalm-1024x683.jpg",
+        "img3": "./places/birka/lunchvidhamnen-1024x683.jpg",
         "changingDiaper": false,
         "parking": false,
         "wc": true,
         "fourH": false,
         "pramFriendly": true,
-        "café": true,
+        "cafe": true,
         "fireplace": false,
         "playground": false,
         "microwave": false,
         "beach": false,
         "trails": false
-                
     },
-
     {
         "id": 3,
-        "name": "Ekorrstigen i Huddinge",
-        "description": " ååååh titta jag såg en groda",
-        "img": "./images/water.jpg",
-        "changingDiaper": false,
-        "parking": false,
+        "name": "Gripsholms Hjorthage",
+        "activities": "gravfält, promenadvägar, byggnadsrester, djur, se sällsynta insekter",
+        "smallDescription": "Efter en trevlig båttur anländer du till Birka.",
+        "description": "I Gripsholms hjorthage kan du ta med dig familjen på insektsjakt efter sällsynta arter eller se de 100 dovhjortarna som betar i området.\n\nDet finns även möjlighet att se en gammal fornborg, gravfält eller bara njuta av våra promenadstråk.",
+        "mapsLink": "https://goo.gl/maps/CuRrAk9RP1F6TE4y7",
+        "card": "./places/gripsholm/WEBB_20140915_Grh Hjorthage_Hjortar_1.jpg",
+        "img1": "./places/gripsholm/Gripsholms_hjorthage_2007_LST_ekar_770x420.jpg",
+        "img2": "./places/gripsholm/Gripsholms_hjorthage_utsikt_2010_LST_770x420.jpg",
+        "img3": "./places/gripsholm/WEBB_20140915_Grh Hjorthage_Hjortar_1.jpg",
+        "changingDiaper": true,
+        "parking": true,
         "wc": true,
         "fourH": false,
         "pramFriendly": true,
-        "café": true,
+        "cafe": false,
         "fireplace": false,
         "playground": false,
         "microwave": false,
         "beach": false,
         "trails": false
-       
     }
-   
 ]
