@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "name": "Bergianska trädgården",
         "description": " ååååh vad fint det är här",
         "img": "./images/water.jpg",
@@ -7,6 +8,7 @@
     },
 
     {
+        "id": 2,
         "name": "Ekospåret på Artipelag",
         "description": " men här var det ju också fint!",
         "img": "./images/water.jpg",
@@ -14,6 +16,7 @@
     },
 
     {
+        "id": 3,
         "name": "Ekorrstigen i Huddinge",
         "description": " ååååh titta jag såg en groda",
         "img": "./images/water.jpg",

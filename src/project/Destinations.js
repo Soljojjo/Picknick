@@ -1,17 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Route, BrowserRouter as Router, Switch, Link } from "react-router-dom";
 
 
 function Destinations() {
-    function handleClick(e) {
-      e.preventDefault();
-      console.log('The link was clicked. ');
-      <Link to= "/InfoPage">InfoPage</Link>;
-    }
+    
+   const [id, setId] = useState(1);
+
+    
     //Ändra namn på menu och menu__link
     return (
         <div class="menu">
-            <Link to= "/InfoPage" class = "menu__link">Bergianska trädgården</Link>
+            <div>
+                
+            </div>
+            <Link to="/InfoPage" className="menu__link" > Bergianska trädgården</Link>
             <Link to= "/InfoPage" class = "menu__link">Ekospåret på Artipelag</Link>
             <Link to= "/InfoPage" class = "menu__link">Ekorrstigen i Huddinge</Link>
             
