@@ -294,6 +294,7 @@ img {
     padding-right: 6px;
     padding-bottom: 3px;
     vertical-align: middle;
+    
 }
 
 
@@ -320,14 +321,14 @@ img {
 
 .button_off {
     margin: 6px;
-    color: black;
+    color: #696868;
     /*width: 0.9em;
     height: 0.9em;
     margin-right: 0.5em;*/
     text-align: right;
     border: none;
     border-radius: 8px;
-    background-color: #c7ebe5;
+    background-color: #DCE6E3;
     background-position: 0px 0px;
     cursor: pointer;
     height: 25px;
