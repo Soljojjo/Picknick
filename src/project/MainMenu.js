@@ -55,7 +55,7 @@ const MainMenu = () => {
                 <button className={fourH ? "button_on" : "button_off"} onClick={toggleFourH}>
                     <img src="./icons/fourH.png" height="20px" /> <span class="filtertext-middle">4H-gård</span> </button>
                 <button className={pramFriendly ? "button_on" : "button_off"} onClick={togglePramFriendly}> <img src="./icons/u_baby-carriage.png" height="20px" /> <span class="filtertext-middle">Barnvagnsvänligt</span> </button>
-                {/*<button className={cafe ? "button_on" : "button_off"} onClick={toggleCafe}>
+             {/*  <button className={cafe ? "button_on" : "button_off"} onClick={toggleCafe}>
                     <img src="./icons/plate.png" height="20px" /> <span class="filtertext-middle">Kiosk/café</span> </button>
                 <button className={fireplace ? "button_on" : "button_off"} onClick={toggleFireplace}>
                     <img src="./icons/Grillplats.png" height="20px" /> <span class="filtertext-middle">Grillplats</span> </button>
@@ -67,8 +67,7 @@ const MainMenu = () => {
                     <img src="./icons/swimmer.png" height="20px" /> <span class="filtertext-middle">Badplats</span> </button>
                 <button className={trails ? "button_on" : "button_off"} onClick={toggleTrails}>
                     <img src="./icons/stigar.png" height="20px" /> <span class="filtertext-middle">Promenadstigar</span> </button>
-            */}
-            </div>
+            */} </div>
 
             <div className="container3">
 
