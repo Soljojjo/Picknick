@@ -2,20 +2,21 @@ import React, { useEffect, useState } from 'react';
 import Destinations from './Destinations';
 import Places from './Places.json';
 import { Route, BrowserRouter as Router, Switch, Link } from "react-router-dom";
-import id from './Destinations';
 
 
 
 
-const InfoPage = () => {
+
+const InfoPage = (props) => {
 
     function handleClick() {
         console.log('The link was clicked. ');
         <Link to= "/"></Link>;
       }
 
+      const destId = props.destinationID;
 
-
+      alert(destId)
 
     // Can only return one object, encapsulated in a DIV here
     return (
@@ -36,7 +37,7 @@ const InfoPage = () => {
                 <div>
                 <Link class="link" name to= "/">Back</Link>
                 </div>
-                {Places.filter((place) => place.id === 1).map(place =>
+                {Places.filter((place) => place.id === destId).map(place =>
                 <div> 
                 <h1>{place.name}</h1>
                 </div>

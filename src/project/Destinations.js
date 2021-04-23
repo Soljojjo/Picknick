@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Route, BrowserRouter as Router, Switch, Link } from "react-router-dom";
-
+import InfoPage from './InfoPage';
 
 function Destinations() {
     
@@ -11,7 +11,7 @@ function Destinations() {
     return (
         <div class="menu">
             <div>
-                
+              
             </div>
             <Link to="/InfoPage" className="menu__link" > Bergianska trädgården</Link>
             <Link to= "/InfoPage" class = "menu__link">Ekospåret på Artipelag</Link>
