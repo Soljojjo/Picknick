@@ -110,7 +110,7 @@ h3 {
 
 
 .container {
-    height: 250px;
+    height: 270px;
     background: url(../images/throwTheBaby.jpg);
     background-size: 100%;
     
@@ -298,7 +298,7 @@ img {
     text-align: right;
     border: none;
     border-radius: 8px;
-    background-color:  #97bbb5;
+    background-color:  #8bafa9;
     background-position: 0px 0px;
     cursor: pointer;
     height: 25px;
