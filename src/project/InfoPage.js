@@ -16,7 +16,6 @@ const InfoPage = (props) => {
 
       const destId = props.destinationID;
 
-      alert(destId)
 
     // Can only return one object, encapsulated in a DIV here
     return (
