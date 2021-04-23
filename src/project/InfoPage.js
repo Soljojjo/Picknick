@@ -36,20 +36,18 @@ const InfoPage = () => {
                 <div>
                 <Link class="link" name to= "/"></Link>
                 </div>
-<<<<<<< HEAD
-                
-=======
                 {Places.filter((place) => place.id === 1).map(place =>
->>>>>>> fb2ed8853ece70bf2e01320ba91d318cd0a02abf
                 <div> 
-                <h1>Bergianska trädgården</h1>
+                <h1>{place.name}</h1>
                 </div>
-                
+                )}
                 <div>
                 <div class="menupicture" />
-                </div> 
+                
+                </div>
+                
 
-            </div> 
+            </div>
             
             <div class="infoContainer2"> 
 

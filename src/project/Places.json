@@ -26,11 +26,7 @@
         "id": 2,
         "name": "Birka",
         "activities": "Fornlämningar, djur, båttur, museum, Bad",
-<<<<<<< HEAD
-        "smallDescription": "Sveriges första stad på\nBjörkö i Mälaren.",
-=======
         "smallDescription": "Sveriges första stad i Mälaren. \nGoda kommunikationer med båt.",
->>>>>>> fb2ed8853ece70bf2e01320ba91d318cd0a02abf
         "description": "Besök Birka på vackra Björkö och ta del av hur det var under vikingatiden i Sverige. Här finns även möjlighet att ta dig ut i vattnet eller bada på stranden.",
         "mapsLink": "https://goo.gl/maps/iusNYXJ9uVQmHrf38",
         "card": "./places/birka/card_birka.png",
@@ -53,11 +49,7 @@
         "id": 3,
         "name": "Hellasgården",
         "activities": "Minigolf, fiske, bad, motionsspår, pulka, skridskoåkning, paddla, vandra mm.",
-<<<<<<< HEAD
-        "smallDescription": "Friluftsgård med\noch bastu och servering,",
-=======
         "smallDescription": "Friluftsgård med omklädnings-\nrum, bastu och servering.",
->>>>>>> fb2ed8853ece70bf2e01320ba91d318cd0a02abf
         "description": "Friluftsgården Hellasgården en mötesplats för familjer - 15 min från city. Här kan du ta del av vackra motionsspår, paddla, simma, vandra och spela bangolf.",
         "mapsLink": "https://goo.gl/maps/vsdGN9gHH4EnmDki6",
         "card": "./places/hellasgarden/card_hellas.png",
