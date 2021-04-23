@@ -74,6 +74,7 @@ h3 {
 .header {
     height: 20px;
     padding: 10px;
+    padding-bottom: 20px;
 }
 
 .link {
@@ -102,9 +103,10 @@ h3 {
 
 
 .container {
-    height: 250px;
+    height: 270px;
     background: url(../images/throwTheBaby.jpg);
     background-size: 100%;
+    
 }
 
 

@@ -36,11 +36,11 @@ const InfoPage = (props) => {
                 <div>
                 <Link class="link" name to= "/">Back</Link>
                 </div>
-                {Places.filter((place) => place.id === destId).map(place =>
+                
                 <div> 
-                <h1>{place.name}</h1>
+                <h1>Bergianska trädgården</h1>
                 </div>
-                )}
+                
                 <div>
                 <img class="menupicture" src="./images/water.jpg" alt="girl at water"/>
                 </div> 
