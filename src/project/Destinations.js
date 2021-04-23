@@ -13,7 +13,19 @@ function Destinations() {
             <div>
                 {Places.map(place =>
                     <div>
-                        <Link to="/InfoPage"  className="menu__link"> <img src={place.card}/> {place.name} <br></br> {place.smallDescription}</Link>
+                        <Link to="/InfoPage" className="menu__link">
+                            <div className="row">
+                                <div className="column">
+                                    <span className="mycard">
+                                        <img src={place.card} width="70" height="70" border-radius="11px"/>
+                                    </span>
+                                </div>
+                                <div className="column">
+                                    <span className="align-middle"><strong>{place.name}</strong> <br></br>{place.smallDescription}</span>
+
+                                </div>
+                            </div>
+                        </Link>
                     </div>
                 )}
             </div >
