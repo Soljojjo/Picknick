@@ -13,6 +13,9 @@ h1 {
     color: #597B72;
     font-style: normal;
     padding-left: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin:0px;
     /* From Figma, identical to box height */
     /*letter-spacing: -0.003em;
     color: #000000;*/
@@ -54,6 +57,7 @@ h3 {
     padding-left: 10px;
     padding-right: 10px;
     color: #597B72;
+    margin: 0px;
     /* identical to box height, or 21px */
 }
 
@@ -74,6 +78,7 @@ h3 {
 .header {
     height: 20px;
     padding: 10px;
+    padding-bottom: 40px;
 }
 
 .link {
@@ -90,6 +95,7 @@ h3 {
 .logoPicknick {
     margin-left: 0;
     width: 120px;
+    
 }
 
 
@@ -107,17 +113,17 @@ h3 {
     height: 250px;
     background: url(../images/throwTheBaby.jpg);
     background-size: 100%;
+    
 }
 
 
-/*-------------------bild ---flyttat till slideshow.css
 .infoContainer{ 
-    height: 100px;
+    height: 400px;
     padding-bottom: 0px;
     padding-top: 20px;
 
     
-}*/
+}
 
 /*-------------------------------------------- column hantering*/
 
@@ -201,24 +207,8 @@ img {
     display: table;
     clear: both;
   }
-/* cardsbilder till huvudsidan */
-.aspuddsparken{
-    background: url(../icons/siggesta_gard_icon.png ) no-repeat;
-    background-size: 54px 54px;
-    border-radius: 0px;
-}
 
-.bergianska{
-    background: url(../places/bergianska/Card_Bergianska.png ) no-repeat;
-    background-size: 54px 54px;
-    border-radius: 0px;
-}
 
-.birka{
-    background: url(../icons/siggesta_gard_icon.png ) no-repeat;
-    background-size: 54px 54px;
-    border-radius: 0px;
-}
 /*
 .menu__icon {
     /* From figma: */
@@ -272,8 +262,8 @@ img {
     margin: 1px;
     /*padding-top: 2px;     
     padding-left: 33px;
-    padding-right: 6px;
-    padding-bottom: 3px;*/
+    padding-right: 6px;*/
+    padding-bottom: 20px;
 }
 
 .button {
