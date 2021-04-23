@@ -2,19 +2,19 @@ import React, { useEffect, useState } from 'react';
 import Destinations from './Destinations';
 import Places from './Places.json';
 import { Route, BrowserRouter as Router, Switch, Link } from "react-router-dom";
+import id from './Destinations';
 
 
 
 
-
-const InfoPage = (props) => {
+const InfoPage = () => {
 
     function handleClick() {
         console.log('The link was clicked. ');
         <Link to= "/"></Link>;
       }
 
-      const destId = props.destinationID;
+
 
 
     // Can only return one object, encapsulated in a DIV here
@@ -34,22 +34,26 @@ const InfoPage = (props) => {
 
             <div class="infoContainer">
                 <div>
-                <Link class="link" name to= "/">Back</Link>
+                <Link class="link" name to= "/"></Link>
                 </div>
+<<<<<<< HEAD
                 
+=======
+                {Places.filter((place) => place.id === 1).map(place =>
+>>>>>>> fb2ed8853ece70bf2e01320ba91d318cd0a02abf
                 <div> 
                 <h1>Bergianska trädgården</h1>
                 </div>
                 
                 <div>
-                <img class="menupicture" src="./images/water.jpg" alt="girl at water"/>
+                <div class="menupicture" />
                 </div> 
 
             </div> 
             
             <div class="infoContainer2"> 
 
-            <p class="body_copy">Filtrera med populära taggar:</p> 
+            <p class="body_copy"></p> 
                 
             </div>
 

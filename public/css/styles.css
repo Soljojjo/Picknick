@@ -83,7 +83,7 @@ h3 {
     color: #FEF8EF;
     color: rgba(218, 236, 226, 0.671);
     padding-left: 10px;
-    padding-top: px;;
+    padding-top: px;
 }
 
 /*------------------------------------bild hantering*/
@@ -95,7 +95,9 @@ h3 {
 
 
 .menupicture {
-    width: 100%;
+    height: 250px;
+    background: url(../places/bergianska/paviljong.jpg);
+    background-size: 100%;
 }
 
 
