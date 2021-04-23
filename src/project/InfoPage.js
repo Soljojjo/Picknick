@@ -42,7 +42,6 @@ const InfoPage = (props) => {
                 <h1>{place.name}</h1>
                 </div>
                 )}
-                <h1>Siggesta Gård</h1>
                 <div>
                 <img class="menupicture" src="./images/water.jpg" alt="girl at water"/>
                 </div> 
@@ -56,8 +55,10 @@ const InfoPage = (props) => {
             </div>
 
             <div class="infoContainer3">
-                <p class = "body_copy"><b>OM UTFLYKTSMÅLET</b>. På Siggesta Gård finns det alltid något kul att göra utomhus.
-                Det bästa är att det är öppet året runt.
+                <p class = "body_copy"><b>OM UTFLYKTSMÅLET</b>. I Bergianska trädgården kan du med barnvagnen promenera och upptäcka växter från hela världen.
+
+                Besök gärna växthuset där exotiska växter som vanligen hittas i regnskogar och öknen.
+
                 <br/>
                 <br/> 
                 Ta med dig barnen på utomhusaktiviteter

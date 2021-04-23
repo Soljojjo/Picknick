@@ -48,10 +48,11 @@ h3 {
     font-family: 'Cabin';
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 16px;
     /* Adjusted from 16 in figma */
     line-height: 130%;
     padding-left: 10px;
+    padding-right: 10px;
     color: #597B72;
     /* identical to box height, or 21px */
 }
@@ -78,8 +79,10 @@ h3 {
 .link {
     font-weight: bold;
     font-family: 'Cabin';
-    color: #597B72;
+    color: #FEF8EF;
+    color: rgba(218, 236, 226, 0.671);
     padding-left: 10px;
+    padding-top: px;;
 }
 
 /*------------------------------------bild hantering*/
@@ -89,11 +92,14 @@ h3 {
     width: 120px;
 }
 
+
 .menupicture {
     width: 100%;
 }
 
+
 /*---------------------------------------- container hantering*/
+
 
 .container {
     height: 250px;
@@ -132,22 +138,22 @@ h3 {
     position: flex;
     width: 30%;
     height: 100%;
-    border-radius: 12px;
     float: left;
     min-width: 100px;
 }
 
 .menu__link {
     color: #597B72;
+    float: left;
     font-family: 'Cabin';
     font-weight: medium;
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
-    display: block;
-    padding: 15px;
-    padding-left: 70px;
-    border-radius: 12px;
-    margin: 14px;
+    display: inline;
+    padding: 1px;
+    padding-left: 5px;
+    padding-top: 1px;
+    margin: 11px;
     /*box-shadow: 0 2px 4px 0 rgba(153, 152, 152, 0.104), 0 3px 10px 0 rgba(0, 0, 0, 0.19);*/
     min-width: 100px;
     /* From figma below: */
@@ -163,12 +169,55 @@ h3 {
     /*background: #DCE6E3;
     /* Drop shadow */
     /*box-shadow: 4px 4px 3px rgba(32, 32, 32, 0.14);*/
-    border-radius: 14px;
     /* fix for picture icon in button */
-    background: url(../icons/siggesta_gard_icon.png ) no-repeat;
-    background-size: 54px 54px;
+        white-space: pre-wrap;  /* make \n work */
 }
 
+.align-middle{
+    vertical-align: bottom;
+}
+
+.mycard{
+    border-radius: 1px;
+    border: 2px;
+    color: blue
+}
+
+img {
+    border-radius: 20%;
+  }
+
+/* .column & .row from https://www.w3schools.com/howto/howto_css_two_columns.asp */
+.column {
+    float: left;
+    padding-right: 11px;
+  }
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+/* cardsbilder till huvudsidan */
+.aspuddsparken{
+    background: url(../icons/siggesta_gard_icon.png ) no-repeat;
+    background-size: 54px 54px;
+    border-radius: 0px;
+}
+
+.bergianska{
+    background: url(../places/bergianska/Card_Bergianska.png ) no-repeat;
+    background-size: 54px 54px;
+    border-radius: 0px;
+}
+
+.birka{
+    background: url(../icons/siggesta_gard_icon.png ) no-repeat;
+    background-size: 54px 54px;
+    border-radius: 0px;
+}
+/*
 .menu__icon {
     /* From figma: */
     /* position: absolute;
@@ -176,19 +225,20 @@ h3 {
     right: 63.26%;
     top: -8.33%;
     bottom: 0%;
-    */
+    
     padding-left: 77px;
     text-align: right;
     text-align-last: right;
     align-items: flex-end;
 }
-
+*/
+/*
 .menu__icon:hover {
     border-radius: 5px;
-    /* background: white; */
-}
+    /* background: white; 
+}*/
 
-.menu__link:hover {
+/*.menu__link:hover {
     display: block;
     color: black;
     padding: 15px;
@@ -212,8 +262,9 @@ h3 {
     /*
     box-shadow: 4px 4px 3px rgba(32, 32, 32, 0.14);
     border-radius: 14px;
-    */
-}
+    
+}*/
+
 
 .container2 {
     margin: 1px;
@@ -243,8 +294,30 @@ h3 {
     vertical-align: middle;
 }
 
+
+
+.button_on {
+    margin: 6px;
+    color: black;
+    /*width: 0.9em;
+    height: 0.9em;
+    margin-right: 0.5em;*/
+    text-align: right;
+    border: none;
+    border-radius: 8px;
+    background-color:  #97bbb5;
+    background-position: 0px 0px;
+    cursor: pointer;
+    height: 25px;
+    padding-top: 2px;
+    padding-left: 8px;
+    padding-right: 6px;
+    padding-bottom: 3px;
+    vertical-align: middle;
+}
+
 .button_off {
-    margin: 4px;
+    margin: 6px;
     color: black;
     /*width: 0.9em;
     height: 0.9em;
@@ -263,25 +336,12 @@ h3 {
     vertical-align: middle;
 }
 
-.button_on {
-    margin: 4px;
-    color: black;
-    /*width: 0.9em;
-    height: 0.9em;
-    margin-right: 0.5em;*/
-    text-align: right;
-    border: none;
-    border-radius: 8px;
-    background-color:  #97bbb5;
-    background-position: 0px 0px;
-    cursor: pointer;
-    height: 25px;
-    padding-top: 2px;
-    padding-left: 8px;
-    padding-right: 6px;
-    padding-bottom: 3px;
-    vertical-align: middle;
+.filtertext-middle{
+    vertical-align: text-top;
+    padding: 5px;
+    font-weight: bold;
 }
+
 .button:hover {
     margin: 4px;
     color: black;
@@ -317,4 +377,6 @@ h3 {
     padding-bottom: 3px;
     vertical-align: middle;
     /* align the text vertically centered */
+
+
 }
