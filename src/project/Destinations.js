@@ -4,7 +4,7 @@ import Places from './Places.json';
 
 function Destinations() {
 
-    const [id, setId] = useState(1);
+    
 
 
     //Ändra namn på menu och menu__link
@@ -13,7 +13,7 @@ function Destinations() {
             <div>
                 {Places.map(place =>
                     <div>
-                        <Link to="/InfoPage" className="menu__link">
+                        <Link to={'/InfoPage/'+ place.id} className="menu__link">
                             <div className="row">
                                 <div className="column">
                                     <span className="mycard">
