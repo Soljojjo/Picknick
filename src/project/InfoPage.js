@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Destinations from './Destinations';
 import Places from './Places.json';
-import { Route, BrowserRouter as Router, Switch, Link } from "react-router-dom";
-import id from './Destinations';
+import { Route, BrowserRouter as Router, Switch, Link,useParams } from "react-router-dom";
+
+
 
 
 
@@ -14,18 +15,18 @@ const InfoPage = () => {
         <Link to="/"></Link>;
     }
 
-
+    const {id} = useParams();
 
 
     // Can only return one object, encapsulated in a DIV here
     return (
         <div>
 
-
+            
 
             <div class="header">
                 <div>
-                    <Link to="/"> <img class="logoPicknick" src="./icons/picknickLogoAndText.png" alt=" logo " /></Link>
+                    <Link to="/"> <img class="logoPicknick" src="../icons/picknickLogoAndText.png" alt=" logo " /></Link>
                 </div>
 
 
@@ -34,13 +35,13 @@ const InfoPage = () => {
 
             <div class="infoContainer">
                
-                {Places.filter((place) => place.id === 1).map(place =>
+                {Places.filter((place) => place.id == id).map(place =>
                     <div>
                         <h1>{place.name}</h1>
                     </div>
                 )}
                 <div>
-                    <div class="menupicture" />
+                    {/*<div class="menupicture" />*/}
                 </div>
 
             </div>
