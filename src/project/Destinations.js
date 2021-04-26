@@ -9,7 +9,7 @@ function Destinations() {
 
     //Ändra namn på menu och menu__link
     return (
-        <div class="menu">
+        <div className="menu">
             <div>
                 {Places.map(place =>
                     <div>
