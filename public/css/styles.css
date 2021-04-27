@@ -130,7 +130,6 @@ width: 100%;
 .infoContainer{ 
     height: 400px;
     padding-bottom: 0px;
-    padding-top: ;
 
     
 }
@@ -192,7 +191,7 @@ width: 100%;
 }
 
 .align-middle{
-    vertical-align: bottom;
+    
 }
 
 .mycard{
@@ -281,7 +280,7 @@ width: 100%;
     /*width: 0.9em;
     height: 0.9em;
     margin-right: 0.5em;*/
-    text-align: right;
+    text-align: center;
     border: none;
     border-radius: 8px;
     background-color: #c7ebe5;
@@ -302,7 +301,7 @@ margin: 4px;
     /*width: 0.9em;
     height: 0.9em;
     margin-right: 0.5em;*/
-    text-align: right;
+    text-align: center;
     border: none;
     border-radius: 8px;
     background-color: #c7ebe5;
