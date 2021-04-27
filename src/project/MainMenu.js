@@ -6,7 +6,7 @@ import Destinations from './Destinations';
 
 const MainMenu = () => {
 
-    // States for all filter buttons, 'false' for buttons/filtereing that is not pressed/on
+    // States for all filter buttons, 'false' for buttons/filtering that is not pressed/on
     const [changingDiaper, setChangingDiaper] = useState(false); const toggleChangingDiaper = () => { setChangingDiaper(value => !value); }
     const [parking, setParking] = useState(false); /*         */ const toggleParking = () => setParking(value => !value);
     const [wc, setWc] = useState(false); /*                   */ const toggleWc = () => setWc(value => !value);
@@ -47,27 +47,28 @@ const MainMenu = () => {
                 <p className="body_copy_filter">Filtrera med populära taggar:</p>
 
                 <button className={changingDiaper ? "button_on" : "button_off"} onClick={toggleChangingDiaper}>
-                    <img src="./icons/family baby change diaper.png" height="20px" /> <span class="filtertext-middle">Skötbord</span> </button>
+                    <span class="filtertext-middle">Skötbord</span> </button>
                 <button className={parking ? "button_on" : "button_off"} onClick={toggleParking}>
-                    <img src="./icons/u_parking-square.png" height="20px" /> <span class="filtertext-middle">Parkering</span> </button>
+                    <span class="filtertext-middle">Parkering</span> </button>
                 <button className={wc ? "button_on" : "button_off"} onClick={toggleWc}>
-                    <img src="./icons/toilet.png" height="20px" /> <span class="filtertext-middle">WC</span> </button>
+                    <span class="filtertext-middle">WC</span> </button>
                 <button className={fourH ? "button_on" : "button_off"} onClick={toggleFourH}>
-                    <img src="./icons/fourH.png" height="20px" /> <span class="filtertext-middle">4H-gård</span> </button>
-                <button className={pramFriendly ? "button_on" : "button_off"} onClick={togglePramFriendly}> <img src="./icons/u_baby-carriage.png" height="20px" /> <span class="filtertext-middle">Barnvagnsvänligt</span> </button>
-             {/*  <button className={cafe ? "button_on" : "button_off"} onClick={toggleCafe}>
-                    <img src="./icons/plate.png" height="20px" /> <span class="filtertext-middle">Kiosk/café</span> </button>
+                    <span class="filtertext-middle">4H-gård</span> </button>
+                <button className={pramFriendly ? "button_on" : "button_off"} onClick={togglePramFriendly}> 
+                    <span class="filtertext-middle">Barnvagnsvänligt</span> </button>
+               <button className={cafe ? "button_on" : "button_off"} onClick={toggleCafe}>
+                    <span class="filtertext-middle">Kiosk/café</span> </button>
                 <button className={fireplace ? "button_on" : "button_off"} onClick={toggleFireplace}>
-                    <img src="./icons/Grillplats.png" height="20px" /> <span class="filtertext-middle">Grillplats</span> </button>
+                    <span class="filtertext-middle">Grillplats</span> </button>
                 <button className={playground ? "button_on" : "button_off"} onClick={togglePlayground}>
-                    <img src="./icons/family outdoors slide.png" height="20px" /> <span class="filtertext-middle">Lekplats</span> </button>
+                    <span class="filtertext-middle">Lekplats</span> </button>
                 <button className={microwave ? "button_on" : "button_off"} onClick={toggleMicrowave}>
-                    <img src="./icons/microwave.png" height="20px" /> <span class="filtertext-middle">Mikrovågsugn</span> </button>
+                    <span class="filtertext-middle">Mikrovågsugn</span> </button>
                 <button className={beach ? "button_on" : "button_off"} onClick={toggleBeach}>
-                    <img src="./icons/swimmer.png" height="20px" /> <span class="filtertext-middle">Badplats</span> </button>
+                    <span class="filtertext-middle">Badplats</span> </button>
                 <button className={trails ? "button_on" : "button_off"} onClick={toggleTrails}>
-                    <img src="./icons/stigar.png" height="20px" /> <span class="filtertext-middle">Promenadstigar</span> </button>
-            */} </div>
+                    <span class="filtertext-middle">Promenadstigar</span> </button>
+             </div>
 
             <div className="container3">
 
@@ -84,22 +85,7 @@ const MainMenu = () => {
 
 export default MainMenu;
 
-/*
 
-                    <span class="align-middle">{"  Skötbord"} </span>
-
-changingDiaper
-parking
-wc
-fourH
-pramFriendly
-cafe
-fireplace
-playground
-microwave
-beach
-trails
-*/
 
 
 
