@@ -10,7 +10,7 @@ function Destinations() {
     //Ändra namn på menu och menu__link
     // för varje utflyckts mål i json filen skapas en ny länk med bild och info från samma jsonfil
     return (
-        <div class="menu">
+        <div className="menu">
             <div>
                 {Places.map(place =>
                     <div>
