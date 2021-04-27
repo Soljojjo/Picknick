@@ -22,6 +22,20 @@ const MainMenu = () => {
     useEffect(() => {
         // alert("Useeffect was called!");
     })
+    var allFiltSettings = {
+        'changingDiaper': changingDiaper,
+        'parking': parking,
+        'wc': wc,
+        'fourH': fourH,
+        'pramFriendly': pramFriendly,
+        'cafe': cafe,
+        'fireplace': fireplace,
+        'playground': playground,
+        'microwave': microwave,
+        'beach': beach,
+        'trails': trails,
+    }
+
 
     return (
         <div>
@@ -54,9 +68,9 @@ const MainMenu = () => {
                     <span class="filtertext-middle">WC</span> </button>
                 <button className={fourH ? "button_on" : "button_off"} onClick={toggleFourH}>
                     <span class="filtertext-middle">4H-gård</span> </button>
-                <button className={pramFriendly ? "button_on" : "button_off"} onClick={togglePramFriendly}> 
+                <button className={pramFriendly ? "button_on" : "button_off"} onClick={togglePramFriendly}>
                     <span class="filtertext-middle">Barnvagnsvänligt</span> </button>
-               <button className={cafe ? "button_on" : "button_off"} onClick={toggleCafe}>
+                <button className={cafe ? "button_on" : "button_off"} onClick={toggleCafe}>
                     <span class="filtertext-middle">Kiosk/café</span> </button>
                 <button className={fireplace ? "button_on" : "button_off"} onClick={toggleFireplace}>
                     <span class="filtertext-middle">Grillplats</span> </button>
@@ -68,11 +82,11 @@ const MainMenu = () => {
                     <span class="filtertext-middle">Badplats</span> </button>
                 <button className={trails ? "button_on" : "button_off"} onClick={toggleTrails}>
                     <span class="filtertext-middle">Promenadstigar</span> </button>
-             </div>
+            </div>
 
             <div className="container3">
 
-                <Destinations />
+                <Destinations filterSettings = {allFiltSettings}/>
 
             </div>
             <div className="footer">
