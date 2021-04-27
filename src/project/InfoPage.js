@@ -34,33 +34,45 @@ const InfoPage = () => {
 
 
             <div class="infoContainer">
-               
+                <div>
                 {Places.filter((place) => place.id == id).map(place =>
                     <div>
                         <h1>{place.name}</h1>
                     </div>
                 )}
+                </div>
                 <div>
-                    {/*<div class="menupicture" />*/}
+                {Places.filter((place) => place.id == id).map(place =>
+                    <div>
+                        <img class="infopicture" src= {place.img3} alt = 'picture'/> 
+                    </div>       
+                )}
                 </div>
 
             </div>
 
             <div class="infoContainer2">
+                <p>också på plattsen:</p>
 
-                <p class="body_copy"></p>
+                <div>
+          
+                </div>
+
+                <div>
+                    
+                <button className="infobutton"><span class="filtertext-middle">Skötbord</span> </button>
+                </div>
 
             </div>
 
             <div class="infoContainer3">
-                <p class="body_copy"><b>OM UTFLYKTSMÅLET</b>. I Bergianska trädgården kan du med barnvagnen promenera och upptäcka växter från hela världen.
-
-                Besök gärna växthuset där exotiska växter som vanligen hittas i regnskogar och öknen.
-
-                <br />
-                    <br />
-                Ta med dig barnen på utomhusaktiviteter
-                som ni alla kommer gilla och avsluta med en god lunch i vår restaurang. </p>
+            <div>
+                {Places.filter((place) => place.id == id).map(place =>
+                    <div>
+                        <p>{place.description}</p>
+                    </div>
+                )}
+                </div>
 
             </div>
 
