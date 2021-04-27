@@ -29,12 +29,9 @@ function Destinations(props) {
     // för varje utflyckts mål i json filen skapas en ny länk med bild och info från samma jsonfil
     return (
         <div className="menu">
-<<<<<<< HEAD
             {(props.filterSettings.changingDiaper ? "Skötbord KRÄVS. " : "Skötbord krävs INTE. ")}
             {(props.filterSettings.parking ? "Parkering KRÄVS. " : "Parkering krävs INTE. ")}
             {(props.filterSettings.wc ? "WC KRÄVS. " : "WC krävs INTE. ")}
-=======
->>>>>>> 751667854d2175a9b603394fb32dd0783313b36b
             <div>
                 {Places.filter(place =>  (!props.filterSettings.changingDiaper) || place.changingDiaper).map(place =>
 
