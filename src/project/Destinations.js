@@ -8,6 +8,7 @@ function Destinations() {
 
 
     //Ändra namn på menu och menu__link
+    // för varje utflyckts mål i json filen skapas en ny länk med bild och info från samma jsonfil
     return (
         <div className="menu">
             <div>
@@ -17,7 +18,7 @@ function Destinations() {
                             <div className="row">
                                 <div className="column">
                                     <span className="mycard">
-                                        <img src={place.card} width="70" height="70" border-radius="11px"/>
+                                        <img className="minipicture" src={place.card} width="70" height="70" />
                                     </span>
                                 </div>
                                 <div className="column">

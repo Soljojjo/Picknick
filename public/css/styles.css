@@ -99,11 +99,21 @@ h3 {
 }
 
 
-.menupicture {
-    height: 250px;
-    background: url(../places/bergianska/paviljong.jpg);
-    background-size: 100%;
+
+.minipicture{
+    border-radius: 20%;
+  }
+
+.infopicture{
+
+height: 280px;
+width: 100%;
+
+
 }
+
+
+
 
 
 /*---------------------------------------- container hantering*/
@@ -127,7 +137,7 @@ container3{
 .infoContainer{ 
     height: 400px;
     padding-bottom: 0px;
-    padding-top: 20px;
+    padding-top: ;
 
     
 }
@@ -198,9 +208,7 @@ container3{
     color: blue
 }
 
-img {
-    border-radius: 20%;
-  }
+
 
 /* .column & .row from https://www.w3schools.com/howto/howto_css_two_columns.asp */
 .column {
@@ -295,7 +303,26 @@ img {
     
 }
 
+.infobutton{
+margin: 4px;
+    color: black;
+    /*width: 0.9em;
+    height: 0.9em;
+    margin-right: 0.5em;*/
+    text-align: right;
+    border: none;
+    border-radius: 8px;
+    background-color: #c7ebe5;
+    background-position: 0px 0px;
+    cursor: pointer;
+    height: 25px;
+    padding-top: 2px;
+    padding-left: 8px;
+    padding-right: 6px;
+    padding-bottom: 3px;
+    vertical-align: middle;
 
+}
 
 .button_on {
     margin: 6px;
