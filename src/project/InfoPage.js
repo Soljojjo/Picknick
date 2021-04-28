@@ -182,12 +182,21 @@ const InfoPage = () => {
             </div>
 
             <div class="infoContainer3">
+<<<<<<< HEAD
             <div>
                 {Places.filter((place) => place.id == id).map(place =>
                     <div>
                         <p>{place.description}</p>
                     </div>
                 )}
+=======
+                <div>
+                    {Places.filter((place) => place.id == id).map(place =>
+                        <div>
+                            <p>{place.description}</p>
+                        </div>
+                    )}
+>>>>>>> 93e06c209c2836c0cca753d066c20e030a9c683c
                 </div>
 
             </div>
