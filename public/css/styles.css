@@ -137,12 +137,8 @@ container3{
 .infoContainer{ 
     height: 400px;
     padding-bottom: 0px;
-<<<<<<< HEAD
-    padding-top: 0px;   
-=======
 
     
->>>>>>> 751667854d2175a9b603394fb32dd0783313b36b
 }
 
 /*-------------------------------------------- column hantering*/
@@ -285,61 +281,31 @@ container3{
     padding-left: 10px;
 }
 
-.button {
-    margin: 4px;
-    color: black;
-    /*width: 0.9em;
-    height: 0.9em;
-    margin-right: 0.5em;*/
-    text-align: center;
-    border: none;
-    border-radius: 8px;
-    background-color: #c7ebe5;
+.buttons {
+    margin: 0px;
+    text-align: left;
     background-position: 0px 0px;
     cursor: pointer;
-    height: 25px;
+ /*   height: 25px; */
     padding-top: 2px;
-    padding-left: 8px;
+    padding-left: 0px;
     padding-right: 6px;
-    padding-bottom: 3px;
+    padding-bottom: 2px;
     vertical-align: middle;
-    
 }
 
-.infobutton{
-margin: 4px;
-    color: black;
-    /*width: 0.9em;
-    height: 0.9em;
-    margin-right: 0.5em;*/
-    text-align: center;
-    border: none;
-    border-radius: 8px;
-    background-color: #c7ebe5;
-    background-position: 0px 0px;
-    cursor: pointer;
-    height: 25px;
-    padding-top: 2px;
-    padding-left: 8px;
-    padding-right: 6px;
-    padding-bottom: 3px;
-    vertical-align: middle;
-
-}
 
 .button_on {
-    margin: 6px;
+    font-size: 16px;
+    font-family: 'Cabin';
+    font-weight: bold;
     color: black;
-    /*width: 0.9em;
-    height: 0.9em;
-    margin-right: 0.5em;*/
+    background-color:  #8bafa9;
+    margin: 6px;
     text-align: right;
     border: none;
     border-radius: 8px;
-    background-color:  #8bafa9;
-    background-position: 0px 0px;
     cursor: pointer;
-    height: 25px;
     padding-top: 2px;
     padding-left: 8px;
     padding-right: 6px;
@@ -348,24 +314,22 @@ margin: 4px;
 }
 
 .button_off {
-    margin: 6px;
+    font-size: 16px;
+    font-family: 'Cabin';
+    font-weight: bold;
     color: #696868;
-    /*width: 0.9em;
-    height: 0.9em;
-    margin-right: 0.5em;*/
+    background-color: #DCE6E3;
+    margin: 6px;
     text-align: right;
     border: none;
     border-radius: 8px;
-    background-color: #DCE6E3;
-    background-position: 0px 0px;
     cursor: pointer;
-    height: 25px;
     padding-top: 2px;
     padding-left: 8px;
     padding-right: 6px;
     padding-bottom: 3px;
     vertical-align: middle;
-}
+  }
 
 .filtertext-middle{
     vertical-align: text-top;
