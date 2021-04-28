@@ -55,9 +55,9 @@ const InfoPage = () => {
                 <p>också på plattsen:</p>
 
                 <div>
-                {Places.filter((place) => place.id == id).map(place =>
+                {Places.filter((place) => place.id === id).map(place =>
                     <div>
-                        <p>{place.description}</p>
+
                     </div>
                 )}
                 </div>
@@ -71,7 +71,7 @@ const InfoPage = () => {
 
             <div class="infoContainer3">
             <div>
-                {Places.filter((place) => place.id == id).map(place =>
+                {Places.filter((place) => place.id === id).map(place =>
                     <div>
                         <p>{place.description}</p>
                     </div>
