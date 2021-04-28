@@ -141,8 +141,12 @@ container3{
 .infoContainer{ 
     height: 400px;
     padding-bottom: 0px;
+<<<<<<< HEAD
+    padding-top: 0px;   
+=======
 
     
+>>>>>>> 891b9ecb1b5e91923906a3edeb0f76e81d4c5a0a
 }
 
 /*-------------------------------------------- column hantering*/
