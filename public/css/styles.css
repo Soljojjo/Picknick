@@ -45,6 +45,10 @@ h3 {
     color: #000000;
 }
 
+p {
+    padding-left: 10px;
+}
+
 .body_copy {
     /* From figma: */
     /* Body copy */
@@ -227,53 +231,7 @@ container3{
   }
 
 
-/*
-.menu__icon {
-    /* From figma: */
-    /* position: absolute;
-    left: 0%;
-    right: 63.26%;
-    top: -8.33%;
-    bottom: 0%;
-    
-    padding-left: 77px;
-    text-align: right;
-    text-align-last: right;
-    align-items: flex-end;
-}
-*/
-/*
-.menu__icon:hover {
-    border-radius: 5px;
-    /* background: white; 
-}*/
 
-/*.menu__link:hover {
-    display: block;
-    color: black;
-    padding: 15px;
-    padding-left: 70px;
-    border-radius: 12px;
-    margin: 14px;
-    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-    /* From figma: card / active */
-    /* Auto Layout */
-    /*
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 15px 0px 0px;
-    position: relative;
-    width: 497px;
-    height: 60px;
-    background: #DCE6E3;
-    /* Drop shadow */
-    /*
-    box-shadow: 4px 4px 3px rgba(32, 32, 32, 0.14);
-    border-radius: 14px;
-    
-}*/
 
 
 .container2 {
@@ -334,6 +292,24 @@ container3{
     padding-bottom: 3px;
     vertical-align: middle;
   }
+
+.infobutton{
+    font-size: 16px;
+    font-family: 'Cabin';
+    font-weight: bold;
+    color: #696868;
+    background-color: #DCE6E3;
+    margin: 6px;
+    text-align: right;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding-top: 2px;
+    padding-left: 8px;
+    padding-right: 6px;
+    padding-bottom: 3px;
+    vertical-align: middle;
+}  
 
 .filtertext-middle{
     vertical-align: text-top;
