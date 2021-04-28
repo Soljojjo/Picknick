@@ -56,13 +56,6 @@ const InfoPage = () => {
             <div class="infoContainer2">
                 <p>på platsen:</p>
                 <div>
-<<<<<<< HEAD
-                {Places.filter((place) => place.id === id).map(place =>
-                    <div>
-
-                    </div>
-                )}
-=======
                     {Places.filter((place) => place.id == id).map(place =>
                         <div>
                             {place.changingDiaper ? (
@@ -184,27 +177,17 @@ const InfoPage = () => {
                         </div>
 
                     )}
->>>>>>> 891b9ecb1b5e91923906a3edeb0f76e81d4c5a0a
                 </div>
 
             </div>
 
             <div class="infoContainer3">
-<<<<<<< HEAD
             <div>
-                {Places.filter((place) => place.id === id).map(place =>
+                {Places.filter((place) => place.id == id).map(place =>
                     <div>
                         <p>{place.description}</p>
                     </div>
                 )}
-=======
-                <div>
-                    {Places.filter((place) => place.id == id).map(place =>
-                        <div>
-                            <p>{place.description}</p>
-                        </div>
-                    )}
->>>>>>> 891b9ecb1b5e91923906a3edeb0f76e81d4c5a0a
                 </div>
 
             </div>
