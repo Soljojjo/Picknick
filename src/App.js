@@ -1,7 +1,7 @@
 import React from 'react';
 import MainMenu from './project/MainMenu';
 import InfoPage from './project/InfoPage';
-import { Route, BrowserRouter as Router, Switch, Link } from "react-router-dom";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
 
 function App() {
