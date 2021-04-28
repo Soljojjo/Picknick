@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Destinations from './Destinations';
 import Places from './Places.json';
-import { Route, BrowserRouter as Router, Switch, Link,useParams } from "react-router-dom";
+import { Route, BrowserRouter as Router, Switch, Link, useParams } from "react-router-dom";
 
 
 
@@ -15,14 +15,14 @@ const InfoPage = () => {
         <Link to="/"></Link>;
     }
 
-    const {id} = useParams();
+    const { id } = useParams();
 
 
     // Can only return one object, encapsulated in a DIV here
     return (
         <div>
 
-            
+
 
             <div class="header">
                 <div>
@@ -35,42 +35,46 @@ const InfoPage = () => {
 
             <div class="infoContainer">
                 <div>
-                {Places.filter((place) => place.id == id).map(place =>
-                    <div>
-                        <h1>{place.name}</h1>
-                    </div>
-                )}
+                    {Places.filter((place) => place.id == id).map(place =>
+                        <div>
+                            <h1>{place.name}</h1>
+                        </div>
+                    )}
                 </div>
                 <div>
-                {Places.filter((place) => place.id == id).map(place =>
-                    <div>
-                        <img class="infopicture" src= {place.img3} alt = 'picture'/> 
-                    </div>       
-                )}
+                    {Places.filter((place) => place.id == id).map(place =>
+                        <div>
+                            <img class="infopicture" src={place.img3} alt='picture' />
+                        </div>
+                    )}
                 </div>
 
             </div>
 
             <div class="infoContainer2">
-                <p>också på plattsen:</p>
-
+                <p>också på platsen:</p>
                 <div>
+                    {Places.filter((place) => place.id === id).map(place =>
+                        <div>
+                            {if (place.wc = true){
+                                <button className="infobutton"><span class="filtertext-middle">Skötbord</span> </button>
+                            } }
+</div>
+                    )}
                 </div>
-
                 <div>
-                    
-                <button className="infobutton"><span class="filtertext-middle">Skötbord</span> </button>
+                    <button className="infobutton"><span class="filtertext-middle">Skötbord</span> </button>
                 </div>
 
             </div>
 
             <div class="infoContainer3">
-            <div>
-                {Places.filter((place) => place.id == id).map(place =>
-                    <div>
-                        <p>{place.description}</p>
-                    </div>
-                )}
+                <div>
+                    {Places.filter((place) => place.id == id).map(place =>
+                        <div>
+                            <p>{place.description}</p>
+                        </div>
+                    )}
                 </div>
 
             </div>
