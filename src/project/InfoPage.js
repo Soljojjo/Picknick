@@ -51,22 +51,25 @@ const InfoPage = () => {
 
             </div>
 
-            <div class="infoContainer2">
+        {/*     <div class="infoContainer2">
                 <p>också på platsen:</p>
                 <div>
-                    {Places.filter((place) => place.id === id).map(place =>
+                    {Places.filter((place) => place.id == id).map(place =>
                         <div>
-                            {if (place.wc = true){
-                                <button className="infobutton"><span class="filtertext-middle">Skötbord</span> </button>
-                            } }
-</div>
+                            {id.filter((place.id) => (place.id.wc === true)   {if (place.wc = true)>{
+                                <div>
+                                    <button className="infobutton"><span class="filtertext-middle">WC</span> </button>
+                                </div>
+                            } } }
+                        </div>
+
                     )}
                 </div>
                 <div>
                     <button className="infobutton"><span class="filtertext-middle">Skötbord</span> </button>
                 </div>
 
-            </div>
+            </div> */}
 
             <div class="infoContainer3">
                 <div>
