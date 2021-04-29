@@ -21,7 +21,7 @@ const InfoPage = () => {
 
             <div className="header">
                 <div>
-                    <Link to="/"> <img classname="logoPicknick" src="../icons/picknickLogoAndText.png" alt=" logo " /></Link>
+                    <Link to="/"> <img className="logoPicknick" src="../icons/picknickLogoAndText.png" alt=" logo " /></Link>
                 </div>
 
             </div>
@@ -39,7 +39,7 @@ const InfoPage = () => {
                 <div>
                     {Places.filter((place) => place.id == id).map(place =>
                         <div>
-                            <img classname="infopicture" src={"../places/" + place.img3} alt={place.name} />
+                            <img className="infopicture" src={"../places/" + place.img3} alt={place.name} />
                         </div>
                     )}
                 </div>
@@ -146,7 +146,7 @@ const InfoPage = () => {
 export default InfoPage;
 
 /*
-<p classname="family">
+<p className="family">
 <img src="./icons/family_friendly_2440px.png" alt="<h2>Familjevänliga utflyktsmål</h2>" />
 </p>
 */
