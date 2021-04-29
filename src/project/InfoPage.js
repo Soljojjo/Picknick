@@ -17,7 +17,7 @@ const InfoPage = () => {
 
     // Can only return one object, encapsulated in a DIV here
     return (
-        <div>
+        <div class="column_all">
 
             <div class="header">
                 <div>
