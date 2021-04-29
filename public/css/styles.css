@@ -15,7 +15,7 @@ h1 {
     padding-left: 10px;
     padding-top: 30px;
     padding-bottom: 20px;
-    margin:0px;
+    margin: 0px;
     /* From Figma, identical to box height */
     /*letter-spacing: -0.003em;
     color: #000000;*/
@@ -100,48 +100,32 @@ p {
 .logoPicknick {
     margin-left: 0;
     width: 120px;
-    
 }
 
-
-
-.minipicture{
+.minipicture {
     border-radius: 20%;
-  }
-
-.infopicture{
-
-height: 280px;
-width: 100%;
-
-
 }
 
-
-
-
+.infopicture {
+    height: 280px;
+    width: 100%;
+}
 
 /*---------------------------------------- container hantering*/
-
 
 .container {
     height: 270px;
     background: url(../images/throwTheBaby.jpg);
     background-size: 100%;
-    
 }
 
-.container2{
+.container2 {}
 
-}
+container3 {}
 
-container3{
-    
-}
-
-.infoContainer{ 
+.infoContainer {
     height: 400px;
-    padding-bottom: 0px; 
+    padding-bottom: 0px;
 }
 
 /*-------------------------------------------- column hantering*/
@@ -157,6 +141,36 @@ container3{
     height: 50px;
     padding-top: 10px;
     box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: table;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    table-layout: fixed;
+    min-width: 800px;
+}
+
+body > div {
+    display: table-cell;
+}
+
+.left {
+    background: #000;
+}
+
+.middle {
+    background: #F00;
+    width: 500px;
+}
+
+.right {
+    background: #F90
 }
 
 /*------------------------------------------- knappar/ länkar hantering */
@@ -197,38 +211,33 @@ container3{
     /* Drop shadow */
     /*box-shadow: 4px 4px 3px rgba(32, 32, 32, 0.14);*/
     /* fix for picture icon in button */
-        white-space: pre-wrap;  /* make \n work */
+    white-space: pre-wrap;
+    /* make \n work */
 }
 
-.align-middle{
-    
-}
+.align-middle {}
 
-.mycard{
+.mycard {
     border-radius: 1px;
     border: 2px;
     color: blue
 }
 
-
-
 /* .column & .row from https://www.w3schools.com/howto/howto_css_two_columns.asp */
+
 .column {
     float: left;
     padding-right: 11px;
     max-width: 270px;
-  }
+}
 
 /* Clear floats after the columns */
+
 .row:after {
     content: "";
     display: table;
     clear: both;
-  }
-
-
-
-
+}
 
 .container2 {
     margin: 1px;
@@ -244,7 +253,7 @@ container3{
     text-align: left;
     background-position: 0px 0px;
     cursor: pointer;
- /*   height: 25px; */
+    /*   height: 25px; */
     padding-top: 0px;
     padding-left: 0px;
     padding-right: 6px;
@@ -252,21 +261,20 @@ container3{
     vertical-align: middle;
 }
 
-
 .button_on {
     font-size: 14px;
     font-family: 'Cabin';
     font-weight: normal;
     color: #597B72;
-    background-color:  #8bafa9;
+    background-color: #8bafa9;
     margin: 6px;
     text-align: right;
     border: none;
     border-radius: 20px;
     cursor: pointer;
     padding: 3px;
-    padding-left:10px;
-    padding-right:10px;
+    padding-left: 10px;
+    padding-right: 10px;
     vertical-align: middle;
     margin-top: 6px;
 }
@@ -283,13 +291,13 @@ container3{
     border-radius: 20px;
     cursor: pointer;
     padding: 3px;
-    padding-left:10px;
-    padding-right:10px;
+    padding-left: 10px;
+    padding-right: 10px;
     vertical-align: middle;
     margin-top: 6px;
-  }
+}
 
-.infobutton{
+.infobutton {
     font-size: 16px;
     font-family: 'Cabin';
     font-weight: bold;
@@ -305,9 +313,9 @@ container3{
     padding-right: 6px;
     padding-bottom: 3px;
     vertical-align: middle;
-}  
+}
 
-.filtertext-middle{
+.filtertext-middle {
     vertical-align: text-top;
     padding: 5px;
     font-weight: bold;
@@ -348,6 +356,4 @@ container3{
     padding-bottom: 3px;
     vertical-align: middle;
     /* align the text vertically centered */
-
-
 }
