@@ -255,7 +255,8 @@ container3 {}
     margin-top: 6px;
 }
 
-.button_off {
+
+.button_off { 
     font-size: 14px;
     font-family: 'Cabin';
     font-weight: normal;
@@ -272,6 +273,8 @@ container3 {}
     vertical-align: middle;
     margin-top: 6px;
 }
+
+/* Eventuellt ta bort infobutton från styles.css*/
 
 .infobutton {
     font-size: 16px;
