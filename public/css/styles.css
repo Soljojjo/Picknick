@@ -74,7 +74,9 @@ p {
     /* Adjusted from 16 in figma */
     line-height: 130%;
     padding-left: 10px;
+    padding-top: 0px;
     color: #597B72;
+    margin-bottom: 5px;
     /* identical to box height, or 21px */
 }
 
@@ -214,6 +216,7 @@ container3{
 .column {
     float: left;
     padding-right: 11px;
+    max-width: 270px;
   }
 
 /* Clear floats after the columns */
@@ -242,7 +245,7 @@ container3{
     background-position: 0px 0px;
     cursor: pointer;
  /*   height: 25px; */
-    padding-top: 2px;
+    padding-top: 0px;
     padding-left: 0px;
     padding-right: 6px;
     padding-bottom: 2px;
@@ -251,7 +254,7 @@ container3{
 
 
 .button_on {
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Cabin';
     font-weight: normal;
     color: #597B72;
@@ -261,15 +264,15 @@ container3{
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    padding-top: 2px;
-    padding-left: 8px;
-    padding-right: 6px;
-    padding-bottom: 3px;
+    padding: 3px;
+    padding-left:10px;
+    padding-right:10px;
     vertical-align: middle;
+    margin-top: 6px;
 }
 
 .button_off {
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Cabin';
     font-weight: normal;
     color: #597B72;
@@ -279,11 +282,11 @@ container3{
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    padding-top: 2px;
-    padding-left: 8px;
-    padding-right: 6px;
-    padding-bottom: 3px;
+    padding: 3px;
+    padding-left:10px;
+    padding-right:10px;
     vertical-align: middle;
+    margin-top: 6px;
   }
 
 .infobutton{
