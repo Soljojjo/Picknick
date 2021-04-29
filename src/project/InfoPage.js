@@ -61,7 +61,7 @@ const InfoPage = () => {
                             }
 
                             {place.wc ? (
-                                <button className="button_off">Wc </button>) :
+                                <button className="button_off">WC </button>) :
                                 ("")
                             }
 
