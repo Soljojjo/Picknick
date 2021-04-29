@@ -199,7 +199,7 @@ container3 {}
 .column {
     float: left;
     padding-right: 11px;
-    max-width: 375px;
+    max-width: 270px;
 }
 
 .column_all {
