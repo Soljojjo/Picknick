@@ -25,7 +25,7 @@ function Destinations(props) {
                     (!props.filterSettings.beach || place.beach) &&
                     (!props.filterSettings.trails || place.trails)&&
                     (!props.filterSettings.restaurant || place.restaurant))).map(place =>
-                        <div>
+                        <li key={place.id.toString()}>
                             < Link to={'/InfoPage/' + place.id} className="menu__link" >
                                 <div className="row">
 
@@ -41,7 +41,7 @@ function Destinations(props) {
 
                                 </div>
                             </Link >
-                        </div>
+                        </li>
                     )
                 }
             </div>

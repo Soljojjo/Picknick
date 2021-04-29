@@ -143,6 +143,11 @@ container3 {}
     box-sizing: border-box;
 }
 
+/*------------------------------------------- list hantering */
+
+li {
+    list-style-type: none;
+}
 
 /*------------------------------------------- knappar/ länkar hantering */
 
@@ -203,10 +208,10 @@ container3 {}
 }
 
 .column_all {
-
     width: 375px;
     margin: auto;
 }
+
 /* Clear floats after the columns */
 
 .row:after {

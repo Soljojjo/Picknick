@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Route, BrowserRouter as Router, Switch, Link, useParams } from "react-router-dom";
+// import { Route, BrowserRouter as Router, Switch, Link, useParams } from "react-router-dom";
 import Destinations from './Destinations';
 
 
