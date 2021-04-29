@@ -56,7 +56,6 @@ p {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    /* Adjusted from 16 in figma */
     line-height: 130%;
     padding-left: 10px;
     padding-right: 10px;
@@ -71,7 +70,7 @@ p {
     font-family: 'Cabin';
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 16px;
     /* Adjusted from 16 in figma */
     line-height: 130%;
     padding-left: 10px;
@@ -140,13 +139,7 @@ container3{
 
 .infoContainer{ 
     height: 400px;
-    padding-bottom: 0px;
-<<<<<<< HEAD
-    padding-top: 0px;   
-=======
-
-    
->>>>>>> 891b9ecb1b5e91923906a3edeb0f76e81d4c5a0a
+    padding-bottom: 0px; 
 }
 
 /*-------------------------------------------- column hantering*/
@@ -179,7 +172,7 @@ container3{
     float: left;
     font-family: 'Cabin';
     font-weight: medium;
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: none;
     display: inline;
     padding: 1px;
@@ -260,13 +253,13 @@ container3{
 .button_on {
     font-size: 16px;
     font-family: 'Cabin';
-    font-weight: bold;
-    color: black;
+    font-weight: normal;
+    color: #004000;
     background-color:  #8bafa9;
     margin: 6px;
     text-align: right;
     border: none;
-    border-radius: 8px;
+    border-radius: 20px;
     cursor: pointer;
     padding-top: 2px;
     padding-left: 8px;
@@ -278,13 +271,13 @@ container3{
 .button_off {
     font-size: 16px;
     font-family: 'Cabin';
-    font-weight: bold;
-    color: #696868;
+    font-weight: normal;
+    color: #105010; /* TODO: mörkgrön */
     background-color: #DCE6E3;
     margin: 6px;
     text-align: right;
     border: none;
-    border-radius: 8px;
+    border-radius: 20px;
     cursor: pointer;
     padding-top: 2px;
     padding-left: 8px;
