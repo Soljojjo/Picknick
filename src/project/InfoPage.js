@@ -4,7 +4,6 @@ import React from 'react';
 import Places from './Places.json';
 import { Route, BrowserRouter as Router, Switch, Link, useParams } from "react-router-dom";
 
-
 const InfoPage = () => {
     /*
         function handleClick() {
@@ -52,70 +51,70 @@ const InfoPage = () => {
                     {Places.filter((place) => place.id == id).map(place =>
                         <li key={place.id.toString()}>
                             {place.changingDiaper ? (
-                                <button className="button_off"><span className="filtertext-middle">Skötbord</span> </button>) :
+                                <button className="button_off">Skötbord </button>) :
                                 ("")
                             }
 
                             {place.parking ? (
-                                <button className="button_off"><span className="filtertext-middle">Parkering</span> </button>) :
+                                <button className="button_off">Parkering </button>) :
                                 ("")
                             }
 
                             {place.wc ? (
-                                <button className="button_off"><span className="filtertext-middle">Wc</span> </button>) :
+                                <button className="button_off">Wc </button>) :
                                 ("")
                             }
 
                             {place.fourH ? (
-                                <button className="button_off"><span className="filtertext-middle">4H</span> </button>) :
+                                <button className="button_off">4H </button>) :
                                 ("")
                             }
 
                             {place.pramFriendly ? (
-                                <button className="button_off"><span className="filtertext-middle">Barnvagnsvänligt</span> </button>) :
+                                <button className="button_off">Barnvagnsvänligt </button>) :
                                 ("")
                             }
                             {place.cafe ? (
-                                <button className="button_off"><span className="filtertext-middle">Kiosk/cafe</span> </button>) :
+                                <button className="button_off">Kiosk/cafe </button>) :
                                 ("")
                             }
                             {place.fireplace ? (
-                                <button className="button_off"><span className="filtertext-middle">Grillplats</span> </button>) :
+                                <button className="button_off">Grillplats </button>) :
                                 ("")
                             }
 
                             {place.playground ? (
-                                <button className="button_off"><span className="filtertext-middle">Lekplats</span> </button>) :
+                                <button className="button_off">Lekplats </button>) :
                                 ("")
                             }
 
                             {place.microwave ? (
-                                <button className="button_off"><span className="filtertext-middle">Mikrovågsugn</span> </button>) :
+                                <button className="button_off">Mikrovågsugn </button>) :
                                 ("")
                             }
 
                             {place.beach ? (
-                                <button className="button_off"><span className="filtertext-middle">Badplats</span> </button>) :
+                                <button className="button_off">Badplats </button>) :
                                 ("")
                             }
 
                             {place.trails ? (
-                                <button className="button_off"><span className="filtertext-middle">Promenadstigar</span> </button>) :
+                                <button className="button_off">Promenadstigar </button>) :
                                 ("")
                             }
 
                             {place.elevatorRamp ? (
-                                <button className="button_off"><span className="filtertext-middle">Hiss/ramp</span> </button>) :
+                                <button className="button_off">Hiss/ramp </button>) :
                                 ("")
                             }
 
                             {place.picnicCompatible ? (
-                                <button className="button_off"><span className="filtertext-middle">Picknickområde</span> </button>) :
+                                <button className="button_off">Picknickområde </button>) :
                                 ("")
                             }
 
                             {place.restaurant ? (
-                                <button className="button_off"><span className="filtertext-middle">Restaurang</span> </button>) :
+                                <button className="button_off">Restaurang </button>) :
                                 ("")
                             }
                         </li>

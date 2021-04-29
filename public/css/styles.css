@@ -119,9 +119,6 @@ p {
     background-size: 100%;
 }
 
-.container2 {}
-
-container3 {}
 
 .infoContainer {
     height: 400px;
@@ -145,8 +142,8 @@ container3 {}
 
 /*------------------------------------------- list hantering */
 
-li {
-    list-style-type: none;
+li { 
+    list-style-type: none ;
 }
 
 /*------------------------------------------- knappar/ länkar hantering */
@@ -190,8 +187,6 @@ li {
     white-space: pre-wrap;
     /* make \n work */
 }
-
-.align-middle {}
 
 .mycard {
     border-radius: 1px;
