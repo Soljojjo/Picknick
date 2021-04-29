@@ -31,16 +31,16 @@ const InfoPage = () => {
                 map tar all info och lägger i place, namnet hämtas från place.
                 samma sak görs för bilden och beskrivning i nästa div */}
                     {Places.filter((place) => place.id == id).map(place =>
-                        <div>
+                        <li key={place.id.toString()}>
                             <h1>{place.name}</h1>
-                        </div>
+                        </li>
                     )}
                 </div>
                 <div>
                     {Places.filter((place) => place.id == id).map(place =>
-                        <div>
+                        <li key={place.id.toString()}>
                             <img className="infopicture" src={"../places/" + place.img3} alt={place.name} />
-                        </div>
+                        </li>
                     )}
                 </div>
 
@@ -50,7 +50,7 @@ const InfoPage = () => {
                 <p>På platsen:</p>
                 <div>
                     {Places.filter((place) => place.id == id).map(place =>
-                        <div>
+                        <li key={place.id.toString()}>
                             {place.changingDiaper ? (
                                 <button className="button_off"><span className="filtertext-middle">Skötbord</span> </button>) :
                                 ("")
@@ -118,7 +118,7 @@ const InfoPage = () => {
                                 <button className="button_off"><span className="filtertext-middle">Restaurang</span> </button>) :
                                 ("")
                             }
-                        </div>
+                        </li>
                     )}
                 </div>
 
@@ -127,9 +127,9 @@ const InfoPage = () => {
             <div className="infoContainer3">
                 <div>
                     {Places.filter((place) => place.id == id).map(place =>
-                        <div>
+                        <li key={place.id.toString()}>
                             <p>{place.description}</p>
-                        </div>
+                        </li>
                     )}
                 </div>
 
