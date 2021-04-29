@@ -205,6 +205,7 @@ container3 {}
 .column_all {
 
     width: 375px;
+    margin: auto;
 }
 /* Clear floats after the columns */
 
