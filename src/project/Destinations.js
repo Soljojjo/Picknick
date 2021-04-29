@@ -31,7 +31,7 @@ function Destinations(props) {
 
                                     <div className="column">
                                         <span className="mycard">
-                                            <img className="minipicture" alt={place.name} src={"./places/"+place.card} width="70" height="70" />
+                                            <img className="minipicture" alt={place.name} src={"./places/"+place.card} width="64" height="57" />
                                         </span>
                                     </div>
                                     <div className="column">
