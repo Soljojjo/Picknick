@@ -143,35 +143,6 @@ container3 {}
     box-sizing: border-box;
 }
 
-html {
-    height: 100%;
-}
-
-body {
-    display: table;
-    height: 100%;
-    margin: 0;
-    width: 100%;
-    table-layout: fixed;
-    min-width: 800px;
-}
-
-body > div {
-    display: table-cell;
-}
-
-.left {
-    background: #000;
-}
-
-.middle {
-    background: #F00;
-    width: 500px;
-}
-
-.right {
-    background: #F90
-}
 
 /*------------------------------------------- knappar/ länkar hantering */
 
