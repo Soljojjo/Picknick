@@ -57,98 +57,97 @@ const InfoPage = () => {
             </div>
 
             <div className="infoContainer2">
-                <p>Filterval:</p>
+                <p>Dina val:</p>
                 <div>
 
                 {search.match("changingDiaper") ? (<button className="button_on">Skötbord</button>) : ""}
                 {search.match("parking") ? (<button className="button_on">Parkering</button>) : ""}
-                {search.match("WC") ? (<button className="button_on">WC</button>) : ""}
+                {search.match("wc") ? (<button className="button_on">WC</button>) : ""}
                 {search.match("fourH") ? (<button className="button_on">4h-gård</button>) : ""}
                 {search.match("pramFriendly") ? (<button className="button_on">Barnvagnsvänligt</button>) : ""}
-                {search.match("elevatorRamp") ? (<button className="button_on">Hiss/ramp</button>) : ""}
-                {search.match("picnicCompatible") ? (<button className="button_on">Picknickområde</button>) : ""}
                 {search.match("cafe") ? (<button className="button_on">Kiosk/café </button>) : ""}
                 {search.match("fireplace") ? (<button className="button_on">Grillplats </button>) : ""}
                 {search.match("playground") ? (<button className="button_on">Lekplats </button>) : ""}
                 {search.match("microwave") ? (<button className="button_on">Micro</button>) : ""}
                 {search.match("beach") ? (<button className="button_on">Badplats</button>) : ""}
                 {search.match("trails") ? (<button className="button_on">Promenadstigar</button>) : ""}
+                {search.match("elevatorRamp") ? (<button className="button_on">Hiss/ramp</button>) : ""}
+                {search.match("picnicCompatible") ? (<button className="button_on">Picknickområde</button>) : ""}
                 {search.match("restaurant") ? (<button className="button_on">Restaurang</button>) : ""}
-
                 </div>
 
             </div>
 
 
             <div className="infoContainer2">
-                <p>På platsen:</p>
+                <p>Också på platsen:</p>
                 <div>
                     {Places.filter((place) => place.id == id).map(place =>
                         <li key={place.id.toString()}>
-                            {place.changingDiaper ? (
+                            {(place.changingDiaper && !search.match("changingDiaper"))? (
                                 <button className="button_off">Skötbord </button>) :
                                 ("")
                             }
 
-                            {place.parking ? (
+                            {(place.parking && !search.match("parking"))? (
                                 <button className="button_off">Parkering </button>) :
                                 ("")
                             }
 
-                            {place.wc ? (
+                            {(place.wc && !search.match("wc"))? (
                                 <button className="button_off">WC </button>) :
                                 ("")
                             }
 
-                            {place.fourH ? (
+                            {(place.fourH && !search.match("fourH"))? (
                                 <button className="button_off">4H </button>) :
                                 ("")
                             }
 
-                            {place.pramFriendly ? (
+                            {(place.pramFriendly && !search.match("pramFriendly"))? (
                                 <button className="button_off">Barnvagnsvänligt </button>) :
                                 ("")
                             }
-                            {place.cafe ? (
+                            {(place.cafe && !search.match("cafe"))? (
                                 <button className="button_off">Kiosk/cafe </button>) :
                                 ("")
                             }
-                            {place.fireplace ? (
+                            {(place.fireplace && !search.match("fireplace"))? (
                                 <button className="button_off">Grillplats </button>) :
                                 ("")
                             }
 
-                            {place.playground ? (
+                            {(place.playground && !search.match("playground"))? (
                                 <button className="button_off">Lekplats </button>) :
                                 ("")
                             }
 
-                            {place.microwave ? (
+                            {(place.microwave && !search.match("microwave"))? (
                                 <button className="button_off">Mikrovågsugn </button>) :
                                 ("")
                             }
 
-                            {place.beach ? (
+                            {(place.beach && !search.match("beach"))? (
                                 <button className="button_off">Badplats </button>) :
                                 ("")
                             }
 
-                            {place.trails ? (
+                            {(place.trails && !search.match("trails"))? (
                                 <button className="button_off">Promenadstigar </button>) :
                                 ("")
                             }
 
-                            {place.elevatorRamp ? (
+                            {(place.elevatorRamp && !search.match("elevatorRamp"))? (
                                 <button className="button_off">Hiss/ramp </button>) :
                                 ("")
                             }
 
-                            {place.picnicCompatible ? (
+                            {(place.picnicCompatible && !search.match("picnicCompatible"))? (
                                 <button className="button_off">Picknickområde </button>) :
                                 ("")
                             }
 
-                            {place.restaurant ? (
+                            {(place.restaurant && !search.match("restaurant"))? (
                                 <button className="button_off">Restaurang </button>) :
                                 ("")
                             }

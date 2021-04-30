@@ -4,10 +4,6 @@ import { Route, BrowserRouter as Router, Switch, Link } from "react-router-dom";
 import Places from './Places.json';
 
 
-const backUrl = "/test/There_is_a_WC_here_in_backurl"
-
-const testvalue = "hello"
-
 function Destinations(props) {
 
     //Ändra namn på menu och menu__link
@@ -35,7 +31,7 @@ function Destinations(props) {
                                 < Link to={'/InfoPage/' + place.id + "?filter=" +
                                     (props.filterSettings.changingDiaper ? "changingDiaper_" : "") +
                                     (props.filterSettings.parking ? "parking_" : "") +
-                                    (props.filterSettings.wc ? "There_trails__is_a_WC_here_": "") +
+                                    (props.filterSettings.wc ? "wc_": "") +
                                     (props.filterSettings.fourH ? "fourH_": "") +
                                     (props.filterSettings.pramFriendly ? "pramFriendly_" : "") +
                                     (props.filterSettings.elevatorRamp ? "elevatorRamp_": "") +
@@ -44,8 +40,10 @@ function Destinations(props) {
                                     (props.filterSettings.fireplace ? "fireplace_": "") +
                                     (props.filterSettings.playground ? "playground_": "") +
                                     (props.filterSettings.microwave ? "microwave_": "") +
-                                    (props.filterSettings.wc ? "There_trails__is_a_WC_here_": "") +
                                     (props.filterSettings.beach ? "beach_": "") +
+                                    (props.filterSettings.wc ? "wc": "") +
+                                    (props.filterSettings.wc ? "wc": "") +
+  
                                     (props.filterSettings.restaurant ? "restaurant_": "")
                                 } className="menu__link" >
                                     <div className="row">
