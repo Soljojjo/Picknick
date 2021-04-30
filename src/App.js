@@ -7,7 +7,7 @@ import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 function App() {
 
   return (
-    <Router>
+
 
       <div>
       <Switch>
@@ -18,7 +18,7 @@ function App() {
         </Switch>  
       </div>
 
-    </Router>
+
   );
 }
 

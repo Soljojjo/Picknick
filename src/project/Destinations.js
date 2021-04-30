@@ -3,6 +3,11 @@ import React from 'react';
 import { Route, BrowserRouter as Router, Switch, Link } from "react-router-dom";
 import Places from './Places.json';
 
+
+const backUrl = "/test/There_is_a_WC_here_in_backurl"
+
+const testvalue = "hello"
+
 function Destinations(props) {
 
     //Ändra namn på menu och menu__link
@@ -23,29 +28,46 @@ function Destinations(props) {
                     (!props.filterSettings.playground || place.playground) &&
                     (!props.filterSettings.microwave || place.microwave) &&
                     (!props.filterSettings.beach || place.beach) &&
-                    (!props.filterSettings.trails || place.trails)&&
+                    (!props.filterSettings.trails || place.trails) &&
                     (!props.filterSettings.restaurant || place.restaurant))).map(place =>
-                        <li key={place.id.toString()}>
-                            < Link to={'/InfoPage/' + place.id} className="menu__link" >
-                                <div className="row">
+                        <div>
+                            <li key={place.id.toString()}>
+                                < Link to={'/InfoPage/' + place.id + "?filter=" +
+                                    (props.filterSettings.changingDiaper ? "changingDiaper_" : "") +
+                                    (props.filterSettings.parking ? "parking_" : "") +
+                                    (props.filterSettings.wc ? "There_trails__is_a_WC_here_": "") +
+                                    (props.filterSettings.fourH ? "fourH_": "") +
+                                    (props.filterSettings.pramFriendly ? "pramFriendly_" : "") +
+                                    (props.filterSettings.elevatorRamp ? "elevatorRamp_": "") +
+                                    (props.filterSettings.picnicCompatible ? "picnicCompatible_": "") +
+                                    (props.filterSettings.cafe ? "cafe_": "") +
+                                    (props.filterSettings.fireplace ? "fireplace_": "") +
+                                    (props.filterSettings.playground ? "playground_": "") +
+                                    (props.filterSettings.microwave ? "microwave_": "") +
+                                    (props.filterSettings.wc ? "There_trails__is_a_WC_here_": "") +
+                                    (props.filterSettings.beach ? "beach_": "") +
+                                    (props.filterSettings.restaurant ? "restaurant_": "")
+                                } className="menu__link" >
+                                    <div className="row">
 
-                                    <div className="column">
-                                        <span className="mycard">
-                                            <img className="minipicture" alt={place.name} src={"./places/"+place.card} width="64" height="57" />
-                                        </span>
+                                        <div className="column">
+                                            <span className="mycard">
+                                                <img className="minipicture" alt={place.name} src={"./places/" + place.card} width="64" height="57" />
+                                            </span>
+                                        </div>
+                                        <div className="column">
+                                            <span className="align-middle"><strong>{place.name}</strong> <br></br>{place.smallDescription}</span>
+
+                                        </div>
+
                                     </div>
-                                    <div className="column">
-                                        <span className="align-middle"><strong>{place.name}</strong> <br></br>{place.smallDescription}</span>
-
-                                    </div>
-
-                                </div>
-                            </Link >
-                        </li>
+                                </Link >
+                            </li>
+                        </div>
                     )
                 }
             </div>
-        </div>
+        </div >
 
     )
 }
