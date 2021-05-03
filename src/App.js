@@ -1,8 +1,9 @@
+import './css/styles.css';
 import React from 'react';
 import MainMenu from './project/MainMenu';
 import InfoPage from './project/InfoPage';
-import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
-
+import { Route, Switch } from "react-router-dom";
+// import './css/styles.css';
 
 function App() {
 

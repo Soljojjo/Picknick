@@ -6,8 +6,9 @@ import Destinations from './Destinations';
 function MainMenu() {
 
     // States for all filter buttons, 'false' for buttons/filtering that is not pressed/on
-    const [changingDiaper, setChangingDiaper] = useState(false);/* */ const toggleChangingDiaper = () => { setChangingDiaper(value => !value); }
-    const [parking, setParking] = useState(false); /*              */ const toggleParking = () => setParking(value => !value);
+    const [changingDiaper, setChangingDiaper] = useState(false);/* */ 
+    function toggleChangingDiaper() { setChangingDiaper(value => value); };
+    const [parking, setParking] = useState(false); /*              */ function toggleParking() { setParking(value => !value); };
     const [wc, setWc] = useState(false); /*                        */ const toggleWc = () => setWc(value => !value);
     const [fourH, setFourH] = useState(false); /*                  */ const toggleFourH = () => setFourH(value => !value);
     const [pramFriendly, setPramFriendly] = useState(false);/*     */ const togglePramFriendly = () => setPramFriendly(value => !value);
@@ -22,8 +23,9 @@ function MainMenu() {
     const [restaurant, setRestaurant] = useState(false); /*        */ const toggleRestaurant = () => setRestaurant(value => !value);
 
     useEffect(() => {
-        // alert("Useeffect was called!");
+         //alert("Useeffect was called!");
     })
+
     var filterSettings = {
         'changingDiaper': changingDiaper,
         'parking': parking,
