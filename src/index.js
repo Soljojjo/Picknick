@@ -6,6 +6,10 @@ import './css/slideshow.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from "react-router-dom";
+<<<<<<< HEAD
+=======
+import './css/styles.css';
+>>>>>>> 35056f4bfcfa8236e43bba55beb213aad758f718
 
 ReactDOM.render(
   <React.StrictMode>
