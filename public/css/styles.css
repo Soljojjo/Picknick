@@ -136,7 +136,7 @@ p {
     clear: both;
     text-align: center;
     height: 50px;
-    padding-top: 10px;
+    padding-top: 14px;
     box-sizing: border-box;
 }
 
@@ -291,6 +291,32 @@ li {
     vertical-align: middle;
 }
 
+.mapbutton{
+    font-size: 16px;
+    font-family: 'Cabin';
+    font-weight: bold;
+    color:  #DCE6E3;
+    background-color:#597B72;
+    margin: 6px;
+    text-align: right;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    vertical-align: middle;
+    margin-top: 6px;
+    
+}
+
+.mapLink{
+    font-size: 14px;
+    font-family: 'Cabin';
+    font-weight: normal;
+    color: #597B72;
+
+}
 .filtertext-middle {
     vertical-align: text-top;
     padding: 5px;
