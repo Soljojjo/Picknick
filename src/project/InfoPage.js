@@ -2,9 +2,7 @@ import React from 'react';
 // import React, { useEffect, useState } from 'react';
 // import Destinations from './Destinations';
 import Places from './Places.json';
-import { Route, BrowserRouter as Router, Switch, Link, useParams, useLocation } from "react-router-dom";
-
-const str = "asdfasdWCasfds43";
+import { Link, useParams, useLocation } from "react-router-dom";
 
 const InfoPage = () => {
     /*
@@ -23,9 +21,7 @@ const InfoPage = () => {
 
     //  alert("filterString= " + filterString + ";  .toString = " + filterString.toString + ";\n.toString() = " + filterString.toString() + "; filter = " + filter);
 
-    const str = "123WCert";
-
-    // Can only return one object, encapsulated in a DIV here
+     // Can only return one object, encapsulated in a DIV here
     return (
         <div className="column_all">
 
@@ -40,14 +36,14 @@ const InfoPage = () => {
                 <div>{/* från json filen filtreras info där id i jsonfilen = id från Url
                 map tar all info och lägger i place, namnet hämtas från place.
                 samma sak görs för bilden och beskrivning i nästa div */}
-                    {Places.filter((place) => place.id == id).map(place =>
+                    {Places.filter((place) => place.id === parseInt(id)).map(place =>
                         <li key={place.id.toString()}>
                             <h1>{place.name}</h1>
                         </li>
                     )}
                 </div>
                 <div>
-                    {Places.filter((place) => place.id == id).map(place =>
+                    {Places.filter((place) => place.id === parseInt(id)).map(place =>
                         <li key={place.id.toString()}>
                             <img className="infopicture" src={"../places/" + place.img3} alt={place.name} />
                         </li>
@@ -82,7 +78,7 @@ const InfoPage = () => {
             <div className="infoContainer2">
                 <p>Också på platsen:</p>
                 <div>
-                    {Places.filter((place) => place.id == id).map(place =>
+                    {Places.filter((place) => place.id === parseInt(id)).map(place =>
                         <li key={place.id.toString()}>
                             {(place.changingDiaper && !search.match("changingDiaper")) ? (
                                 <button className="button_off">Skötbord </button>) :
@@ -159,7 +155,7 @@ const InfoPage = () => {
 
             <div className="infoContainer3">
                 <div>
-                    {Places.filter((place) => place.id == id).map(place =>
+                    {Places.filter((place) => place.id === parseInt(id)).map(place =>
                         <li key={place.id.toString()}>
                             <p>{place.description}</p>
                         </li>
@@ -169,10 +165,10 @@ const InfoPage = () => {
             </div>
 
             <div className="footer">
-                {Places.filter((place) => place.id == id).map(place =>
+                {Places.filter((place) => place.id === parseInt(id)).map(place =>
                     <li key={place.id.toString()}>
                         
-                        <a class="mapbutton" href={place.mapsLink} style={{textDecoration: 'none'}}>ÖPPNA I KARTTJÄNST</a>
+                        <a className="mapbutton" href={place.mapsLink} style={{textDecoration: 'none'}}>ÖPPNA I KARTTJÄNST</a>
                         
                        
                     </li>

@@ -1,6 +1,6 @@
 import React from 'react';
 //import React, { useEffect, useState } from 'react';
-import { Route, BrowserRouter as Router, Switch, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Places from './Places.json';
 
 
@@ -26,45 +26,41 @@ function Destinations(props) {
                     (!props.filterSettings.beach || place.beach) &&
                     (!props.filterSettings.trails || place.trails) &&
                     (!props.filterSettings.restaurant || place.restaurant))).map(place =>
-                        <div>
-                            <li key={place.id.toString()}>
-                                < Link to={'/InfoPage/' + place.id + "?filter=" +
-                                    (props.filterSettings.changingDiaper ? "changingDiaper_" : "") +
-                                    (props.filterSettings.parking ? "parking_" : "") +
-                                    (props.filterSettings.wc ? "wc_": "") +
-                                    (props.filterSettings.fourH ? "fourH_": "") +
-                                    (props.filterSettings.pramFriendly ? "pramFriendly_" : "") +
-                                    (props.filterSettings.elevatorRamp ? "elevatorRamp_": "") +
-                                    (props.filterSettings.picnicCompatible ? "picnicCompatible_": "") +
-                                    (props.filterSettings.cafe ? "cafe_": "") +
-                                    (props.filterSettings.fireplace ? "fireplace_": "") +
-                                    (props.filterSettings.playground ? "playground_": "") +
-                                    (props.filterSettings.microwave ? "microwave_": "") +
-                                    (props.filterSettings.beach ? "beach_": "") +
-                                    (props.filterSettings.wc ? "wc": "") +
-                                    (props.filterSettings.wc ? "wc": "") +
-  
-                                    (props.filterSettings.restaurant ? "restaurant_": "")
-                                } className="menu__link" >
-                                    <div className="row">
+                        <li key={place.id.toString()}>
+                            < Link to={'/InfoPage/' + place.id + "?filter=" +
+                                (props.filterSettings.changingDiaper ? "changingDiaper_" : "") +
+                                (props.filterSettings.parking ? "parking_" : "") +
+                                (props.filterSettings.wc ? "wc_" : "") +
+                                (props.filterSettings.fourH ? "fourH_" : "") +
+                                (props.filterSettings.pramFriendly ? "pramFriendly_" : "") +
+                                (props.filterSettings.elevatorRamp ? "elevatorRamp_" : "") +
+                                (props.filterSettings.picnicCompatible ? "picnicCompatible_" : "") +
+                                (props.filterSettings.cafe ? "cafe_" : "") +
+                                (props.filterSettings.fireplace ? "fireplace_" : "") +
+                                (props.filterSettings.playground ? "playground_" : "") +
+                                (props.filterSettings.microwave ? "microwave_" : "") +
+                                (props.filterSettings.beach ? "beach_" : "") +
+                                (props.filterSettings.trails ? "trails_" : "") +
+                                (props.filterSettings.restaurant ? "restaurant_" : "")
+                            } className="menu__link" >
+                                <div className="row">
 
-                                        <div className="column">
-                                            <span className="mycard">
-                                                <img className="minipicture" alt={place.name} src={"./places/" + place.card} width="64" height="57" />
-                                            </span>
-                                        </div>
-                                        <div className="column">
-                                            <span className="align-middle"><strong>{place.name}</strong> <br></br>{place.smallDescription}</span>
-
-                                        </div>
+                                    <div className="column">
+                                        <span className="mycard">
+                                            <img className="minipicture" alt={place.name} src={"./places/" + place.card} width="64" height="57" />
+                                        </span>
+                                    </div>
+                                    <div className="column">
+                                        <span className="align-middle"><strong>{place.name}</strong> <br></br>{place.smallDescription}</span>
 
                                     </div>
-                                </Link >
-                            </li>
-                        </div>
+
+                                </div>
+                            </Link >
+                        </li>
                     )
                 }
-            </div>
+        </div>
         </div >
 
     )
