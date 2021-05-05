@@ -7,7 +7,7 @@ function MainMenu() {
 
     // States for all filter buttons, 'false' for buttons/filtering that is not pressed/on
     const [changingDiaper, setChangingDiaper] = useState(false);/* */ 
-    function toggleChangingDiaper() { setChangingDiaper(value => value); };
+    function toggleChangingDiaper() { setChangingDiaper(value => !value); };
     const [parking, setParking] = useState(false); /*              */ function toggleParking() { setParking(value => !value); };
     const [wc, setWc] = useState(false); /*                        */ const toggleWc = () => setWc(value => !value);
     const [fourH, setFourH] = useState(false); /*                  */ const toggleFourH = () => setFourH(value => !value);
@@ -42,7 +42,6 @@ function MainMenu() {
         'trails': trails,
         'restaurant': restaurant
     }
-
 
     return (
         <div>
