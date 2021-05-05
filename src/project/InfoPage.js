@@ -119,7 +119,7 @@ const InfoPage = () => {
                 {Places.filter((place) => place.id === parseInt(id)).map(place =>
                     <li key={place.id.toString()}>
                         
-                        <a className="mapbutton" href={place.mapsLink} style={{textDecoration: 'none'}}>ÖPPNA I KARTTJÄNST</a>       
+                        <a className="mapbutton" href={place.mapsLink} style={{textDecoration: 'none'}} target="_blank">ÖPPNA I KARTTJÄNST</a>       
                        
                     </li>
                 )}
