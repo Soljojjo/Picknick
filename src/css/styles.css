@@ -13,8 +13,8 @@ h1 {
     color: #597B72;
     font-style: normal;
     padding-left: 10px;
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
     margin: 0px;
     /* From Figma, identical to box height */
     /*letter-spacing: -0.003em;
@@ -43,6 +43,7 @@ h3 {
     font-size: 20px;
     line-height: 24px;
     color: #000000;
+    letter-spacing: 2%;
 }
 
 p {
@@ -121,12 +122,15 @@ p {
 
 
 .infoContainer {
-    height: 400px;
+    height: 350px;
     padding-bottom: 0px;
 }
 
 /*-------------------------------------------- column hantering*/
-
+/* kolla upp Icontainer3*/
+infocontainer3{
+    padding-right: 10px;
+}
 .center-column {
     width: 90%;
     float: left;
@@ -164,10 +168,10 @@ li {
     font-size: 16px;
     text-decoration: none;
     display: inline;
-    padding: 1px;
-    padding-left: 5px;
-    padding-top: 1px;
-    margin: 11px;
+    padding-left: 10px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    margin: 0px;
     /*box-shadow: 0 2px 4px 0 rgba(153, 152, 152, 0.104), 0 3px 10px 0 rgba(0, 0, 0, 0.19);*/
     min-width: 100px;
     /* From figma below: */
@@ -220,7 +224,7 @@ li {
     /*padding-top: 2px;     
     padding-left: 33px;
     padding-right: 6px;*/
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     padding-left: 0px;
 }
 
@@ -233,7 +237,7 @@ li {
     padding-top: 0px;
     padding-left: 0px;
     padding-right: 6px;
-    padding-bottom: 2px;
+    padding-bottom: 0px;
     vertical-align: middle;
 }
 
