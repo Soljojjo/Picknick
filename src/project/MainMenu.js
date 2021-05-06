@@ -18,7 +18,7 @@ function MainMenu({
     trails, setTrails,
     restaurant, setRestaurant }) {
 
-    const [showMore,setShowMore]=useState(false);    
+    const [showMore, setShowMore] = useState(false);
 
     // Toggle functions for the filters
     const toggleChangingDiaper = () => setChangingDiaper(value => !value);
@@ -88,23 +88,24 @@ function MainMenu({
                         <button className={wc ? "button_on" : "button_off"} onClick={toggleWc}> WC</button>
                         <button className={fourH ? "button_on" : "button_off"} onClick={toggleFourH}>4H-gård</button>
                         <button className={pramFriendly ? "button_on" : "button_off"} onClick={togglePramFriendly}> Barnvagnsvänligt</button>
-                        
-                        {!showMore ? <button className='showMoreButton' onClick={() => setShowMore(true)}>fler..</button>:null}
-                        
-                        {showMore?
-                        <div>
                         <button className={elevatorRamp ? "button_on" : "button_off"} onClick={toggleElevatorRamp}> Hiss/ramp</button>
                         <button className={picnicCompatible ? "button_on" : "button_off"} onClick={togglePicnicCompatible}> Picknickområde</button>
-                        <button className={cafe ? "button_on" : "button_off"} onClick={toggleCafe}> Kiosk/café</button>
-                        <button className={fireplace ? "button_on" : "button_off"} onClick={toggleFireplace}> Grillplats</button>
-                        <button className={playground ? "button_on" : "button_off"} onClick={togglePlayground}> Lekplats</button>
-                        <button className={microwave ? "button_on" : "button_off"} onClick={toggleMicrowave}> Mikrovågsugn</button>
-                        <button className={beach ? "button_on" : "button_off"} onClick={toggleBeach}> Badplats</button>
-                        <button className={trails ? "button_on" : "button_off"} onClick={toggleTrails}> Promenadstigar</button>
-                        <button className={restaurant ? "button_on" : "button_off"} onClick={toggleRestaurant}> Restaurang</button>
-                        {showMore ? <button className='showMoreButton' onClick={() => setShowMore(false)}>färre..</button>:null}
-                        </div>
-                        :null}
+
+                        {!showMore ? <button className='showMoreButton' onClick={() => setShowMore(true)}>+ fler taggar</button> : null}
+
+                        {showMore ?
+                            <div>
+
+                                <button className={cafe ? "button_on" : "button_off"} onClick={toggleCafe}> Kiosk/café</button>
+                                <button className={fireplace ? "button_on" : "button_off"} onClick={toggleFireplace}> Grillplats</button>
+                                <button className={playground ? "button_on" : "button_off"} onClick={togglePlayground}> Lekplats</button>
+                                <button className={microwave ? "button_on" : "button_off"} onClick={toggleMicrowave}> Mikrovågsugn</button>
+                                <button className={beach ? "button_on" : "button_off"} onClick={toggleBeach}> Badplats</button>
+                                <button className={trails ? "button_on" : "button_off"} onClick={toggleTrails}> Promenadstigar</button>
+                                <button className={restaurant ? "button_on" : "button_off"} onClick={toggleRestaurant}> Restaurang</button>
+                                {showMore ? <button className='showMoreButton' onClick={() => setShowMore(false)}>visa färre</button> : null}
+                            </div>
+                            : null}
                     </div>
                 </div>
 
