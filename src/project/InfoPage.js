@@ -38,40 +38,40 @@ const InfoPage = () => {
                         <div className="infoContainer2">
                             <div className="choices" >Dina val:</div>
                             {/* Adding non-pressable buttons for the filter choices that have been made */}
-                            {search.match("changingDiaper") ? (<button className="button_on">Skötbord</button>) : ""}
-                            {search.match("parking") ? (<button className="button_on">Parkering</button>) : ""}
+                            {search.match("changingDiaper") ? (<button className="button_on">skötbord</button>) : ""}
+                            {search.match("parking") ? (<button className="button_on">parkering</button>) : ""}
                             {search.match("wc") ? (<button className="button_on">WC</button>) : ""}
                             {search.match("fourH") ? (<button className="button_on">4h-gård</button>) : ""}
-                            {search.match("pramFriendly") ? (<button className="button_on">Barnvagnsvänligt</button>) : ""}
-                            {search.match("cafe") ? (<button className="button_on">Kiosk/café </button>) : ""}
-                            {search.match("fireplace") ? (<button className="button_on">Grillplats </button>) : ""}
-                            {search.match("playground") ? (<button className="button_on">Lekplats </button>) : ""}
-                            {search.match("microwave") ? (<button className="button_on">Micro</button>) : ""}
-                            {search.match("beach") ? (<button className="button_on">Badplats</button>) : ""}
-                            {search.match("trails") ? (<button className="button_on">Promenadstigar</button>) : ""}
-                            {search.match("elevatorRamp") ? (<button className="button_on">Hiss/ramp</button>) : ""}
-                            {search.match("picnicCompatible") ? (<button className="button_on">Picknickområde</button>) : ""}
-                            {search.match("restaurant") ? (<button className="button_on">Restaurang</button>) : ""}
+                            {search.match("pramFriendly") ? (<button className="button_on">barnvagnsvänligt</button>) : ""}
+                            {search.match("cafe") ? (<button className="button_on">kiosk/café </button>) : ""}
+                            {search.match("fireplace") ? (<button className="button_on">grillplats </button>) : ""}
+                            {search.match("playground") ? (<button className="button_on">lekplats </button>) : ""}
+                            {search.match("microwave") ? (<button className="button_on">micro</button>) : ""}
+                            {search.match("beach") ? (<button className="button_on">badplats</button>) : ""}
+                            {search.match("trails") ? (<button className="button_on">promenadstigar</button>) : ""}
+                            {search.match("elevatorRamp") ? (<button className="button_on">hiss/ramp</button>) : ""}
+                            {search.match("picnicCompatible") ? (<button className="button_on">picknickområde</button>) : ""}
+                            {search.match("restaurant") ? (<button className="button_on">restaurang</button>) : ""}
                         </div>
 
                         <div className="infoContainer3">
                             <div className="facilities">Också på platsen: </div>
 
                             {/* Adding non-pressable buttons for the facilities that the place has, that were NOT included in the filter requiremnts */}
-                            {(place.changingDiaper && !search.match("changingDiaper")) ? <button className="button_off">Skötbord </button> : ""}
-                            {(place.parking && !search.match("parking")) ? <button className="button_off">Parkering </button> : ""}
+                            {(place.changingDiaper && !search.match("changingDiaper")) ? <button className="button_off">skötbord </button> : ""}
+                            {(place.parking && !search.match("parking")) ? <button className="button_off">parkering </button> : ""}
                             {(place.wc && !search.match("wc")) ? <button className="button_off">WC </button> : ""}
                             {(place.fourH && !search.match("fourH")) ? <button className="button_off">4H </button> : ""}
-                            {(place.pramFriendly && !search.match("pramFriendly")) ? <button className="button_off">Barnvagnsvänligt </button> : ""}
-                            {(place.cafe && !search.match("cafe")) ? <button className="button_off">Kiosk/cafe </button> : ""}
-                            {(place.fireplace && !search.match("fireplace")) ? <button className="button_off">Grillplats </button> : ""}
-                            {(place.playground && !search.match("playground")) ? <button className="button_off">Lekplats </button> : ""}
-                            {(place.microwave && !search.match("microwave")) ? <button className="button_off">Mikrovågsugn </button> : ""}
-                            {(place.beach && !search.match("beach")) ? <button className="button_off">Badplats </button> : ""}
-                            {(place.trails && !search.match("trails")) ? <button className="button_off">Promenadstigar </button> : ""}
-                            {(place.elevatorRamp && !search.match("elevatorRamp")) ? <button className="button_off">Hiss/ramp </button> : ""}
-                            {(place.picnicCompatible && !search.match("picnicCompatible")) ? <button className="button_off">Picknickområde </button> : ""}
-                            {(place.restaurant && !search.match("restaurant")) ? <button className="button_off">Restaurang </button> : ""}
+                            {(place.pramFriendly && !search.match("pramFriendly")) ? <button className="button_off">barnvagnsvänligt </button> : ""}
+                            {(place.cafe && !search.match("cafe")) ? <button className="button_off">kiosk/cafe </button> : ""}
+                            {(place.fireplace && !search.match("fireplace")) ? <button className="button_off">grillplats </button> : ""}
+                            {(place.playground && !search.match("playground")) ? <button className="button_off">lekplats </button> : ""}
+                            {(place.microwave && !search.match("microwave")) ? <button className="button_off">mikrovågsugn </button> : ""}
+                            {(place.beach && !search.match("beach")) ? <button className="button_off">badplats </button> : ""}
+                            {(place.trails && !search.match("trails")) ? <button className="button_off">promenadstigar </button> : ""}
+                            {(place.elevatorRamp && !search.match("elevatorRamp")) ? <button className="button_off">hiss/ramp </button> : ""}
+                            {(place.picnicCompatible && !search.match("picnicCompatible")) ? <button className="button_off">picknickområde </button> : ""}
+                            {(place.restaurant && !search.match("restaurant")) ? <button className="button_off">restaurang </button> : ""}
 
                         </div>
 
@@ -86,7 +86,7 @@ const InfoPage = () => {
 
                         <div className="footer">
 
-                            <a className="mapbutton" href={place.mapsLink} style={{ textDecoration: 'none' }} target="_blank">ÖPPNA I KARTTJÄNST</a>
+                            <a className="mapbutton" href={place.mapsLink} style={{ textDecoration: 'none' }} target="_blank" rel="noreferrer">ÖPPNA I KARTTJÄNST</a>
 
 
                         </div>

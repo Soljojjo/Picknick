@@ -83,26 +83,26 @@ function MainMenu({
 
                     <p className="body_copy_filter">Filtrera med populära taggar:</p>
                     <div className="buttons">
-                        <button className={changingDiaper ? "button_on" : "button_off"} onClick={toggleChangingDiaper}>  Skötbord </button>
-                        <button className={parking ? "button_on" : "button_off"} onClick={toggleParking}> Parkering </button>
+                        <button className={changingDiaper ? "button_on" : "button_off"} onClick={toggleChangingDiaper}>  skötbord </button>
+                        <button className={parking ? "button_on" : "button_off"} onClick={toggleParking}> parkering </button>
                         <button className={wc ? "button_on" : "button_off"} onClick={toggleWc}> WC</button>
                         <button className={fourH ? "button_on" : "button_off"} onClick={toggleFourH}>4H-gård</button>
-                        <button className={pramFriendly ? "button_on" : "button_off"} onClick={togglePramFriendly}> Barnvagnsvänligt</button>
-                        <button className={elevatorRamp ? "button_on" : "button_off"} onClick={toggleElevatorRamp}> Hiss/ramp</button>
-                        <button className={picnicCompatible ? "button_on" : "button_off"} onClick={togglePicnicCompatible}> Picknickområde</button>
+                        <button className={pramFriendly ? "button_on" : "button_off"} onClick={togglePramFriendly}> barnvagnsvänligt</button>
+                        <button className={elevatorRamp ? "button_on" : "button_off"} onClick={toggleElevatorRamp}> hiss/ramp</button>
+                        <button className={picnicCompatible ? "button_on" : "button_off"} onClick={togglePicnicCompatible}> picknickområde</button>
 
                         {!showMore ? <button className='showMoreButton' onClick={() => setShowMore(true)}>+ fler taggar</button> : null}
 
                         {showMore ?
                             <div>
 
-                                <button className={cafe ? "button_on" : "button_off"} onClick={toggleCafe}> Kiosk/café</button>
-                                <button className={fireplace ? "button_on" : "button_off"} onClick={toggleFireplace}> Grillplats</button>
-                                <button className={playground ? "button_on" : "button_off"} onClick={togglePlayground}> Lekplats</button>
-                                <button className={microwave ? "button_on" : "button_off"} onClick={toggleMicrowave}> Mikrovågsugn</button>
-                                <button className={beach ? "button_on" : "button_off"} onClick={toggleBeach}> Badplats</button>
-                                <button className={trails ? "button_on" : "button_off"} onClick={toggleTrails}> Promenadstigar</button>
-                                <button className={restaurant ? "button_on" : "button_off"} onClick={toggleRestaurant}> Restaurang</button>
+                                <button className={cafe ? "button_on" : "button_off"} onClick={toggleCafe}> kiosk/café</button>
+                                <button className={fireplace ? "button_on" : "button_off"} onClick={toggleFireplace}> grillplats</button>
+                                <button className={playground ? "button_on" : "button_off"} onClick={togglePlayground}> lekplats</button>
+                                <button className={microwave ? "button_on" : "button_off"} onClick={toggleMicrowave}> mikrovågsugn</button>
+                                <button className={beach ? "button_on" : "button_off"} onClick={toggleBeach}> badplats</button>
+                                <button className={trails ? "button_on" : "button_off"} onClick={toggleTrails}> promenadstigar</button>
+                                <button className={restaurant ? "button_on" : "button_off"} onClick={toggleRestaurant}> restaurang</button>
                                 {showMore ? <button className='showMoreButton' onClick={() => setShowMore(false)}>visa färre</button> : null}
                             </div>
                             : null}

@@ -1,5 +1,5 @@
 // import './css/styles.css';
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import MainMenu from "./project/MainMenu";
 import InfoPage from "./project/InfoPage";
 import { Route, Switch } from "react-router-dom";
