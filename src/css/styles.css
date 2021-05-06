@@ -125,11 +125,21 @@ p {
     padding-bottom: 0px;
 }
 
+.infoContainer2 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.infoContainer3 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
 /*-------------------------------------------- column hantering*/
 
 /* kolla upp Icontainer3*/
 
-infocontainer3 {
+.infocontainer4 {
     padding-right: 10px;
 }
 
@@ -150,6 +160,7 @@ infocontainer3 {
 
 li {
     list-style-type: none;
+    
 }
 
 /*------------------------------------------- knappar/ länkar hantering */
@@ -297,18 +308,17 @@ li {
     vertical-align: middle;
 }
 
-.showMoreButton{
-    background:none;
+.showMoreButton {
+    background: none;
     color: #597B72;
-    border:none;
-    margin:0;
-    padding:0;
+    border: none;
+    margin: 0;
+    padding: 0;
     cursor: pointer;
     padding-left: 7px;
     font-size: 15px;
     font-family: 'Cabin';
     font-weight: normal;
-
 }
 
 .filtertext-middle {
