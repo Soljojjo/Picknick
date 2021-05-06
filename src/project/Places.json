@@ -25,7 +25,6 @@
         "elevatorRamp": false,
         "picnicCompatible": true,
         "restaurant": false
-        
     },
     {
         "id": 2,
@@ -34,7 +33,7 @@
         "smallDescription": "Sveriges första stad i Mälaren. \nGoda kommunikationer med båt.",
         "description": "Fornlämningsområdet Birka på Björkö och Hovgården på Adelsö utgör tillsammans ett av Sveriges 15 världsarv. Området blev upptaget på Unescos världsarvslista år 1993. Ett världsarv är ett kulturminne eller naturminne som ansetts så värdefullt att bevara att det garanterats skydd genom FN-organet Unesco. Riksantikvarieämbetet och Naturvårdsverket är de myndigheter som tillsammans har ansvar för att förvalta Sveriges världsarv på uppdrag av regeringen. Mer om detta, och mycket annat, kommer du att få höra på våra visningar när våra duktiga arkeologer och guider tar dig tillbaka ända till vikingatiden här på Birka. ",
         "infoLink": "",
-        "mapsLink": "https://goo.gl/maps/iusNYXJ9uVQmHrf38",
+        "mapsLink": "https://goo.gl/maps/jRPydSpQcwCRPpGcA",
         "card": "birka_vikingastaden_card.jpg",
         "img1": "Birka1_683x1024.jpg",
         "img2": "Birka2_1024x684.jpg",
