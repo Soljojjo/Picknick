@@ -18,6 +18,8 @@ function MainMenu({
     trails, setTrails,
     restaurant, setRestaurant }) {
 
+    const [showMore,setShowMore]=useState(false);    
+
     // Toggle functions for the filters
     const toggleChangingDiaper = () => setChangingDiaper(value => !value);
     const toggleParking = () => setParking(value => !value);
@@ -86,6 +88,11 @@ function MainMenu({
                         <button className={wc ? "button_on" : "button_off"} onClick={toggleWc}> WC</button>
                         <button className={fourH ? "button_on" : "button_off"} onClick={toggleFourH}>4H-gård</button>
                         <button className={pramFriendly ? "button_on" : "button_off"} onClick={togglePramFriendly}> Barnvagnsvänligt</button>
+                        
+                        {!showMore ? <button className='showMoreButton' onClick={() => setShowMore(true)}>fler..</button>:null}
+                        
+                        {showMore?
+                        <div>
                         <button className={elevatorRamp ? "button_on" : "button_off"} onClick={toggleElevatorRamp}> Hiss/ramp</button>
                         <button className={picnicCompatible ? "button_on" : "button_off"} onClick={togglePicnicCompatible}> Picknickområde</button>
                         <button className={cafe ? "button_on" : "button_off"} onClick={toggleCafe}> Kiosk/café</button>
@@ -95,6 +102,9 @@ function MainMenu({
                         <button className={beach ? "button_on" : "button_off"} onClick={toggleBeach}> Badplats</button>
                         <button className={trails ? "button_on" : "button_off"} onClick={toggleTrails}> Promenadstigar</button>
                         <button className={restaurant ? "button_on" : "button_off"} onClick={toggleRestaurant}> Restaurang</button>
+                        {showMore ? <button className='showMoreButton' onClick={() => setShowMore(false)}>färre..</button>:null}
+                        </div>
+                        :null}
                     </div>
                 </div>
 

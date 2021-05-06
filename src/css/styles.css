@@ -296,6 +296,15 @@ li {
     vertical-align: middle;
 }
 
+.showMoreButton{
+    background:none;
+    color: #597B72;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+}
+
 .filtertext-middle {
     vertical-align: text-top;
     padding: 5px;
