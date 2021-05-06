@@ -109,7 +109,6 @@ p {
 }
 
 .infopicture {
-    height: 280px;
     width: 100%;
 }
 
@@ -121,17 +120,18 @@ p {
     background-size: 100%;
 }
 
-
 .infoContainer {
-    height: 350px;
     padding-bottom: 0px;
 }
 
 /*-------------------------------------------- column hantering*/
+
 /* kolla upp Icontainer3*/
-infocontainer3{
+
+infocontainer3 {
     padding-right: 10px;
 }
+
 .center-column {
     width: 90%;
     float: left;
@@ -147,8 +147,8 @@ infocontainer3{
 
 /*------------------------------------------- list hantering */
 
-li { 
-    list-style-type: none ;
+li {
+    list-style-type: none;
 }
 
 /*------------------------------------------- knappar/ länkar hantering */
@@ -339,12 +339,12 @@ li {
     /* align the text vertically centered */
 }
 
-.mapbutton{
+.mapbutton {
     font-size: 16px;
     font-family: 'Cabin';
     font-weight: bold;
-    color:  #DCE6E3;
-    background-color:#597B72;
+    color: #DCE6E3;
+    background-color: #597B72;
     margin: 6px;
     text-align: right;
     border: none;
@@ -355,13 +355,11 @@ li {
     padding-right: 60px;
     vertical-align: middle;
     margin-top: 6px;
-
 }
 
-.mapLink{
+.mapLink {
     font-size: 14px;
     font-family: 'Cabin';
     font-weight: normal;
     color: #597B72;
-
 }
