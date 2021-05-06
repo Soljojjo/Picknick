@@ -3,28 +3,40 @@ import React, { useEffect, useState } from 'react';
 import Destinations from './Destinations';
 
 
-function MainMenu({changingDiaper,setChangingDiaper,
-parking,setParking}) {
+function MainMenu({ changingDiaper, setChangingDiaper,
+    parking, setParking,
+    wc, setWc,
+    fourH, setFourH,
+    pramFriendly, setPramFriendly,
+    elevatorRamp, setElevatorRamp,
+    picnicCompatible, setPicnicCompatible,
+    cafe, setCafe,
+    fireplace, setFireplace,
+    playground, setPlayground,
+    microwave, setMicrowave,
+    beach, setBeach,
+    trails, setTrails,
+    restaurant, setRestaurant }) {
 
     // States for all filter buttons, 'false' for buttons/filtering that is not pressed/on
     //const [changingDiaper, setChangingDiaper] = useState(false);/* */ 
-    function toggleChangingDiaper() { setChangingDiaper(value => !value); };
-     /*              */ function toggleParking() { setParking(value => !value); };
-    const [wc, setWc] = useState(false); /*                        */ const toggleWc = () => setWc(value => !value);
-    const [fourH, setFourH] = useState(false); /*                  */ const toggleFourH = () => setFourH(value => !value);
-    const [pramFriendly, setPramFriendly] = useState(false);/*     */ const togglePramFriendly = () => setPramFriendly(value => !value);
-    const [elevatorRamp, setElevatorRamp] = useState(false);/*     */ const toggleElevatorRamp = () => setElevatorRamp(value => !value);
-    const [picnicCompatible, setPicnicCompatible] = useState(false); const togglePicnicCompatible = () => setPicnicCompatible(value => !value);
-    const [cafe, setCafe] = useState(false); /*                    */ const toggleCafe = () => setCafe(value => !value);
-    const [fireplace, setFireplace] = useState(false); /*          */ const toggleFireplace = () => setFireplace(value => !value);
-    const [playground, setPlayground] = useState(false); /*        */ const togglePlayground = () => setPlayground(value => !value);
-    const [microwave, setMicrowave] = useState(false); /*          */ const toggleMicrowave = () => setMicrowave(value => !value);
-    const [beach, setBeach] = useState(false); /*                  */ const toggleBeach = () => setBeach(value => !value);
-    const [trails, setTrails] = useState(false); /*                */ const toggleTrails = () => setTrails(value => !value);
-    const [restaurant, setRestaurant] = useState(false); /*        */ const toggleRestaurant = () => setRestaurant(value => !value);
+    const toggleChangingDiaper = () => setChangingDiaper(value => !value);
+    const toggleParking = () => setParking(value => !value);
+    const toggleWc = () => setWc(value => !value);
+    const toggleFourH = () => setFourH(value => !value);
+    const togglePramFriendly = () => setPramFriendly(value => !value);
+    const toggleElevatorRamp = () => setElevatorRamp(value => !value);
+    const togglePicnicCompatible = () => setPicnicCompatible(value => !value);
+    const toggleCafe = () => setCafe(value => !value);
+    const toggleFireplace = () => setFireplace(value => !value);
+    const togglePlayground = () => setPlayground(value => !value);
+    const toggleMicrowave = () => setMicrowave(value => !value);
+    const toggleBeach = () => setBeach(value => !value);
+    const toggleTrails = () => setTrails(value => !value);
+    const toggleRestaurant = () => setRestaurant(value => !value);
 
     useEffect(() => {
-         //alert("Useeffect was called!");
+        //alert("Useeffect was called!");
     })
 
     var filterSettings = {
@@ -105,7 +117,22 @@ parking,setParking}) {
 
 export default MainMenu;
 
-
+/*
+changingDiaper, setChangingDiaper
+parking,  setParking
+wc, setWc
+fourH, setFourH
+pramFriendly, setPramFriendly
+elevatorRamp, setElevatorRamp
+picnicCompatible, setPicnicCompatible
+cafe, setCafe
+fireplace, setFireplace
+playground, setPlayground
+microwave, setMicrowave
+beach, setBeach
+trails, setTrails
+restaurant, setRestaurant
+*/
 
 
 
