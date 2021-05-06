@@ -36,7 +36,7 @@ const InfoPage = () => {
                         </div>
 
                         <div className="infoContainer2">
-                            <p>Dina val:</p>
+                            <div className="choices" >Dina val:</div>
                             {/* Adding non-pressable buttons for the filter choices that have been made */}
                             {search.match("changingDiaper") ? (<button className="button_on">Skötbord</button>) : ""}
                             {search.match("parking") ? (<button className="button_on">Parkering</button>) : ""}
@@ -55,8 +55,7 @@ const InfoPage = () => {
                         </div>
 
                         <div className="infoContainer3">
-                            <p>Också på platsen:</p>
-
+                            <div className="facilities">Också på platsen: </div>
 
                             {/* Adding non-pressable buttons for the facilities that the place has, that were NOT included in the filter requiremnts */}
                             {(place.changingDiaper && !search.match("changingDiaper")) ? <button className="button_off">Skötbord </button> : ""}
@@ -79,7 +78,7 @@ const InfoPage = () => {
                         <div className="infoContainer4">
                             <div>
 
-                                <p>{place.description}</p>
+                                <p><strong>OM UTFLYKTSMÅLET. </strong> {" " + place.description}</p>
 
                             </div>
 
@@ -93,8 +92,9 @@ const InfoPage = () => {
                         </div>
                     </li>
                 </div>
-            )}
-        </div>
+            )
+            }
+        </div >
     );
 };
 

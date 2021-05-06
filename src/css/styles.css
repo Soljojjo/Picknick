@@ -52,6 +52,14 @@ p {
     color: #597B72;
 }
 
+.choices {
+    padding-right: 10px;
+}
+
+.facilities {
+    padding-right: 10px;
+}
+
 .body_copy {
     /* From figma: */
     /* Body copy */
@@ -129,12 +137,19 @@ p {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
+
 .infoContainer3 {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    padding-left: 10px;
+    padding-bottom: 5px;
 }
+
 /*-------------------------------------------- column hantering*/
 
 /* kolla upp Icontainer3*/
@@ -160,7 +175,6 @@ p {
 
 li {
     list-style-type: none;
-    
 }
 
 /*------------------------------------------- knappar/ länkar hantering */
@@ -260,7 +274,7 @@ li {
     font-weight: normal;
     color: #FFFCF8;
     background-color: #8bafa9;
-    margin: 6px;
+    margin: 0px;
     text-align: right;
     border: none;
     border-radius: 20px;
@@ -270,6 +284,7 @@ li {
     padding-right: 10px;
     vertical-align: middle;
     margin-top: 6px;
+    margin-right: 10px;
 }
 
 .button_off {
@@ -278,7 +293,7 @@ li {
     font-weight: normal;
     color: #597B72;
     background-color: #DCE6E3;
-    margin: 6px;
+    margin: 0px;
     text-align: right;
     border: none;
     border-radius: 20px;
@@ -288,6 +303,7 @@ li {
     padding-right: 10px;
     vertical-align: middle;
     margin-top: 6px;
+    margin-right: 10px;
 }
 
 .infobutton {
