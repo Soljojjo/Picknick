@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 // import { Route, BrowserRouter as Router, Switch, Link, useParams } from "react-router-dom";
 import Destinations from './Destinations';
 
-
-function MainMenu({ changingDiaper, setChangingDiaper,
+function MainMenu({
+    changingDiaper, setChangingDiaper,
     parking, setParking,
     wc, setWc,
     fourH, setFourH,
@@ -18,8 +18,7 @@ function MainMenu({ changingDiaper, setChangingDiaper,
     trails, setTrails,
     restaurant, setRestaurant }) {
 
-    // States for all filter buttons, 'false' for buttons/filtering that is not pressed/on
-    //const [changingDiaper, setChangingDiaper] = useState(false);/* */ 
+    // Toggle functions for the filters
     const toggleChangingDiaper = () => setChangingDiaper(value => !value);
     const toggleParking = () => setParking(value => !value);
     const toggleWc = () => setWc(value => !value);
