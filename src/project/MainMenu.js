@@ -81,7 +81,7 @@ function MainMenu({
 
                     <h2>Utflyktsmål i Stockholm:</h2>
 
-                    <p className="body_copy_filter">Filtrera med populära taggar:</p>
+                    <p className="body_copy_filter">Sök med filter:</p>
                     <div className="buttons">
                         <button className={changingDiaper ? "button_on" : "button_off"} onClick={toggleChangingDiaper}>  skötbord </button>
                         <button className={parking ? "button_on" : "button_off"} onClick={toggleParking}> parkering </button>

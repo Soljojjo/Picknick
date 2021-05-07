@@ -37,30 +37,53 @@ h2 {
 h3 {
     /* From figma: */
     /* heading 3 */
-    font-family: Cabin;
-    font-style: normal;
+    font-family: 'Cabin';
+    font-style: bold;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    color: #000000;
+    font-size: 16px;
     letter-spacing: 2%;
+    color: #597B72;
 }
 
 p {
-    font-family: 'Cabin';
+    
     padding-left: 10px;
     padding-right: 10px;
+    font-size: 16px;
+    font-family: 'Cabin';
+    font-weight: normal;
+    line-height: 136%;
     color: #597B72;
+}
+
+.p-strong{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    font-family: 'Cabin';
+    font-weight: bold;
+    line-height: 136%;
+    color: #597B72;
+
 }
 
 .choices {
     padding-right: 10px;
     padding-bottom: 2px;
+    font-size: 16px;
+    font-family: 'Cabin';
+    font-weight: bold;
+    color: #597B72;
 }
 
 .facilities {
     padding-right: 10px;
     padding-bottom: 2px;
+    color: #597B72;
+    font-family: 'Cabin';
+    font-weight: bold;
+    line-height: 130%;
+    font-size: 16px;
 }
 
 .body_copy {
@@ -144,6 +167,10 @@ p {
     padding-top: 15px;
     padding-left: 10px;
     padding-bottom: 7px;
+    font-size: 14px;
+    font-family: 'Cabin';
+    font-weight: normal;
+    color: #597B72;
 }
 
 .infoContainer3 {
