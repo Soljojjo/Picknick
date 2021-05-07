@@ -23,7 +23,7 @@ h1 {
 
 h2 {
     /* H2 Heading 2 */
-    font-family: Cabin;
+    font-family: 'Cabin';
     text-align: left;
     font-style: normal;
     font-weight: bold;
@@ -47,6 +47,7 @@ h3 {
 }
 
 p {
+    font-family: 'Cabin';
     padding-left: 10px;
     padding-right: 10px;
     color: #597B72;
