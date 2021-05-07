@@ -329,12 +329,14 @@ li {
     color: #597B72;
     border: none;
     margin: 0;
+    margin-top: 6px;
     padding: 0;
     cursor: pointer;
     padding-left: 7px;
     font-size: 15px;
     font-family: 'Cabin';
     font-weight: normal;
+    vertical-align: middle;
 }
 
 .filtertext-middle {
