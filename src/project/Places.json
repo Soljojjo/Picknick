@@ -1,6 +1,8 @@
 [
     {
         "id": 1,
+        "dateAdded": "2021-04-19T15:00:00.000Z",
+        "popularity": 500,
         "name": "Bergianska trädgården",
         "activities": "Promenader, växter, picknick, fika",
         "smallDescription": "Blommor, blommor, blommor! \nFik och plats för utelek.",
@@ -28,6 +30,8 @@
     },
     {
         "id": 2,
+        "dateAdded": "2021-04-20T15:00:00.000Z",
+        "popularity": 400,
         "name": "Birka",
         "activities": "Fornlämningar, djur, båttur, museum, Bad",
         "smallDescription": "Sveriges första stad i Mälaren. \nGoda kommunikationer med båt.",
@@ -55,6 +59,8 @@
     },
     {
         "id": 3,
+        "dateAdded": "2021-04-19T14:50:50.500Z",
+        "popularity": 600,
         "name": "Hellasgården",
         "activities": "Minigolf, fiske, bad, motionsspår, pulka, skridskoåkning, paddla, vandra mm.",
         "smallDescription": "Friluftsgård med omklädnings-\nrum, bastu och servering.",
