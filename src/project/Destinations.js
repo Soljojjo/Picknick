@@ -1,14 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
 //import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import Places from './Places.json';
 
+
+
 function Destinations(props) {
+
+    var myHits = 0;
+
+
 
     //Ändra namn på menu och menu__link
     // för varje utflyckts mål i json filen skapas en ny länk med bild och info från samma jsonfil
     return (
         <div className="menu">
+
+            <div>
+                {Places.filter(place => (
+
+                    (!props.filterSettings.changingDiaper || place.changingDiaper) &&
+                    (!props.filterSettings.parking || place.parking) &&
+                    (!props.filterSettings.wc || place.wc) &&
+                    (!props.filterSettings.fourH || place.fourH) &&
+                    (!props.filterSettings.pramFriendly || place.pramFriendly) &&
+                    (!props.filterSettings.elevatorRamp || place.elevatorRamp) &&
+                    (!props.filterSettings.picnicCompatible || place.picnicCompatible) &&
+                    (!props.filterSettings.cafe || place.cafe) &&
+                    (!props.filterSettings.fireplace || place.fireplace) &&
+                    (!props.filterSettings.playground || place.playground) &&
+                    (!props.filterSettings.microwave || place.microwave) &&
+                    (!props.filterSettings.beach || place.beach) &&
+                    (!props.filterSettings.trails || place.trails) &&
+                    (!props.filterSettings.restaurant || place.restaurant))).map(place =>
+                        <div>
+                            {(myHits++ ? "" : "") /* TODO: clean-up */}
+                        </div>)
+                }
+            </div>
+            <div className="container3">
+                <p className="sort_and_hits"> Träffar: {myHits}</p>
+            </div>
             <div>
                 {Places.filter(place => (
 
@@ -51,11 +83,11 @@ function Destinations(props) {
                                 <div className="row">
                                     <div className="column">
                                         <span className="mycard">
-                                            <img className="minipicture" alt={place.name} src={"./places/" + place.card} width="64" height="57" />
+                                            <img className="minipicture" alt={place.name} src={"./places/" + place.card} />
                                         </span>
                                     </div>
                                     <div className="column">
-                                        <span className="align-middle"><strong>{place.name}</strong> <br></br>{place.smallDescription}</span>
+                                        <div className="align-middle"><strong>{place.name}</strong> <br></br>{place.smallDescription}</div>
                                     </div>
                                 </div>
                             </Link >

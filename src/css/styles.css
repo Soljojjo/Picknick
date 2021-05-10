@@ -46,7 +46,6 @@ h3 {
 }
 
 p {
-    
     padding-left: 10px;
     padding-right: 10px;
     font-size: 16px;
@@ -56,7 +55,7 @@ p {
     color: #597B72;
 }
 
-.p-strong{
+.p-strong {
     padding-left: 10px;
     padding-right: 10px;
     font-size: 16px;
@@ -64,7 +63,6 @@ p {
     font-weight: bold;
     line-height: 136%;
     color: #597B72;
-
 }
 
 .choices {
@@ -102,7 +100,7 @@ p {
     /* identical to box height, or 21px */
 }
 
-.body_copy_filter {
+.filter_heading {
     /* From figma: */
     /* Body copy */
     font-family: 'Cabin';
@@ -116,6 +114,19 @@ p {
     color: #597B72;
     margin-bottom: 5px;
     /* identical to box height, or 21px */
+}
+
+.sort-and-hits {
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    /* Adjusted from 16 in figma */
+    line-height: 130%;
+    padding-left: 0px;
+    padding-top: 0px;
+    color: #597B72;
+    margin-bottom: 5px;
 }
 
 .header {
@@ -142,6 +153,13 @@ p {
 
 .minipicture {
     border-radius: 20%;
+    width: 100px;
+    height: 89px;
+}
+
+.align-middle {
+    padding-top: 15px;
+    /* TODO: perhaps solve with some flex center thing, or something?*/
 }
 
 .infopicture {
@@ -282,7 +300,16 @@ li {
     /*padding-top: 2px;     
     padding-left: 33px;
     padding-right: 6px;*/
-    padding-bottom: 20px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+}
+
+.sort-and-hits {
+    margin: 1px;
+    /*padding-top: 2px;     
+    padding-left: 33px;
+    padding-right: 6px;*/
+    padding-bottom: 10px;
     padding-left: 10px;
 }
 
