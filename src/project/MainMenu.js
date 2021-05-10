@@ -91,7 +91,7 @@ function MainMenu({
                         <button className={elevatorRamp ? "button_on" : "button_off"} onClick={toggleElevatorRamp}> hiss/ramp</button>
                         <button className={picnicCompatible ? "button_on" : "button_off"} onClick={togglePicnicCompatible}> picknickområde</button>
 
-                        {!showMore ? <button className='showMoreButton' onClick={() => setShowMore(true)}>+ fler taggar</button> : null}
+                        {!showMore ? <button className='showMoreButton' onClick={() => setShowMore(true)}>+ visa fler</button> : null}
 
                         {showMore ?
                             <div>
@@ -103,7 +103,7 @@ function MainMenu({
                                 <button className={beach ? "button_on" : "button_off"} onClick={toggleBeach}> badplats</button>
                                 <button className={trails ? "button_on" : "button_off"} onClick={toggleTrails}> promenadstigar</button>
                                 <button className={restaurant ? "button_on" : "button_off"} onClick={toggleRestaurant}> restaurang</button>
-                                {showMore ? <button className='showMoreButton' onClick={() => setShowMore(false)}>visa färre</button> : null}
+                                {showMore ? <button className='showMoreButton' onClick={() => setShowMore(false)}>- visa färre</button> : null}
                             </div>
                             : null}
                     </div>
