@@ -42,6 +42,8 @@ function MainMenu({
         //alert("Useeffect was called!");
     })
 
+    var sortSetting = ""; // alphabetical or popularity or dateAdded
+
     var filterSettings = {
         'changingDiaper': changingDiaper,
         'parking': parking,
@@ -124,7 +126,7 @@ function MainMenu({
 
                 <div className="container3">
 
-                    <Destinations filterSettings={filterSettings} />
+                    <Destinations sortSetting={sortSetting} filterSettings={filterSettings} />
 
                 </div>
                 <div className="footer">
