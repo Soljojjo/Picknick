@@ -84,19 +84,8 @@ function MainMenu({
                 <div className="container2">
 
                     <h2>Utflyktsmål i Stockholm:</h2>
-                    
-                        <Dropdown>
-                            <Dropdown.Toggle variant="success" id="dropdown-basic">
-                                Senast tillagda
-                            </Dropdown.Toggle>
-                            <Dropdown.Menu>
-                                <Dropdown.Item href="#/action-1">Populära</Dropdown.Item>
-                                <Dropdown.Item href="#/action-2">Senast tillagda</Dropdown.Item>
-                                <Dropdown.Item href="#/action-3">A-Ö</Dropdown.Item>
-                            </Dropdown.Menu>
-                        </Dropdown>
 
-                   <p className="filter_heading">Filtrera:</p>
+                    <p className="filter_heading">Filtrera:</p>
                     <div className="buttons">
                         <button className={changingDiaper ? "button_on" : "button_off"} onClick={toggleChangingDiaper}>  skötbord </button>
                         <button className={parking ? "button_on" : "button_off"} onClick={toggleParking}> parkering </button>
@@ -122,10 +111,21 @@ function MainMenu({
                             </div>
                             : null}
                     </div>
+
+
                 </div>
 
                 <div className="container3">
-
+                    <Dropdown>
+                        <Dropdown.Toggle variant="success" id="dropdown-basic">
+                            Utflykter sorteras efter
+                            </Dropdown.Toggle>
+                        <Dropdown.Menu>
+                            <Dropdown.Item href="#/action-1">Populära</Dropdown.Item>
+                            <Dropdown.Item href="#/action-2">Senast tillagda</Dropdown.Item>
+                            <Dropdown.Item href="#/action-3">A-Ö</Dropdown.Item>
+                        </Dropdown.Menu>
+                    </Dropdown>
                     <Destinations sortSetting={sortSetting} filterSettings={filterSettings} />
 
                 </div>
