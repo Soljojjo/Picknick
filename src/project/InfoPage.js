@@ -37,7 +37,7 @@ const InfoPage = () => {
 
                         <div className="infoContainer2">
                             <div className="choices" >Dina val:</div>
-                            {/* Adding non-pressable buttons for the filter choices that have been made */}
+                            {/* Adding non-klickable buttons for the filter choices that have been made */}
                             {search.match("changingDiaper") ? (<button className="button_on">skötbord</button>) : ""}
                             {search.match("parking") ? (<button className="button_on">parkering</button>) : ""}
                             {search.match("wc") ? (<button className="button_on">WC</button>) : ""}
@@ -57,7 +57,7 @@ const InfoPage = () => {
                         <div className="infoContainer3">
                             <div className="facilities">Också på platsen: </div>
 
-                            {/* Adding non-pressable buttons for the facilities that the place has, that were NOT included in the filter requiremnts */}
+                            {/* Adding non-klickable buttons for the facilities that the place has, that were NOT included in the filter requiremnts */}
                             {(place.changingDiaper && !search.match("changingDiaper")) ? <button className="button_off">skötbord </button> : ""}
                             {(place.parking && !search.match("parking")) ? <button className="button_off">parkering </button> : ""}
                             {(place.wc && !search.match("wc")) ? <button className="button_off">WC </button> : ""}
