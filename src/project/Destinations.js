@@ -27,7 +27,8 @@ function Destinations(props) {
         (!props.filterSettings.trails || place.trails) &&
         (!props.filterSettings.restaurant || place.restaurant))).map(place => nrOfMatchingPlaces++);
 
-    if (props.sortSetting.match("alphabetical"))
+    /* Sort the Places according to the sortSetting */
+    if (props.sortSetting.match("alphabetical")) {
         Places.sort(function (placeA, placeB) {
             var lowerCaseA = placeA.name.toLowerCase();
             var lowerCaseB = placeB.name.toLowerCase();
@@ -35,20 +36,17 @@ function Destinations(props) {
             if (lowerCaseA > lowerCaseB) { return 1; }
             return 0;
         });
-
-    else if (props.sortSetting.match("popularity"))
-        Places.sort(function (a, b) { return b.popularity - a.popularity });
-
-
-    else if (props.sortSetting.match("dateAdded"))
-        Places.sort(function (a, b) {
-            var x = a.dateAdded.toLowerCase();
-            var y = b.dateAdded.toLowerCase();
-            if (x < y) { return -1; }
-            if (x > y) { return 1; }
+    }
+    else if (props.sortSetting.match("popularity")) {
+        Places.sort(function (a, b) { return b.popularity - a.popularity }); // Highest popularity first
+    }
+    else if (props.sortSetting.match("dateAdded")) {
+        Places.sort(function (placeA, placeB) { // Newest dateAdded first
+            if (placeA.dateAdded > placeB.dateAdded) { return -1; }
+            if (placeA.dateAdded < placeB.dateAdded) { return 1; }
             return 0;
         });
-
+    }
 
     return (
         <div className="menu">
