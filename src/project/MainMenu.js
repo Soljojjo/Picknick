@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 // import { Route, BrowserRouter as Router, Switch, Link, useParams } from "react-router-dom";
 import Destinations from './Destinations';
+import 'bootstrap/dist/css/bootstrap.css';
+import Dropdown from 'react-bootstrap/Dropdown';
 
 function MainMenu({
     changingDiaper, setChangingDiaper,
@@ -80,8 +82,19 @@ function MainMenu({
                 <div className="container2">
 
                     <h2>Utflyktsmål i Stockholm:</h2>
+                    
+                        <Dropdown>
+                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                Senast tillagda
+                            </Dropdown.Toggle>
+                            <Dropdown.Menu>
+                                <Dropdown.Item href="#/action-1">Populära</Dropdown.Item>
+                                <Dropdown.Item href="#/action-2">Senast tillagda</Dropdown.Item>
+                                <Dropdown.Item href="#/action-3">A-Ö</Dropdown.Item>
+                            </Dropdown.Menu>
+                        </Dropdown>
 
-                    <p className="filter_heading">Filtrera med populära taggar:</p>
+                   <p className="filter_heading">Filtrera:</p>
                     <div className="buttons">
                         <button className={changingDiaper ? "button_on" : "button_off"} onClick={toggleChangingDiaper}>  skötbord </button>
                         <button className={parking ? "button_on" : "button_off"} onClick={toggleParking}> parkering </button>
