@@ -116,6 +116,32 @@ p {
     /* identical to box height, or 21px */
 }
 
+#dropdown-basic{
+    font-family: Cabin;
+    background-color: #FFF;
+    border: none;
+    color: #597B72;
+    float: left;
+
+}
+
+#dropdown-basic:focus{
+    font-family: Cabin;
+    background-color: #FFF;
+    border: none;
+    color: #597B72;
+    padding-left: 0px;
+    outline: none;
+    border-style: none;
+   
+
+}
+
+a.dropdown-item{
+    color: #597B72;
+    font-family:Cabin;
+}
+
 .sort-and-hits {
     font-family: 'Cabin';
     font-style: normal;
@@ -127,6 +153,9 @@ p {
     padding-top: 0px;
     color: #597B72;
     margin-bottom: 5px;
+    display: inline;
+    float: right;
+    align-items: flex-end;
 }
 
 .header {
