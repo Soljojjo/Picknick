@@ -1,5 +1,6 @@
 body {
     background-color: #FEF8EF;
+    
 }
 
 /* -----------------------------Text hantering*/
@@ -53,6 +54,7 @@ p {
     font-weight: normal;
     line-height: 136%;
     color: #597B72;
+    display: inline;
 }
 
 .p-strong {
@@ -148,15 +150,21 @@ a.dropdown-item{
     font-weight: normal;
     font-size: 16px;
     /* Adjusted from 16 in figma */
-    line-height: 130%;
-    padding-left: 0px;
-    padding-top: 0px;
+    line-height: 136%;
     color: #597B72;
-    margin-bottom: 5px;
+    margin: 1px;
+    margin-bottom: 100px;
+    padding: 6px 12px;
     display: inline;
-    float: right;
     align-items: flex-end;
-}
+     
+    /*padding-top: 2px;     
+    padding-left: 33px;
+    padding-right: 6px;*/
+    
+}      
+    
+    
 
 .header {
     height: 20px;
@@ -222,6 +230,7 @@ a.dropdown-item{
 
 .infoContainer3 {
     display: flex;
+    display:inline;
     flex-flow: row wrap;
     align-items: center;
     padding-left: 10px;
@@ -333,14 +342,7 @@ li {
     padding-left: 10px;
 }
 
-.sort-and-hits {
-    margin: 1px;
-    /*padding-top: 2px;     
-    padding-left: 33px;
-    padding-right: 6px;*/
-    padding-bottom: 10px;
-    padding-left: 10px;
-}
+
 
 .buttons {
     margin: 0px;
