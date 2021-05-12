@@ -144,19 +144,20 @@ a.dropdown-item{
     font-family:Cabin;
 }
 
-.sort-and-hits {
+p.sort_and_hits {
     font-family: 'Cabin';
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     /* Adjusted from 16 in figma */
     line-height: 136%;
+    text-align: center;
+    vertical-align: middle;
     color: #597B72;
-    margin: 1px;
-    margin-bottom: 100px;
     padding: 6px 12px;
     display: inline;
     align-items: flex-end;
+    margin: 0px;
      
     /*padding-top: 2px;     
     padding-left: 33px;
