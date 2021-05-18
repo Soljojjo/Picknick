@@ -1,6 +1,5 @@
 body {
     background-color: #FEF8EF;
-    
 }
 
 /* -----------------------------Text hantering*/
@@ -47,8 +46,8 @@ h3 {
 }
 
 p {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
     font-size: 16px;
     font-family: 'Cabin';
     font-weight: normal;
@@ -68,7 +67,8 @@ p {
 }
 
 .choices {
-    padding-right: 10px;
+    padding-top: 7px;
+    padding-right: 8px;
     padding-bottom: 2px;
     font-size: 16px;
     font-family: 'Cabin';
@@ -77,7 +77,8 @@ p {
 }
 
 .facilities {
-    padding-right: 10px;
+    padding-top: 7px;
+    padding-right: 8px;
     padding-bottom: 2px;
     color: #597B72;
     font-family: 'Cabin';
@@ -118,7 +119,7 @@ p {
     /* identical to box height, or 21px */
 }
 
-#dropdown-basic{
+#dropdown-basic {
     font-family: Cabin;
     background-color: #FFF;
     background: none;
@@ -129,23 +130,20 @@ p {
     border: none;
     color: #597B72;
     float: left;
-    
 }
 
-#dropdown-basic:focus{
+#dropdown-basic:focus {
     font-family: Cabin;
     background-color: #FFF;
     border: none;
     color: #597B72;
     outline: none;
     border-style: none;
-   
-
 }
 
-a.dropdown-item{
+a.dropdown-item {
     color: #597B72;
-    font-family:Cabin;
+    font-family: Cabin;
 }
 
 .sort_and_hits {
@@ -158,20 +156,16 @@ a.dropdown-item{
     text-align: center;
     vertical-align: middle;
     color: #597B72;
-    padding-top: 10px; 
+    padding-top: 10px;
     padding-bottom: 0px;
     margin: 20px;
     display: inline;
     align-items: flex-end;
     margin: 0px;
-     
     /*padding-top: 2px;     
     padding-left: 33px;
     padding-right: 6px;*/
-    
-}      
-    
-    
+}
 
 .header {
     height: 20px;
@@ -196,13 +190,15 @@ a.dropdown-item{
 }
 
 .minipicture {
-    border-radius: 20%;
-    width: 100px;
-    height: 89px;
+    border-radius: 6%;
+    width: 90px;
+    height: 83px;
+    padding-left: 0px;
 }
 
-.align-middle {
+.shortdescription {
     padding-top: 15px;
+    color: #597B72;
     /* TODO: perhaps solve with some flex center thing, or something?*/
 }
 
@@ -218,11 +214,7 @@ a.dropdown-item{
     background-size: 100%;
 }
 
-.infoContainer {
-    padding-bottom: 0px;
-}
-
-.infoContainer2 {
+.container2 {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -235,7 +227,47 @@ a.dropdown-item{
     color: #597B72;
 }
 
-.infoContainer3 {
+.infocontainer {
+    padding-bottom: 0px;
+}
+
+.infocontainer2 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-bottom: 7px;
+    font-size: 14px;
+    font-family: 'Cabin';
+    font-weight: normal;
+    color: #597B72;
+}
+
+.infocontainer3 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: left;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+/* NEW::after
+
+.infocontainer3 {
+    display: flex;
+    display: inline;
+    flex-flow: row wrap;
+    align-items: left;
+    padding-left: 70px;
+    padding-bottom: 5px;
+}
+
+
+
+Old::after}
+
+.infocontainer3 {
     display: flex;
     display:inline;
     flex-flow: row wrap;
@@ -243,6 +275,7 @@ a.dropdown-item{
     padding-left: 10px;
     padding-bottom: 5px;
 }
+*/
 
 /*-------------------------------------------- column hantering*/
 
@@ -250,6 +283,7 @@ a.dropdown-item{
 
 .infocontainer4 {
     padding-right: 10px;
+    padding-left: 10px;
 }
 
 .center-column {
@@ -262,6 +296,7 @@ a.dropdown-item{
     text-align: center;
     height: 50px;
     padding-top: 10px;
+    padding-bottom: 10px;
     box-sizing: border-box;
 }
 
@@ -287,7 +322,6 @@ li {
     font-family: 'Cabin';
     font-weight: medium;
     font-size: 16px;
-    text-decoration: none;
     display: inline;
     padding-left: 10px;
     padding-top: 0px;
@@ -316,14 +350,15 @@ li {
 .mycard {
     border-radius: 1px;
     border: 2px;
-    color: blue
+    color: #597B72;
 }
 
 /* .column & .row from https://www.w3schools.com/howto/howto_css_two_columns.asp */
 
 .column {
     float: left;
-    padding-right: 11px;
+    padding-right: 0px;
+    padding-left: 15px;
     max-width: 270px;
 }
 
@@ -340,16 +375,11 @@ li {
     clear: both;
 }
 
-.container2 {
-    margin: 1px;
-    /*padding-top: 2px;     
-    padding-left: 33px;
-    padding-right: 6px;*/
+.container3 {
+    margin: 0px;
     padding-bottom: 0px;
-    padding-left: 10px;
+    padding-left: 0px;
 }
-
-
 
 .buttons {
     margin: 0px;
@@ -447,6 +477,7 @@ li {
 .button:hover {
     margin: 4px;
     color: black;
+    text-decoration: none;
     /*width: 0.9em;
     height: 0.9em;
     margin-right: 0.5em;*/
@@ -465,7 +496,7 @@ li {
 }
 
 .button-icon {
-    color: blue;
+    color: orange;
     text-align: right;
     border: none;
     cursor: pointer;
