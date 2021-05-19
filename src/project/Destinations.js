@@ -99,7 +99,7 @@ function Destinations(props) {
                                             </span>
                                         </div>
                                         <div className="column">
-                                            <div className="align-middle"><strong>{place.name}</strong> <br></br>{place.smallDescription}</div>
+                                            <div className="shortdescription"><strong>{place.name}</strong> <br></br>{place.smallDescription}</div>
                                         </div>
                                     </div>
                                 </Link >

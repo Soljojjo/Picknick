@@ -22,12 +22,12 @@ const InfoPage = () => {
             {Places.filter((place) => place.id === parseInt(id)).map(place =>
                 <div>
                     <li key={place.id.toString()}>
-                        <div className="infoContainer">
+                        <div className="infocontainer">
                             <div>{/* från json filen filtreras info där id i jsonfilen = id från Url
                                  map tar all info och lägger i place, namnet hämtas från place.
                                  samma sak görs för bilden och beskrivning i nästa div */}
 
-                                <h1>{place.name}</h1>
+                                <h1 style={{ paddingLeft: "10px" }}>{place.name}</h1>
 
                             </div>
                             <div>
@@ -35,7 +35,7 @@ const InfoPage = () => {
                             </div>
                         </div>
 
-                        <div className="infoContainer2">
+                        <div className="infocontainer2">
                             <div className="choices" >Dina val:</div>
                             {/* Adding non-klickable buttons for the filter choices that have been made */}
                             {search.match("changingDiaper") ? (<button className="button_on">skötbord</button>) : ""}
@@ -54,9 +54,10 @@ const InfoPage = () => {
                             {search.match("restaurant") ? (<button className="button_on">restaurang</button>) : ""}
                         </div>
 
-                        <div className="infoContainer3">
-                            <div className="facilities">Också på platsen: </div>
-
+                        <div className="infocontainer3">
+                            <div className="facilities">
+                                Också på platsen:
+                            </div>
                             {/* Adding non-klickable buttons for the facilities that the place has, that were NOT included in the filter requiremnts */}
                             {(place.changingDiaper && !search.match("changingDiaper")) ? <button className="button_off">skötbord </button> : ""}
                             {(place.parking && !search.match("parking")) ? <button className="button_off">parkering </button> : ""}
@@ -75,7 +76,7 @@ const InfoPage = () => {
 
                         </div>
 
-                        <div className="infoContainer4">
+                        <div className="infocontainer4">
                             <div>
 
                                 <p><strong>OM UTFLYKTSMÅLET. </strong> {" " + place.description}</p>
