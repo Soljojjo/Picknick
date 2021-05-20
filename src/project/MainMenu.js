@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 // import { Route, BrowserRouter as Router, Switch, Link, useParams } from "react-router-dom";
 import Destinations from './Destinations';
-import 'bootstrap/dist/css/bootstrap.css';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 
