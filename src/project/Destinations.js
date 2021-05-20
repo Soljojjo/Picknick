@@ -28,7 +28,7 @@ function Destinations(props) {
         (!props.filterSettings.restaurant || place.restaurant))).map(place => nrOfMatchingPlaces++);
 
     /* Sort the Places according to the sortSetting */
-    if (props.sortSetting.match("alphabetical")) {
+    if (props.sortSetting.match("A-Ö")) {
         Places.sort(function (placeA, placeB) {
             var lowerCaseA = placeA.name.toLowerCase();
             var lowerCaseB = placeB.name.toLowerCase();
@@ -37,10 +37,10 @@ function Destinations(props) {
             return 0;
         });
     }
-    else if (props.sortSetting.match("popularity")) {
+    else if (props.sortSetting.match("Populära")) {
         Places.sort(function (a, b) { return b.popularity - a.popularity }); // Highest popularity first
     }
-    else if (props.sortSetting.match("dateAdded")) {
+    else if (props.sortSetting.match("Senast tillagda")) {
         Places.sort(function (placeA, placeB) { // Newest dateAdded first
             if (placeA.dateAdded > placeB.dateAdded) { return -1; }
             if (placeA.dateAdded < placeB.dateAdded) { return 1; }
