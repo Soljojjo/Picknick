@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import Destinations from './Destinations';
 import 'bootstrap/dist/css/bootstrap.css';
 import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
 
 function MainMenu({
     changingDiaper, setChangingDiaper,
@@ -21,7 +22,11 @@ function MainMenu({
     restaurant, setRestaurant }) {
 
     const [showMore, setShowMore] = useState(false);
-
+    const [sortSetting, setSortSetting] = useState('');
+    const handleSelect = (e) => {
+        console.log(e);
+        setSortSetting(e)
+    }
     // Toggle functions for the filters
     const toggleChangingDiaper = () => setChangingDiaper(value => !value);
     const toggleParking = () => setParking(value => !value);
@@ -42,7 +47,7 @@ function MainMenu({
         //alert("Useeffect was called!");
     })
 
-    var sortSetting = ""; // alphabetical or popularity or dateAdded
+    // var sortSetting = ""; // alphabetical or popularity or dateAdded
 
     var filterSettings = {
         'changingDiaper': changingDiaper,
@@ -116,16 +121,18 @@ function MainMenu({
                 </div>
 
                 <div className="container3">
-                    <Dropdown>
-                        <Dropdown.Toggle variant="success" id="dropdown-basic">
-                            Utflykter sorteras efter
-                            </Dropdown.Toggle>
-                        <Dropdown.Menu>
-                            <Dropdown.Item href="#/action-1">Populära</Dropdown.Item>
-                            <Dropdown.Item href="#/action-2">Senast tillagda</Dropdown.Item>
-                            <Dropdown.Item href="#/action-3">A-Ö</Dropdown.Item>
-                        </Dropdown.Menu>
-                    </Dropdown>
+                    {/* "sortSetting = " + sortSetting */}
+                    <DropdownButton
+                        alignRight
+                        title="Utflykter sorteras efter"
+                        id="dropdown-basic"
+                        onSelect={handleSelect}
+                    >
+                        <Dropdown.Item eventKey="popularity"> Populära</Dropdown.Item>
+                        <Dropdown.Item eventKey="dateAdded"> Senast tillagda</Dropdown.Item>
+                        <Dropdown.Item eventKey="alphabetical">  A-Ö</Dropdown.Item>
+                    </DropdownButton>
+
                     <Destinations sortSetting={sortSetting} filterSettings={filterSettings} />
 
                 </div>
@@ -136,7 +143,7 @@ function MainMenu({
             </div>
             <div className="right">
             </div>
-        </div>
+        </div >
     );
 };
 
