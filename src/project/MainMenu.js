@@ -22,7 +22,8 @@ function MainMenu({
     restaurant, setRestaurant }) {
 
     const [showMore, setShowMore] = useState(false);
-    const [sortSetting, setSortSetting] = useState('');
+
+    const [sortSetting, setSortSetting] = useState('popularity');
     const handleSelect = (e) => {
         console.log(e);
         setSortSetting(e)
@@ -128,9 +129,9 @@ function MainMenu({
                         id="dropdown-basic"
                         onSelect={handleSelect}
                     >
-                        <Dropdown.Item eventKey="popularity"> Populära</Dropdown.Item>
-                        <Dropdown.Item eventKey="dateAdded"> Senast tillagda</Dropdown.Item>
-                        <Dropdown.Item eventKey="alphabetical">  A-Ö</Dropdown.Item>
+                        <Dropdown.Item  eventKey="popularity"> {(sortSetting.match("popularity") ? "X " : "o ") + "Populära"} </Dropdown.Item>
+                        <Dropdown.Item eventKey="dateAdded"> {(sortSetting.match("dateAdded") ? "X " : "o ") + "Senast tillagda"} </Dropdown.Item>
+                        <Dropdown.Item eventKey="alphabetical"> {(sortSetting.match("alphabetical") ? "X " : "o ") + "A-Ö"} </Dropdown.Item>
                     </DropdownButton>
 
                     <Destinations sortSetting={sortSetting} filterSettings={filterSettings} />
