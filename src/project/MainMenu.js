@@ -125,13 +125,13 @@ function MainMenu({
                     {/* "sortSetting = " + sortSetting */}
                     <DropdownButton
                         alignRight
-                        title="Utflykter sorteras efter"
+                        title={sortSetting}
                         id="dropdown-basic"
                         onSelect={handleSelect}
                     >
-                        <Dropdown.Item  eventKey="popularity"> {(sortSetting.match("popularity") ? "X " : "o ") + "Populära"} </Dropdown.Item>
-                        <Dropdown.Item eventKey="dateAdded"> {(sortSetting.match("dateAdded") ? "X " : "o ") + "Senast tillagda"} </Dropdown.Item>
-                        <Dropdown.Item eventKey="alphabetical"> {(sortSetting.match("alphabetical") ? "X " : "o ") + "A-Ö"} </Dropdown.Item>
+                        <Dropdown.Item eventKey="Populära"> {(sortSetting.match("popularity") ? "X " : "o") + "Populära"} </Dropdown.Item>
+                        <Dropdown.Item eventKey="Senast tillagda"> {(sortSetting.match("dateAdded") ? "X " : "o ") + "Senast tillagda"} </Dropdown.Item>
+                        <Dropdown.Item eventKey="A-Ö"> {(sortSetting.match("alphabetical") ? "X " : "o ") + "A-Ö"} </Dropdown.Item>
                     </DropdownButton>
 
                     <Destinations sortSetting={sortSetting} filterSettings={filterSettings} />

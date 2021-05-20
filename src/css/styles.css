@@ -132,18 +132,24 @@ p {
     float: left;
 }
 
-#dropdown-basic:focus {
+#dropdown-basic:focus, #dropdown-basic:active {
     font-family: Cabin;
     background-color: #FFF;
     border: none;
     color: #597B72;
+    border-style: none; 
     outline: none;
-    border-style: none;
+    box-shadow: none;
+    
 }
 
 a.dropdown-item {
     color: #597B72;
     font-family: Cabin;
+}
+
+a.dropdown-item:focus{
+    background-color: blue;
 }
 
 .sort_and_hits {
