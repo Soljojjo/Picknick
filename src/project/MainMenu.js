@@ -90,7 +90,9 @@ function MainMenu({
                 <div className="container2">
 
                     <h2>Utflyktsmål i Stockholm:</h2>
+                </div>
 
+                <div className="container3">
                     <p className="filter_heading">Filtrera:</p>
                     <div className="buttons">
                         <button className={changingDiaper ? "button_on" : "button_off"} onClick={toggleChangingDiaper}>  skötbord </button>
@@ -121,7 +123,7 @@ function MainMenu({
 
                 </div>
 
-                <div className="container3">
+                <div className="container4">
                     {/* "sortSetting = " + sortSetting */}
                     <DropdownButton
                         alignRight

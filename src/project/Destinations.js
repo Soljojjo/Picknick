@@ -51,7 +51,7 @@ function Destinations(props) {
     return (
         <div className="menu">
 
-            <div className="container3">
+            <div className="container4">
                 <p className="sort_and_hits">{nrOfMatchingPlaces} utflyktsmål</p>
                 <div>
                     {Places.filter(place => (

@@ -14,7 +14,7 @@ h1 {
     font-style: normal;
     padding-left: 0px;
     padding-top: 10px;
-    padding-bottom: 0px;
+    padding-bottom: 20px;
     margin: 0 0 0 0;
     /* From Figma, identical to box height */
     /*letter-spacing: -0.003em;
@@ -54,6 +54,8 @@ p {
     line-height: 136%;
     color: #597B72;
     display: inline;
+    /* make \n work */
+    white-space: pre-wrap;
 }
 
 .p-strong {
@@ -119,10 +121,19 @@ p {
     /* identical to box height, or 21px */
 }
 
+#dropdown-menu {
+    /* background-color: #FEF8EF; */
+    background-color: red;
+}
+
+#dropdown {
+    /* background-color: #FEF8EF; */
+    background-color: blue;
+}
+
 #dropdown-basic {
     font-family: Cabin;
-    background-color: #FFF;
-    background: none;
+    background-color: #FEF8EF;
     margin: 0px;
     padding-top: 3px;
     padding-bottom: 10px;
@@ -134,23 +145,21 @@ p {
 
 #dropdown-basic:focus, #dropdown-basic:active {
     font-family: Cabin;
-    background-color: #FFF;
+    background-color: #FEF8EF;
     border: none;
     color: #597B72;
-    border-style: none; 
+    border-style: none;
     outline: none;
     box-shadow: none;
-    
 }
 
 a.dropdown-item {
     color: #597B72;
+    background-color: #FEF8EF;
     font-family: Cabin;
 }
 
-a.dropdown-item:focus{
-    background-color: blue;
-}
+a.dropdown-item:focus {}
 
 .sort_and_hits {
     font-family: 'Cabin';
@@ -221,8 +230,6 @@ a.dropdown-item:focus{
 }
 
 .container2 {
-    display: flex;
-    flex-flow: row wrap;
     align-items: center;
     padding-top: 15px;
     padding-left: 10px;
@@ -231,6 +238,25 @@ a.dropdown-item:focus{
     font-family: 'Cabin';
     font-weight: normal;
     color: #597B72;
+}
+
+.container3 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-bottom: 7px;
+    font-size: 14px;
+    font-family: 'Cabin';
+    font-weight: normal;
+    color: #597B72;
+}
+
+.container4 {
+    margin: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
 }
 
 .infocontainer {
@@ -379,12 +405,6 @@ li {
     content: "";
     display: table;
     clear: both;
-}
-
-.container3 {
-    margin: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
 }
 
 .buttons {
