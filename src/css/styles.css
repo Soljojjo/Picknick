@@ -159,7 +159,7 @@ a.dropdown-item {
     font-family: Cabin;
 }
 
-a.dropdown-item:focus {}
+/* a.dropdown-item:focus {} */
 
 .sort_and_hits {
     font-family: 'Cabin';
