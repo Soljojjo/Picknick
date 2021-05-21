@@ -99,14 +99,13 @@ function MainMenu({
                         <button className={wc ? "button_on" : "button_off"} onClick={toggleWc}> WC</button>
                         <button className={fourH ? "button_on" : "button_off"} onClick={toggleFourH}>4H-gård</button>
                         <button className={pramFriendly ? "button_on" : "button_off"} onClick={togglePramFriendly}> barnvagnsvänligt</button>
-                        <button className={elevatorRamp ? "button_on" : "button_off"} onClick={toggleElevatorRamp}> hiss/ramp</button>
                         <button className={picnicCompatible ? "button_on" : "button_off"} onClick={togglePicnicCompatible}> picknickområde</button>
 
                         {!showMore ? <button className='showMoreButton' onClick={() => setShowMore(true)}>+ visa fler</button> : null}
 
                         {showMore ?
                             <div>
-
+                                <button className={elevatorRamp ? "button_on" : "button_off"} onClick={toggleElevatorRamp}> hiss/ramp</button>
                                 <button className={cafe ? "button_on" : "button_off"} onClick={toggleCafe}> kiosk/café</button>
                                 <button className={fireplace ? "button_on" : "button_off"} onClick={toggleFireplace}> grillplats</button>
                                 <button className={playground ? "button_on" : "button_off"} onClick={togglePlayground}> lekplats</button>
@@ -130,9 +129,10 @@ function MainMenu({
                         id="dropdown-basic"
                         onSelect={handleSelect}
                     >
-                        <Dropdown.Item eventKey="Populära">Populära</Dropdown.Item>
-                        <Dropdown.Item eventKey="Senast tillagda"> Senast tillagda </Dropdown.Item>
-                        <Dropdown.Item eventKey="A-Ö"> A-Ö </Dropdown.Item>
+                        <Dropdown.Item eventKey="Populära"><img className="radio" src={"./icons/radio" + (sortSetting.match("Populära") ? "on" : "off") + ".png"} height="15px" />   Populära</Dropdown.Item>
+                        <Dropdown.Item eventKey="Senast tillagda"><img className="radio" src={"./icons/radio" + (sortSetting.match("Senast tillagda") ? "on" : "off") + ".png"} height="15px" /> Senast tillagda </Dropdown.Item>
+                        <Dropdown.Item eventKey="A-Ö"><img className="radio" src={"./icons/radio_" + (sortSetting.match("A-Ö") ? "on" : "off") + ".png"} height="15px" /> A-Ö </Dropdown.Item>
+
                     </DropdownButton>
 
                     {/*(sortSetting.match("popularity") ? "X " : "o") + "Populära"*/}

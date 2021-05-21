@@ -41,7 +41,7 @@ const InfoPage = () => {
                             {search.match("changingDiaper") ? (<button className="button_on">skötbord</button>) : ""}
                             {search.match("parking") ? (<button className="button_on">parkering</button>) : ""}
                             {search.match("wc") ? (<button className="button_on">WC</button>) : ""}
-                            {search.match("fourH") ? (<button className="button_on">4h-gård</button>) : ""}
+                            {search.match("fourH") ? (<button className="button_on">4H-gård</button>) : ""}
                             {search.match("pramFriendly") ? (<button className="button_on">barnvagnsvänligt</button>) : ""}
                             {search.match("cafe") ? (<button className="button_on">kiosk/café </button>) : ""}
                             {search.match("fireplace") ? (<button className="button_on">grillplats </button>) : ""}
@@ -62,7 +62,7 @@ const InfoPage = () => {
                             {(place.changingDiaper && !search.match("changingDiaper")) ? <button className="button_off">skötbord </button> : ""}
                             {(place.parking && !search.match("parking")) ? <button className="button_off">parkering </button> : ""}
                             {(place.wc && !search.match("wc")) ? <button className="button_off">WC </button> : ""}
-                            {(place.fourH && !search.match("fourH")) ? <button className="button_off">4H </button> : ""}
+                            {(place.fourH && !search.match("fourH")) ? <button className="button_off">4H-gård </button> : ""}
                             {(place.pramFriendly && !search.match("pramFriendly")) ? <button className="button_off">barnvagnsvänligt </button> : ""}
                             {(place.cafe && !search.match("cafe")) ? <button className="button_off">kiosk/cafe </button> : ""}
                             {(place.fireplace && !search.match("fireplace")) ? <button className="button_off">grillplats </button> : ""}
