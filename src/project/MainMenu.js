@@ -129,8 +129,8 @@ function MainMenu({
                         id="dropdown-basic"
                         onSelect={handleSelect}
                     >
-                        <Dropdown.Item eventKey="Populära"><img className="radio" src={"./icons/radio" + (sortSetting.match("Populära") ? "on" : "off") + ".png"} height="15px" />   Populära</Dropdown.Item>
-                        <Dropdown.Item eventKey="Senast tillagda"><img className="radio" src={"./icons/radio" + (sortSetting.match("Senast tillagda") ? "on" : "off") + ".png"} height="15px" /> Senast tillagda </Dropdown.Item>
+                        <Dropdown.Item eventKey="Populära"><img className="radio" src={"./icons/radio_" + (sortSetting.match("Populära") ? "on" : "off") + ".png"} height="15px" />   Populära</Dropdown.Item>
+                        <Dropdown.Item eventKey="Senast tillagda"><img className="radio" src={"./icons/radio_" + (sortSetting.match("Senast tillagda") ? "on" : "off") + ".png"} height="15px" /> Senast tillagda </Dropdown.Item>
                         <Dropdown.Item eventKey="A-Ö"><img className="radio" src={"./icons/radio_" + (sortSetting.match("A-Ö") ? "on" : "off") + ".png"} height="15px" /> A-Ö </Dropdown.Item>
 
                     </DropdownButton>
