@@ -79,7 +79,7 @@ const InfoPage = () => {
                         <div className="infocontainer4">
                             <div>
 
-                                <p><strong>OM UTFLYKTSMÅLET. </strong> {" " + place.description}</p>
+                                <p><strong>OM UTFLYKTSMÅLET. </strong> {" " + place.description.replaceAll("\n", "\n\n")}</p>
 
                             </div>
 
