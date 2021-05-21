@@ -62,7 +62,7 @@ const InfoPage = () => {
                             {(place.changingDiaper && !search.match("changingDiaper")) ? <button className="button_off">skötbord </button> : ""}
                             {(place.parking && !search.match("parking")) ? <button className="button_off">parkering </button> : ""}
                             {(place.wc && !search.match("wc")) ? <button className="button_off">WC </button> : ""}
-                            {(place.fourH && !search.match("fourH")) ? <button className="button_off">4H </button> : ""}
+                            {(place.fourH && !search.match("fourH")) ? <button className="button_off">4H-sida </button> : ""}
                             {(place.pramFriendly && !search.match("pramFriendly")) ? <button className="button_off">barnvagnsvänligt </button> : ""}
                             {(place.cafe && !search.match("cafe")) ? <button className="button_off">kiosk/cafe </button> : ""}
                             {(place.fireplace && !search.match("fireplace")) ? <button className="button_off">grillplats </button> : ""}
@@ -79,7 +79,7 @@ const InfoPage = () => {
                         <div className="infocontainer4">
                             <div>
 
-                                <p><strong>OM UTFLYKTSMÅLET. </strong> {" " + place.description}</p>
+                                <p><strong>OM UTFLYKTSMÅLET. </strong> {" " + place.description.replaceAll("\n", "\n\n")}</p>
 
                             </div>
 

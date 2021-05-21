@@ -130,9 +130,9 @@ function MainMenu({
                         id="dropdown-basic"
                         onSelect={handleSelect}
                     >
-                        <Dropdown.Item eventKey="Populära">Populära</Dropdown.Item>
-                        <Dropdown.Item eventKey="Senast tillagda"> Senast tillagda </Dropdown.Item>
-                        <Dropdown.Item eventKey="A-Ö"> A-Ö </Dropdown.Item>
+                        <Dropdown.Item eventKey="Populära"><img className="radio" src={"./icons/radio_" + (sortSetting.match("Populära") ? "on" : "off") + ".png"} height="15px" />   Populära</Dropdown.Item>
+                        <Dropdown.Item eventKey="Senast tillagda"><img className="radio" src={"./icons/radio_" + (sortSetting.match("Senast tillagda") ? "on" : "off") + ".png"} height="15px" /> Senast tillagda </Dropdown.Item>
+                        <Dropdown.Item eventKey="A-Ö"><img className="radio" src={"./icons/radio_" + (sortSetting.match("A-Ö") ? "on" : "off") + ".png"} height="15px" /> A-Ö </Dropdown.Item>
                     </DropdownButton>
 
                     {/*(sortSetting.match("popularity") ? "X " : "o") + "Populära"*/}
@@ -154,6 +154,10 @@ function MainMenu({
 export default MainMenu;
 
 /*
+
+      <button className={changingDiaper ? "button_on" : "button_off"} onClick={toggleChangingDiaper}>
+                    <img src="./icons/family baby change diaper.png" height="20px" /> <span class="filtertext-middle">Skötbord</span> </button>
+
 changingDiaper, setChangingDiaper
 parking,  setParking
 wc, setWc

@@ -55,7 +55,9 @@ p {
     color: #597B72;
     display: inline;
     /* make \n work */
-    white-space: pre-wrap;
+    white-space:pre-wrap;
+    box-decoration-break:initial 
+
 }
 
 .p-strong {
@@ -254,7 +256,13 @@ a.dropdown-item {
 }
 
 .container4 {
-    margin: 0px;
+    clear: both;
+    display: initial;
+    flex-flow: row;
+    flex-direction: row;
+    background-color: #999999;
+    font-style: italic;
+    margin: 77px;
     padding-bottom: 0px;
     padding-left: 0px;
 }
@@ -343,7 +351,6 @@ li {
 ​​​​​​​​ .menu {
     position: flex;
     width: 30%;
-    height: 100%;
     float: left;
     min-width: 100px;
 }
@@ -375,8 +382,9 @@ li {
     /* Drop shadow */
     /*box-shadow: 4px 4px 3px rgba(32, 32, 32, 0.14);*/
     /* fix for picture icon in button */
+    /* make \n work with white-space: pre-wrap; */
     white-space: pre-wrap;
-    /* make \n work */
+    
 }
 
 .mycard {
@@ -391,7 +399,7 @@ li {
     float: left;
     padding-right: 0px;
     padding-left: 15px;
-    max-width: 270px;
+    max-width: 330px;
 }
 
 .column_all {
