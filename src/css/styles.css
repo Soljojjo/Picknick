@@ -559,3 +559,40 @@ li {
     font-weight: normal;
     color: #597B72;
 }
+
+/*  BREADCRUMBS!-----------------------------------   */
+/*  breadcrumb containern   */
+.breadcrumb{
+    background-color: #FEF8EF;
+    margin: 0px;
+    padding: 0px 0px 0px 10px;
+
+}
+
+/* strukturen för breadcrumbs */
+.breadcrumb-item + .breadcrumb-item::before{
+    content: ">";
+}
+
+/* färg för breadcrumb */
+.homecrumb{
+    color: #597B72;
+}
+
+/* färg för breadcrumb */
+.itemcrumb {
+    color: #597B72;
+    font-weight: bold;
+    text-decoration: none;
+}
+.itemcrumb:hover {
+    color: #597B72;
+    text-decoration: none;
+}
+
+/* breadcrumb hover */
+.breadcrumb-item,a:hover{
+    color: #597B72;
+
+    
+}
