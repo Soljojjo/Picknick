@@ -211,8 +211,13 @@ a.dropdown-item {
     padding-left: 0px;
 }
 
+.map_pin {
+    margin-right: 5px;
+}
+
 .shortdescription {
-    padding-top: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     color: #597B72;
     /* TODO: perhaps solve with some flex center thing, or something?*/
 }
@@ -316,7 +321,7 @@ Old::after}
 .infocontainer4 {
     padding-right: 10px;
     padding-left: 10px;
-    padding-bottom:40px;
+    padding-bottom: 40px;
 }
 
 .center-column {
@@ -326,7 +331,6 @@ Old::after}
 
 .footer {
     clear: both;
-    
     height: 50px;
     padding-top: 10px;
     padding-bottom: 100px;
@@ -561,38 +565,42 @@ li {
 }
 
 /*  BREADCRUMBS!-----------------------------------   */
+
 /*  breadcrumb containern   */
-.breadcrumb{
+
+.breadcrumb {
     background-color: #FEF8EF;
     margin: 0px;
     padding: 0px 0px 0px 10px;
-
 }
 
 /* strukturen för breadcrumbs */
-.breadcrumb-item + .breadcrumb-item::before{
+
+.breadcrumb-item+.breadcrumb-item::before {
     content: ">";
 }
 
 /* färg för breadcrumb */
-.homecrumb{
+
+.homecrumb {
     color: #597B72;
 }
 
 /* färg för breadcrumb */
+
 .itemcrumb {
     color: #597B72;
     font-weight: bold;
     text-decoration: none;
 }
+
 .itemcrumb:hover {
     color: #597B72;
     text-decoration: none;
 }
 
 /* breadcrumb hover */
-.breadcrumb-item,a:hover{
-    color: #597B72;
 
-    
+.breadcrumb-item, a:hover {
+    color: #597B72;
 }

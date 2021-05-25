@@ -99,7 +99,14 @@ function Destinations(props) {
                                             </span>
                                         </div>
                                         <div className="column">
-                                            <div className="shortdescription"><strong>{place.name}</strong> <br></br>{place.smallDescription}</div>
+                                            <div className="shortdescription">
+                                                <strong>{place.name}</strong> <br></br>{place.smallDescription}
+                                            </div>
+                                            <div>
+                                                <img className="map_pin" alt="" src="./icons/map-pin.svg" />
+                                                <strong>{place.location}</strong>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </Link >
