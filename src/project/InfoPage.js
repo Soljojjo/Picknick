@@ -2,6 +2,7 @@ import React from 'react';
 // import React, { useEffect, useState } from 'react';
 // import Destinations from './Destinations';
 import Places from './Places.json';
+import InfiniteCarousel from 'react-leaf-carousel';
 import { Link, useParams, useLocation } from "react-router-dom";
 
 const InfoPage = () => {
@@ -31,7 +32,62 @@ const InfoPage = () => {
 
                             </div>
                             <div>
-                                <img className="infopicture" src={"../places/" + place.images[0]} alt={place.name} />
+
+                                <InfiniteCarousel
+                                    breakpoints={[
+                                        {
+                                            breakpoint: 500,
+                                            settings: {
+                                                slidesToShow: 1,
+                                                slidesToScroll: 2,
+                                                /*  arrows:false,
+                                                dots:false, */
+                                                /* autoCycle: true,
+                                                cycleInterval: 3000,
+                                                pauseOn: false */
+                            
+                                            },
+                                        },
+                                        {
+                                            breakpoint: 768,
+                                            settings: {
+                                                slidesToShow: 3,
+                                                slidesToScroll: 3,
+                                            },
+                                        },
+                                    ]}
+                                    dots={true}
+                                    showSides={true}
+                                    sidesOpacity={.5}
+                                    sideSize={.1}
+                                    slidesToScroll={3}
+                                    slidesToShow={3}
+                                    scrollOnDevice={true}
+                                
+                                >
+                                    <div>
+                                        <img
+                                            alt={place.name}
+                                            src={"../places/" + place.images[0]}
+                                            height={"200px"}
+                                        />
+                                    </div>
+                                    <div>
+                                        <img
+                                            alt={place.name}
+                                            src={"../places/" + place.images[1]}
+                                            height={"200px"}
+                                        />
+                                    </div>
+                                    <div>
+                                        <img
+                                            alt={place.name}
+                                            src={"../places/" + place.images[2]}
+                                            height={"200px"}
+                                        />
+                                    </div>
+
+                                </InfiniteCarousel>
                             </div>
                         </div>
 
