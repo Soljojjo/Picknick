@@ -18,7 +18,7 @@ const InfoPage = () => {
             <div className="header">
                 <div>
                     <Link to="/"> <img className="logoPicknick" src="../icons/picknickLogoAndText.png" alt=" logo " /></Link>
-                    
+
                 </div>
 
             </div>
@@ -29,7 +29,7 @@ const InfoPage = () => {
                             <div>{/* från json filen filtreras info där id i jsonfilen = id från Url
                                  map tar all info och lägger i place, namnet hämtas från place.
                                  samma sak görs för bilden och beskrivning i nästa div */}
-                                 <BreadCrumbs id={id}/>
+                                <BreadCrumbs id={id} />
 
                                 <h1 style={{ paddingLeft: "10px" }}>{place.name}</h1>
 
@@ -43,12 +43,12 @@ const InfoPage = () => {
                                             settings: {
                                                 slidesToShow: 1,
                                                 slidesToScroll: 2,
-                                                /*  arrows:false,
+                                                 /*  arrows:false,
                                                 dots:false, */
                                                 /* autoCycle: true,
                                                 cycleInterval: 3000,
                                                 pauseOn: false */
-                            
+
                                             },
                                         },
                                         {
@@ -66,31 +66,21 @@ const InfoPage = () => {
                                     slidesToScroll={3}
                                     slidesToShow={3}
                                     scrollOnDevice={true}
-                                
-                                >
-                                    <div>
-                                        <img
-                                            alt={place.name}
-                                            src={"../places/" + place.images[0]}
-                                            height={"200px"}
-                                        />
-                                    </div>
-                                    <div>
-                                        <img
-                                            alt={place.name}
-                                            src={"../places/" + place.images[1]}
-                                            height={"200px"}
-                                        />
-                                    </div>
-                                    <div>
-                                        <img
-                                            alt={place.name}
-                                            src={"../places/" + place.images[2]}
-                                            height={"200px"}
-                                        />
-                                    </div>
 
-                                </InfiniteCarousel>
+                                >
+                                    {place.images.map(img => 
+
+                                        <div>
+                                            <img
+                                                alt={place.name}
+                                                src={"../places/" + img}
+                                                /* height={"200px"} */
+                                                width={"267px"}
+                                                overflow={"hidden"}
+                                            />
+                                        </div>
+                                    )}
+                                    </InfiniteCarousel>
                             </div>
                         </div>
 
