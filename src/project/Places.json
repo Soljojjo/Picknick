@@ -10,7 +10,7 @@
         "infoLink": "",
         "mapsLink": "https://goo.gl/maps/iusNYXJ9uVQmHrf38",
         "card": "bergianska_tradgarden_card.jpg",
-        "location": "",
+        "location": "Norra Djurgården",
         "images": [
             "Bergianska1_527x280.jpg",
             "Bergianska2_465x309.jpg",
@@ -42,7 +42,7 @@
         "infoLink": "",
         "mapsLink": "https://goo.gl/maps/jRPydSpQcwCRPpGcA",
         "card": "birka_vikingastaden_card.jpg",
-        "location": "",
+        "location": "Björkö",
         "images": [
             "Birka1_683x1024.jpg",
             "Birka2_1024x684.jpg",
@@ -74,7 +74,7 @@
         "infoLink": "",
         "mapsLink": "https://goo.gl/maps/vsdGN9gHH4EnmDki6",
         "card": "hellasgarden_card.jpg",
-        "location": "",
+        "location": "Nacka",
         "images": [
             "Hellasgarden1_273x185.jpg",
             "Hellasgarden2_284x177.jpg",
@@ -106,7 +106,7 @@
         "infoLink": "",
         "mapsLink": "https://goo.gl/maps/CuRrAk9RP1F6TE4y7",
         "card": "gripsholms_hjorthage_card.jpg",
-        "location": "",
+        "location": "Mariefred",
         "images": [
             "Gripsholms_hjorthage1_410x273.jpg",
             "Gripsholms_hjorthage2_770x420.jpg",
@@ -138,7 +138,7 @@
         "infoLink": "",
         "mapsLink": "https://goo.gl/maps/VByjYw7UphHbR9Ui6",
         "card": "augustendals_4h_card.jpg",
-        "location": "",
+        "location": "Solna",
         "images": [
             "Augustendal1_400x286.jpg",
             "Augustendal2_400x560.jpg",
@@ -170,11 +170,12 @@
         "infoLink": "",
         "mapsLink": " https://goo.gl/maps/FK9pBDhDkTtgTfMG9",
         "card": "aspuddsparken_card.jpg",
-        "location": "",
+        "location": "Hägersten",
         "images": [
             "Aspuddsparken1_512x384.jpg",
             "Aspuddsparken2_600x398.jpg",
-            "Aspuddsparken3_300x199.jpg"
+            "Aspuddsparken3_300x199.jpg",
+            "Aspuddsparken4_600x556.jpg",
         ],
         "changingDiaper": true,
         "parking": false,
@@ -202,7 +203,7 @@
         "infoLink": "",
         "mapsLink": "https://goo.gl/maps/vai7FmeMzkmF56MW6",
         "card": "haga_fjarilshuset_card.jpg",
-        "location": "",
+        "location": "Solna",
         "images": [
             "Fjarilshuset1_275x183.jpg",
             "Fjarilshuset2_273x185.jpg",
@@ -234,7 +235,7 @@
         "infoLink": "",
         "mapsLink": "https://goo.gl/maps/osCaR11LPPij8BAu5",
         "card": "hagelbyparken_card.jpg",
-        "location": "",
+        "location": "Tumba",
         "images": [
             "Hagelbyparken1_869x489.jpg",
             "Hagelbyparken2_870x580.jpg",
@@ -266,7 +267,7 @@
         "infoLink": "",
         "mapsLink": "https://goo.gl/maps/EX2J8cH9ETuxdYwj8",
         "card": "lida_friluftsgard_naturreservat_card.jpg",
-        "location": "",
+        "location": "Tullinge",
         "images": [
             "Lida1_890x551.jpg",
             "Lida2_890x551.jpg",
@@ -298,7 +299,7 @@
         "infoLink": "",
         "mapsLink": "https://goo.gl/maps/i7qaSGi27Da8eJbd7",
         "card": "nyckelviken_card.jpg",
-        "location": "",
+        "location": "Nacka",
         "images": [
             "Nyckelviken1_300x168.jpg",
             "Nyckelviken2_294x171.jpg",
@@ -330,7 +331,7 @@
         "infoLink": "",
         "mapsLink": "https://goo.gl/maps/r92jhar47HB8jsLr8",
         "card": "siggesta_gard_card.jpg",
-        "location": "",
+        "location": "Värmdö",
         "images": [
             "Siggestagard1_1920x1440_card.jpg",
             "Siggestagard2_402x322.jpg",
@@ -362,7 +363,7 @@
         "infoLink": "",
         "mapsLink": "https://goo.gl/maps/yUZskR9qWe55EXC27",
         "card": "tyresta_nationalpark_card.jpg",
-        "location": "",
+        "location": "Vendelsö",
         "images": [
             "Tyresta_nationalpark1_944x500.jpg",
             "tyresta-nationalpark2_944x500.jpg",
