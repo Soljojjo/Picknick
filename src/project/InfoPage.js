@@ -3,6 +3,7 @@ import React from 'react';
 // import Destinations from './Destinations';
 import Places from './Places.json';
 import { Link, useParams, useLocation } from "react-router-dom";
+import BreadCrumbs from './BreadCrumbs';
 
 const InfoPage = () => {
 
@@ -16,6 +17,7 @@ const InfoPage = () => {
             <div className="header">
                 <div>
                     <Link to="/"> <img className="logoPicknick" src="../icons/picknickLogoAndText.png" alt=" logo " /></Link>
+                    
                 </div>
 
             </div>
@@ -26,6 +28,7 @@ const InfoPage = () => {
                             <div>{/* från json filen filtreras info där id i jsonfilen = id från Url
                                  map tar all info och lägger i place, namnet hämtas från place.
                                  samma sak görs för bilden och beskrivning i nästa div */}
+                                 <BreadCrumbs id={id}/>
 
                                 <h1 style={{ paddingLeft: "10px" }}>{place.name}</h1>
 
@@ -88,6 +91,7 @@ const InfoPage = () => {
                         <div className="footer">
 
                             <a className="mapbutton" href={place.mapsLink} style={{ textDecoration: 'none' }} target="_blank" rel="noreferrer">ÖPPNA I KARTTJÄNST</a>
+                            <BreadCrumbs />
 
 
                         </div>
