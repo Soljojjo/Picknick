@@ -34,7 +34,7 @@ const InfoPage = () => {
 
                             </div>
                             <div>
-                                <img className="infopicture" src={"../places/" + place.img3} alt={place.name} />
+                                <img className="infopicture" src={"../places/" + place.images[0]} alt={place.name} />
                             </div>
                         </div>
 
