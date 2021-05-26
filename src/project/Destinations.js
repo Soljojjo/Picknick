@@ -103,7 +103,7 @@ function Destinations(props) {
                                                 <strong>{place.name}</strong> <br></br>{place.smallDescription}
                                             </div>
                                             <div>
-                                                <img className="map_pin" alt="" src="./icons/map-pin.svg" />
+                                                <img className="map_pin" alt="" src="./icons/map-pin-green.svg" />
                                                 <strong>{place.location}</strong>
                                             </div>
 

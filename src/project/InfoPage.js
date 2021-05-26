@@ -43,9 +43,9 @@ const InfoPage = () => {
                                             settings: {
                                                 slidesToShow: 1,
                                                 slidesToScroll: 1,
-                                                /*  arrows:false,*/
-                                               /*dots:false, 
-                                                /*autoCycle: true,
+                                                /*  arrows: true,
+                                               dots:false, */
+                                                /* autoCycle: true,
                                                 cycleInterval: 3000,
                                                 pauseOn: false */
 
