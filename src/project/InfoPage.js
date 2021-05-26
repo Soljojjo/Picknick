@@ -41,42 +41,56 @@ const InfoPage = () => {
                                         {
                                             breakpoint: 500,
                                             settings: {
+                                                sideSize: .1,
                                                 slidesToShow: 1,
                                                 slidesToScroll: 1,
+                                                slidesSpacing: 2,
+
                                                 /*  arrows: true,
                                                dots:false, */
                                                 /* autoCycle: true,
                                                 cycleInterval: 3000,
                                                 pauseOn: false */
-
                                             },
                                         },
-                                        {
+                                        /*{
                                             breakpoint: 768,
                                             settings: {
-                                                slidesToShow: 3,
-                                                slidesToScroll: 3,
+                                                sideSize: .1,
+                                                slidesToShow: 1,
+                                                slidesToScroll: 1,
+                                                slidesSpacing: 2,
                                             },
-                                        },
+                                        },*/
                                     ]}
-                                    dots={true}
+
+                                    dots={false}
+                                    arrows={true}
                                     showSides={true}
                                     sidesOpacity={.5}
                                     sideSize={.1}
-                                    slidesToScroll={3}
-                                    slidesToShow={3}
+                                    slidesToScroll={1}
+                                    slidesToShow={1}
+                                    slidesSpacing={2}
                                     scrollOnDevice={true}
+                                /*
+                                dots={true}
+                                showSides={true}
+                                sidesOpacity={.5}
+                                sideSize={.1}
+                                slidesToScroll={3}
+                                slidesToShow={3}
+                                scrollOnDevice={true}*/
 
                                 >
                                     {place.images.map(img =>
 
                                         <div>
                                             <img
+                                                style={{ objectFit: "cover" }}
                                                 alt={place.name}
                                                 src={"../places/" + img}
-                                                /* height={"200px"} */
-                                                width={"267px"}
-                                                overflow={"hidden"}
+                                                height={"250px"}
                                             />
                                         </div>
                                     )}
