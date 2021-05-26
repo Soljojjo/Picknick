@@ -42,10 +42,10 @@ const InfoPage = () => {
                                             breakpoint: 500,
                                             settings: {
                                                 slidesToShow: 1,
-                                                slidesToScroll: 2,
-                                                 /*  arrows:false,
-                                                dots:false, */
-                                                /* autoCycle: true,
+                                                slidesToScroll: 1,
+                                                /*  arrows:false,*/
+                                               /*dots:false, 
+                                                /*autoCycle: true,
                                                 cycleInterval: 3000,
                                                 pauseOn: false */
 
@@ -68,7 +68,7 @@ const InfoPage = () => {
                                     scrollOnDevice={true}
 
                                 >
-                                    {place.images.map(img => 
+                                    {place.images.map(img =>
 
                                         <div>
                                             <img
@@ -80,7 +80,7 @@ const InfoPage = () => {
                                             />
                                         </div>
                                     )}
-                                    </InfiniteCarousel>
+                                </InfiniteCarousel>
                             </div>
                         </div>
 
