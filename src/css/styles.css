@@ -152,10 +152,17 @@ p {
     outline: none;
     box-shadow: none;
 }
+/* själva bakgrundsfärgen till radio knapparna*/
+.dropdown-menu.show.dropdown-menu-right {
+    background-color: #FEF8EF;
+    border-color: #597B72;
+    border-width: 3px;
+    
+}
 
 a.dropdown-item {
     color: #597B72;
-    background-color: #FEF8EF;
+    
     font-family: Cabin;
 }
 
