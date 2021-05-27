@@ -265,13 +265,13 @@ button#dropdown-basic.dropdown-toggle.btn.btn-primary::after {
     color: #597B72;
 }
 
-.container3 {
+..container3 {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     padding-top: 0px;
     padding-left: 10px;
-    padding-bottom: 7px;
+    padding-bottom: 0px;
     font-size: 14px;
     font-family: 'Cabin';
     font-weight: normal;
@@ -282,6 +282,7 @@ button#dropdown-basic.dropdown-toggle.btn.btn-primary::after {
     margin: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
+    padding-top: 3px;
 }
 
 .infocontainer {
