@@ -151,7 +151,7 @@ const InfoPage = () => {
                         <div className="footer">
 
                             <a className="mapbutton" href={place.mapsLink} style={{ textDecoration: 'none' }} target="_blank" rel="noreferrer">ÖPPNA I KARTTJÄNST</a>
-                            <BreadCrumbs />
+                            
 
 
                         </div>
