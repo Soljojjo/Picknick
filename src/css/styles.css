@@ -577,13 +577,19 @@ li {
     vertical-align: middle;
     margin-top: 6px;
 }
+.mapbutton:focus{
+    color: white;
+}
 
-.mapLink {
+
+
+/*.mapLink {
     font-size: 14px;
     font-family: 'Cabin';
     font-weight: normal;
-    color: #597B72;
-}
+    
+    
+}*/
 
 /*  BREADCRUMBS!-----------------------------------   */
 
