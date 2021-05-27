@@ -12,6 +12,10 @@ const InfoPage = () => {
 
     const { search } = useLocation(); // From the string with the filter settings after the "?" in the link
 
+    const easteregg = () => {
+        alert("Hello from the other side")
+    }
+
     return (
         <div className="column_all">
 
@@ -151,6 +155,8 @@ const InfoPage = () => {
                         <div className="footer">
 
                             <a className="mapbutton" href={place.mapsLink} style={{ textDecoration: 'none' }} target="_blank" rel="noreferrer">ÖPPNA I KARTTJÄNST</a>
+
+                            <button className="easteregg" onClick={easteregg} ></button>
                             
 
 
