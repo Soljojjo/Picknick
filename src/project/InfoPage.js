@@ -44,7 +44,7 @@ const InfoPage = () => {
                                                 sideSize: .1,
                                                 slidesToShow: 1,
                                                 slidesToScroll: 1,
-                                                slidesSpacing: 2,
+                                                slidesSpacing: 24,
 
                                                 /*  arrows: true,
                                                dots:false, */

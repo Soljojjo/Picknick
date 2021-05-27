@@ -100,11 +100,13 @@ function MainMenu({
                         <button className={fourH ? "button_on" : "button_off"} onClick={toggleFourH}>4H-gård</button>
                         <button className={pramFriendly ? "button_on" : "button_off"} onClick={togglePramFriendly}> barnvagnsvänligt</button>
                         <button className={picnicCompatible ? "button_on" : "button_off"} onClick={togglePicnicCompatible}> picknickområde</button>
+                        <button className={restaurant ? "button_on" : "button_off"} onClick={toggleRestaurant}> restaurang</button>
 
                         {!showMore ? <button className='showMoreButton' onClick={() => setShowMore(true)}>+ visa fler</button> : null}
 
                         {showMore ?
                             <div>
+
                                 <button className={elevatorRamp ? "button_on" : "button_off"} onClick={toggleElevatorRamp}> hiss/ramp</button>
                                 <button className={cafe ? "button_on" : "button_off"} onClick={toggleCafe}> kiosk/café</button>
                                 <button className={fireplace ? "button_on" : "button_off"} onClick={toggleFireplace}> grillplats</button>
@@ -112,7 +114,7 @@ function MainMenu({
                                 <button className={microwave ? "button_on" : "button_off"} onClick={toggleMicrowave}> mikrovågsugn</button>
                                 <button className={beach ? "button_on" : "button_off"} onClick={toggleBeach}> badplats</button>
                                 <button className={trails ? "button_on" : "button_off"} onClick={toggleTrails}> promenadstigar</button>
-                                <button className={restaurant ? "button_on" : "button_off"} onClick={toggleRestaurant}> restaurang</button>
+                                
                                 {showMore ? <button className='showMoreButton' onClick={() => setShowMore(false)}>- visa färre</button> : null}
                             </div>
                             : null}
