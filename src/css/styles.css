@@ -616,8 +616,9 @@ li {
 /* färg för breadcrumb */
 
 .homecrumb {
-    color: #597B72; 
+    color: #84A89E; 
     font-size: 14px;
+    font-family: Cabin;
 }
 
 /* färg för breadcrumb */
@@ -627,6 +628,7 @@ li {
     /* font-weight: bold; */
     text-decoration: none;
     font-size: 14px;
+    font-family: Cabin;
      
 }
 

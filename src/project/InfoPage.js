@@ -45,10 +45,10 @@ const InfoPage = () => {
                                         {
                                             breakpoint: 500,
                                             settings: {
-                                                sideSize: .1,
+                                                sideSize: .05,
                                                 slidesToShow: 1,
                                                 slidesToScroll: 1,
-                                                slidesSpacing: 12,
+                                                slidesSpacing: 6,
 
                                                 /*  arrows: true,
                                                dots:false, */
