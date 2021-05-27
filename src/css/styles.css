@@ -445,13 +445,13 @@ li {
     /*   height: 25px; */
     padding-top: 0px;
     padding-left: 0px;
-    padding-right: 6px;
+    padding-right: 0px;
     padding-bottom: 16px;
     vertical-align: middle;
 }
 
 .button_on {
-    font-size: 14px;
+    font-size: 15px;
     font-family: 'Cabin';
     font-weight: normal;
     color: #FFFCF8;
@@ -469,7 +469,7 @@ li {
 }
 
 .button_off {
-    font-size: 14px;
+    font-size: 15px;
     font-family: 'Cabin';
     font-weight: normal;
     color: #597B72;
