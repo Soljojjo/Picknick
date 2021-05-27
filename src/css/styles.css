@@ -293,7 +293,7 @@ button#dropdown-basic.dropdown-toggle.btn.btn-primary::after {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 7px;
     padding-left: 10px;
     padding-bottom: 7px;
     font-size: 14px;
@@ -564,7 +564,7 @@ li {
     font-size: 16px;
     font-family: 'Cabin';
     font-weight: bold;
-    color: #DCE6E3;
+    color: #FEF8EF;
     background-color: #597B72;
     margin: 6px;
     text-align: right;
@@ -613,6 +613,7 @@ li {
 
 .homecrumb {
     color: #597B72; 
+    font-size: 14px;
 }
 
 /* färg för breadcrumb */
@@ -621,6 +622,7 @@ li {
     color: #597B72;
     /* font-weight: bold; */
     text-decoration: none;
+    font-size: 
     
 }
 
