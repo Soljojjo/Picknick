@@ -141,6 +141,8 @@ p {
     border: none;
     color: #597B72;
     float: left;
+    width: 140px;
+    text-align: left;
 }
 
 #dropdown-basic:focus, #dropdown-basic:active {
@@ -157,8 +159,7 @@ p {
 
 .dropdown-menu.show.dropdown-menu-right {
     background-color: #FEF8EF;
-    border-color: #597B72;
-    border-width: 3px;
+   
 }
 
 a.dropdown-item {
@@ -166,7 +167,18 @@ a.dropdown-item {
     font-family: Cabin;
 }
 
+button#dropdown-basic.dropdown-toggle.btn.btn-primary::after {
+   content: "⌄";
+   font-weight: bolder;
+   border: none;
+}
+
 /* a.dropdown-item:focus {} */
+
+.radio {
+    padding-bottom: 3px;
+    padding-right: 15px;
+}
 
 .sort_and_hits {
     font-family: 'Cabin';
@@ -220,7 +232,7 @@ a.dropdown-item {
 
 .map_pin {
     margin-right: 5px;
-    padding-bottom: 3px;
+    padding-bottom: 6px;
 }
 
 .shortdescription {
@@ -585,21 +597,24 @@ li {
 /* strukturen för breadcrumbs */
 
 .breadcrumb-item+.breadcrumb-item::before {
-    content: ">";
+    content: "❯";
+   font-size: 16px; 
+  
 }
 
 /* färg för breadcrumb */
 
 .homecrumb {
-    color: #597B72;
+    color: #597B72; 
 }
 
 /* färg för breadcrumb */
 
 .itemcrumb {
     color: #597B72;
-    font-weight: bold;
+    /* font-weight: bold; */
     text-decoration: none;
+    
 }
 
 .itemcrumb:hover {

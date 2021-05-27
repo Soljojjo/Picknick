@@ -44,7 +44,7 @@ const InfoPage = () => {
                                                 sideSize: .1,
                                                 slidesToShow: 1,
                                                 slidesToScroll: 1,
-                                                slidesSpacing: 24,
+                                                slidesSpacing: 12,
 
                                                 /*  arrows: true,
                                                dots:false, */
@@ -90,7 +90,7 @@ const InfoPage = () => {
                                                 style={{ objectFit: "cover" }}
                                                 alt={place.name}
                                                 src={"../places/" + img}
-                                                height={"250px"}
+                                                height={"225px"}
                                             />
                                         </div>
                                     )}

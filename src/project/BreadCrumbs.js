@@ -9,7 +9,7 @@ const BreadCrumbs = (props) => {
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
-              <a class="homecrumb" href="/">Home</a>
+              <a class="homecrumb" href="/">Hem</a>
             </li>
             <li class="breadcrumb-item">
               <a class="itemcrumb">{place.name}</a>
