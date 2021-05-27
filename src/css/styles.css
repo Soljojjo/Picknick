@@ -232,7 +232,7 @@ button#dropdown-basic.dropdown-toggle.btn.btn-primary::after {
 
 .map_pin {
     margin-right: 5px;
-    padding-bottom: 6px;
+    padding-bottom: 5px;
 }
 
 .shortdescription {
@@ -240,6 +240,10 @@ button#dropdown-basic.dropdown-toggle.btn.btn-primary::after {
     padding-bottom: 5px;
     color: #597B72;
     /* TODO: perhaps solve with some flex center thing, or something?*/
+}
+
+.placename{
+    font-weight: bold;
 }
 
 .infopicture {
@@ -622,6 +626,7 @@ li {
     color: #597B72;
     /* font-weight: bold; */
     text-decoration: none;
+    font-size: 14px;
      
 }
 
