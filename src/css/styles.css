@@ -265,7 +265,7 @@ button#dropdown-basic.dropdown-toggle.btn.btn-primary::after {
     color: #597B72;
 }
 
-..container3 {
+.container3 {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
